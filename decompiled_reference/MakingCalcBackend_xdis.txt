@@ -1,0 +1,498 @@
+# pydisasm version 6.1.7
+# Python bytecode 3.9.0 (3425)
+# Disassembled from Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+# Timestamp in code: 0 (1970-01-01 05:30:00)
+# Source code size mod 2**32: 0 bytes
+# Method Name:       <module>
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        4
+# Flags:             0x00000040 (NOFREE)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: ('QtWidgets',)
+#    2: ('loadUi',)
+#    3: <Code38 code object Making at 0x16e8593e510, file Common\MakingCalcBackend.py>, line 4
+#    4: 'Making'
+#    5: '__main__'
+#    6: None
+# Names:
+#    0: PyQt5
+#    1: QtWidgets
+#    2: PyQt5.uic
+#    3: loadUi
+#    4: QDialog
+#    5: Making
+#    6: __name__
+#    7: sys
+#    8: QApplication
+#    9: argv
+#   10: app
+#   11: dialog
+#   12: exit
+#   13: exec_
+  1:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('QtWidgets',))
+               4 IMPORT_NAME          (PyQt5)
+               6 IMPORT_FROM          (QtWidgets)
+               8 STORE_NAME           (QtWidgets)
+              10 POP_TOP
+
+  2:          12 LOAD_CONST           (0)
+              14 LOAD_CONST           (('loadUi',))
+              16 IMPORT_NAME          (PyQt5.uic)
+              18 IMPORT_FROM          (loadUi)
+              20 STORE_NAME           (loadUi)
+              22 POP_TOP
+
+  4:          24 LOAD_BUILD_CLASS
+              26 LOAD_CONST           (<Code38 code object Making at 0x16e8593e510, file Common\MakingCalcBackend.py>, line 4)
+              28 LOAD_CONST           ("Making")
+              30 MAKE_FUNCTION        (No arguments)
+              32 LOAD_CONST           ("Making")
+              34 LOAD_NAME            (QtWidgets)
+              36 LOAD_ATTR            (QDialog)
+              38 CALL_FUNCTION        (3 positional arguments)
+              40 STORE_NAME           (Making)
+
+ 29:          42 LOAD_NAME            (__name__)
+              44 LOAD_CONST           ("__main__")
+              46 COMPARE_OP           (==)
+              48 POP_JUMP_IF_FALSE    (to 90)
+
+ 30:          50 LOAD_CONST           (0)
+              52 LOAD_CONST           (None)
+              54 IMPORT_NAME          (sys)
+              56 STORE_NAME           (sys)
+
+ 31:          58 LOAD_NAME            (QtWidgets)
+              60 LOAD_METHOD          (QApplication)
+              62 LOAD_NAME            (sys)
+              64 LOAD_ATTR            (argv)
+              66 CALL_METHOD          (1 positional argument)
+              68 STORE_NAME           (app)
+
+ 32:          70 LOAD_NAME            (Making)
+              72 CALL_FUNCTION        (0 positional arguments)
+              74 STORE_NAME           (dialog)
+
+ 33:          76 LOAD_NAME            (sys)
+              78 LOAD_METHOD          (exit)
+              80 LOAD_NAME            (app)
+              82 LOAD_METHOD          (exec_)
+              84 CALL_METHOD          (0 positional arguments)
+              86 CALL_METHOD          (1 positional argument)
+              88 POP_TOP
+         >>   90 LOAD_CONST           (None)
+              92 RETURN_VALUE
+
+
+# Method Name:       Making
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        4
+# Constants:
+#    0: 'Making'
+#    1: <Code38 code object __init__ at 0x16e8593e350, file Common\MakingCalcBackend.py>, line 5
+#    2: 'Making.__init__'
+#    3: <Code38 code object Calc at 0x16e8593e430, file Common\MakingCalcBackend.py>, line 14
+#    4: 'Making.Calc'
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: Calc
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+  4:           0 LOAD_NAME            (__name__)
+               2 STORE_NAME           (__module__)
+               4 LOAD_CONST           ("Making")
+               6 STORE_NAME           (__qualname__)
+
+  5:           8 LOAD_CLOSURE         (__class__)
+              10 BUILD_TUPLE          1
+              12 LOAD_CONST           (<Code38 code object __init__ at 0x16e8593e350, file Common\MakingCalcBackend.py>, line 5)
+              14 LOAD_CONST           ("Making.__init__")
+              16 MAKE_FUNCTION        (closure)
+              18 STORE_NAME           (__init__)
+
+ 14:          20 LOAD_CONST           (<Code38 code object Calc at 0x16e8593e430, file Common\MakingCalcBackend.py>, line 14)
+              22 LOAD_CONST           ("Making.Calc")
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (Calc)
+              28 LOAD_CLOSURE         (__class__)
+              30 DUP_TOP
+              32 STORE_NAME           (__classcell__)
+              34 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        5
+# Constants:
+#    0: None
+#    1: 'Common\\MakingCalc.ui'
+#    2: <Code38 code object <lambda> at 0x16e8593da90, file Common\MakingCalcBackend.py>, line 8
+#    3: 'Making.__init__.<locals>.<lambda>'
+#    4: <Code38 code object <lambda> at 0x16e8593e0b0, file Common\MakingCalcBackend.py>, line 9
+#    5: <Code38 code object <lambda> at 0x16e8593e190, file Common\MakingCalcBackend.py>, line 10
+#    6: <Code38 code object <lambda> at 0x16e8593e270, file Common\MakingCalcBackend.py>, line 11
+# Names:
+#    0: super
+#    1: Making
+#    2: __init__
+#    3: loadUi
+#    4: Mntwt
+#    5: valueChanged
+#    6: connect
+#    7: Mamount
+#    8: Mrate
+#    9: EBill
+#   10: stateChanged
+#   11: show
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+# Free variables:
+#    0: __class__
+# Cell variables:
+#    0: self
+  6:           0 LOAD_GLOBAL          (super)
+               2 LOAD_GLOBAL          (Making)
+               4 LOAD_DEREF           (self)
+               6 CALL_FUNCTION        (2 positional arguments)
+               8 LOAD_METHOD          (__init__)
+              10 CALL_METHOD          (0 positional arguments)
+              12 POP_TOP
+
+  7:          14 LOAD_GLOBAL          (loadUi)
+              16 LOAD_CONST           ("Common\\MakingCalc.ui")
+              18 LOAD_DEREF           (self)
+              20 CALL_FUNCTION        (2 positional arguments)
+              22 POP_TOP
+
+  8:          24 LOAD_DEREF           (self)
+              26 LOAD_ATTR            (Mntwt)
+              28 LOAD_ATTR            (valueChanged)
+              30 LOAD_METHOD          (connect)
+              32 LOAD_CLOSURE         (self)
+              34 BUILD_TUPLE          1
+              36 LOAD_CONST           (<Code38 code object <lambda> at 0x16e8593da90, file Common\MakingCalcBackend.py>, line 8)
+              38 LOAD_CONST           ("Making.__init__.<locals>.<lambda>")
+              40 MAKE_FUNCTION        (closure)
+              42 CALL_METHOD          (1 positional argument)
+              44 POP_TOP
+
+  9:          46 LOAD_DEREF           (self)
+              48 LOAD_ATTR            (Mamount)
+              50 LOAD_ATTR            (valueChanged)
+              52 LOAD_METHOD          (connect)
+              54 LOAD_CLOSURE         (self)
+              56 BUILD_TUPLE          1
+              58 LOAD_CONST           (<Code38 code object <lambda> at 0x16e8593e0b0, file Common\MakingCalcBackend.py>, line 9)
+              60 LOAD_CONST           ("Making.__init__.<locals>.<lambda>")
+              62 MAKE_FUNCTION        (closure)
+              64 CALL_METHOD          (1 positional argument)
+              66 POP_TOP
+
+ 10:          68 LOAD_DEREF           (self)
+              70 LOAD_ATTR            (Mrate)
+              72 LOAD_ATTR            (valueChanged)
+              74 LOAD_METHOD          (connect)
+              76 LOAD_CLOSURE         (self)
+              78 BUILD_TUPLE          1
+              80 LOAD_CONST           (<Code38 code object <lambda> at 0x16e8593e190, file Common\MakingCalcBackend.py>, line 10)
+              82 LOAD_CONST           ("Making.__init__.<locals>.<lambda>")
+              84 MAKE_FUNCTION        (closure)
+              86 CALL_METHOD          (1 positional argument)
+              88 POP_TOP
+
+ 11:          90 LOAD_DEREF           (self)
+              92 LOAD_ATTR            (EBill)
+              94 LOAD_ATTR            (stateChanged)
+              96 LOAD_METHOD          (connect)
+              98 LOAD_CLOSURE         (self)
+             100 BUILD_TUPLE          1
+             102 LOAD_CONST           (<Code38 code object <lambda> at 0x16e8593e270, file Common\MakingCalcBackend.py>, line 11)
+             104 LOAD_CONST           ("Making.__init__.<locals>.<lambda>")
+             106 MAKE_FUNCTION        (closure)
+             108 CALL_METHOD          (1 positional argument)
+             110 POP_TOP
+
+ 12:         112 LOAD_DEREF           (self)
+             114 LOAD_METHOD          (show)
+             116 CALL_METHOD          (0 positional arguments)
+             118 POP_TOP
+             120 LOAD_CONST           (None)
+             122 RETURN_VALUE
+
+
+# Method Name:       Calc
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        4
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        14
+# Constants:
+#    0: None
+#    1: 0
+#    2: 0.0
+#    3: 1.0
+#    4: True
+#    5: 1.03
+#    6: 'Making: '
+# Names:
+#    0: Mamount
+#    1: value
+#    2: Mntwt
+#    3: Mrate
+#    4: EBill
+#    5: isChecked
+#    6: print
+#    7: Result
+#    8: setText
+# Varnames:
+#	self, Making
+# Positional arguments:
+#	self
+# Local variables:
+#    1: Making
+ 15:           0 LOAD_FAST            (self)
+               2 LOAD_ATTR            (Mamount)
+               4 LOAD_METHOD          (value)
+               6 CALL_METHOD          (0 positional arguments)
+               8 LOAD_CONST           (0)
+              10 COMPARE_OP           (!=)
+              12 POP_JUMP_IF_FALSE    (to 244)
+              14 LOAD_FAST            (self)
+              16 LOAD_ATTR            (Mntwt)
+              18 LOAD_METHOD          (value)
+              20 CALL_METHOD          (0 positional arguments)
+              22 LOAD_CONST           (0.0)
+              24 COMPARE_OP           (!=)
+              26 POP_JUMP_IF_FALSE    (to 244)
+              28 LOAD_FAST            (self)
+              30 LOAD_ATTR            (Mrate)
+              32 LOAD_METHOD          (value)
+              34 CALL_METHOD          (0 positional arguments)
+              36 LOAD_CONST           (0)
+              38 COMPARE_OP           (!=)
+              40 POP_JUMP_IF_FALSE    (to 244)
+
+ 16:          42 LOAD_FAST            (self)
+              44 LOAD_ATTR            (Mntwt)
+              46 LOAD_METHOD          (value)
+              48 CALL_METHOD          (0 positional arguments)
+              50 LOAD_CONST           (1.0)
+              52 COMPARE_OP           (>=)
+              54 POP_JUMP_IF_FALSE    (to 138)
+
+ 17:          56 LOAD_FAST            (self)
+              58 LOAD_ATTR            (EBill)
+              60 LOAD_METHOD          (isChecked)
+              62 CALL_METHOD          (0 positional arguments)
+              64 LOAD_CONST           (True)
+              66 COMPARE_OP           (!=)
+              68 POP_JUMP_IF_FALSE    (to 106)
+
+ 18:          70 LOAD_FAST            (self)
+              72 LOAD_ATTR            (Mamount)
+              74 LOAD_METHOD          (value)
+              76 CALL_METHOD          (0 positional arguments)
+              78 LOAD_CONST           (1.03)
+              80 BINARY_TRUE_DIVIDE
+              82 LOAD_FAST            (self)
+              84 LOAD_ATTR            (Mntwt)
+              86 LOAD_METHOD          (value)
+              88 CALL_METHOD          (0 positional arguments)
+              90 BINARY_TRUE_DIVIDE
+              92 LOAD_FAST            (self)
+              94 LOAD_ATTR            (Mrate)
+              96 LOAD_METHOD          (value)
+              98 CALL_METHOD          (0 positional arguments)
+             100 BINARY_SUBTRACT
+             102 STORE_FAST           (Making)
+             104 JUMP_ABSOLUTE        (to 218)
+
+ 20:     >>  106 LOAD_FAST            (self)
+             108 LOAD_ATTR            (Mamount)
+             110 LOAD_METHOD          (value)
+             112 CALL_METHOD          (0 positional arguments)
+             114 LOAD_FAST            (self)
+             116 LOAD_ATTR            (Mntwt)
+             118 LOAD_METHOD          (value)
+             120 CALL_METHOD          (0 positional arguments)
+             122 BINARY_TRUE_DIVIDE
+             124 LOAD_FAST            (self)
+             126 LOAD_ATTR            (Mrate)
+             128 LOAD_METHOD          (value)
+             130 CALL_METHOD          (0 positional arguments)
+             132 BINARY_SUBTRACT
+             134 STORE_FAST           (Making)
+             136 JUMP_FORWARD         (to 218)
+
+ 22:     >>  138 LOAD_FAST            (self)
+             140 LOAD_ATTR            (EBill)
+             142 LOAD_METHOD          (isChecked)
+             144 CALL_METHOD          (0 positional arguments)
+             146 LOAD_CONST           (True)
+             148 COMPARE_OP           (!=)
+             150 POP_JUMP_IF_FALSE    (to 188)
+
+ 23:         152 LOAD_FAST            (self)
+             154 LOAD_ATTR            (Mamount)
+             156 LOAD_METHOD          (value)
+             158 CALL_METHOD          (0 positional arguments)
+             160 LOAD_CONST           (1.03)
+             162 BINARY_TRUE_DIVIDE
+             164 LOAD_FAST            (self)
+             166 LOAD_ATTR            (Mntwt)
+             168 LOAD_METHOD          (value)
+             170 CALL_METHOD          (0 positional arguments)
+             172 LOAD_FAST            (self)
+             174 LOAD_ATTR            (Mrate)
+             176 LOAD_METHOD          (value)
+             178 CALL_METHOD          (0 positional arguments)
+             180 BINARY_MULTIPLY
+             182 BINARY_SUBTRACT
+             184 STORE_FAST           (Making)
+             186 JUMP_FORWARD         (to 218)
+
+ 25:     >>  188 LOAD_FAST            (self)
+             190 LOAD_ATTR            (Mamount)
+             192 LOAD_METHOD          (value)
+             194 CALL_METHOD          (0 positional arguments)
+             196 LOAD_FAST            (self)
+             198 LOAD_ATTR            (Mntwt)
+             200 LOAD_METHOD          (value)
+             202 CALL_METHOD          (0 positional arguments)
+             204 LOAD_FAST            (self)
+             206 LOAD_ATTR            (Mrate)
+             208 LOAD_METHOD          (value)
+             210 CALL_METHOD          (0 positional arguments)
+             212 BINARY_MULTIPLY
+             214 BINARY_SUBTRACT
+             216 STORE_FAST           (Making)
+
+ 26:     >>  218 LOAD_GLOBAL          (print)
+             220 LOAD_FAST            (Making)
+             222 CALL_FUNCTION        (1 positional argument)
+             224 POP_TOP
+
+ 27:         226 LOAD_FAST            (self)
+             228 LOAD_ATTR            (Result)
+             230 LOAD_METHOD          (setText)
+             232 LOAD_CONST           ("Making: ")
+             234 LOAD_FAST            (Making)
+             236 FORMAT_VALUE         0
+             238 BUILD_STRING         2
+             240 CALL_METHOD          (1 positional argument)
+             242 POP_TOP
+         >>  244 LOAD_CONST           (None)
+             246 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        8
+# Constants:
+#    0: None
+# Names:
+#    0: Calc
+# Free variables:
+#    0: self
+  8:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (Calc)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        9
+# Constants:
+#    0: None
+# Names:
+#    0: Calc
+# Free variables:
+#    0: self
+  9:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (Calc)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        10
+# Constants:
+#    0: None
+# Names:
+#    0: Calc
+# Free variables:
+#    0: self
+ 10:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (Calc)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\MakingCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        11
+# Constants:
+#    0: None
+# Names:
+#    0: Calc
+# Free variables:
+#    0: self
+ 11:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (Calc)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+

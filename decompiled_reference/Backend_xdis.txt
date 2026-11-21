@@ -1,0 +1,1684 @@
+# pydisasm version 6.1.7
+# Python bytecode 3.9.0 (3425)
+# Disassembled from Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+# Timestamp in code: 0 (1970-01-01 05:30:00)
+# Source code size mod 2**32: 0 bytes
+# Method Name:       <module>
+# Filename:          Common\Backend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000040 (NOFREE)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: ('purchase',)
+#    2: ('date',)
+#    3: ('strptime', 'time')
+#    4: None
+#    5: 'database.db'
+#    6: <Code38 code object Bill_store at 0x16e858d5400, file Common\Backend.py>, line 9
+#    7: 'Bill_store'
+#    8: <Code38 code object Bill_num at 0x16e85878910, file Common\Backend.py>, line 109
+#    9: 'Bill_num'
+#   10: <Code38 code object Get_Billsday at 0x16e858796d0, file Common\Backend.py>, line 118
+#   11: 'Get_Billsday'
+#   12: <Code38 code object Get_delBills at 0x16e8584b820, file Common\Backend.py>, line 123
+#   13: 'Get_delBills'
+#   14: <Code38 code object Get_specificbills at 0x16e8584b100, file Common\Backend.py>, line 128
+#   15: 'Get_specificbills'
+#   16: <Code38 code object del_billnum at 0x16e85781fd0, file Common\Backend.py>, line 152
+#   17: 'del_billnum'
+#   18: <Code38 code object Sale_store at 0x16e8589c8d0, file Common\Backend.py>, line 156
+#   19: 'Sale_store'
+#   20: <Code38 code object Get_Sale_store at 0x16e8589e7a0, file Common\Backend.py>, line 353
+#   21: 'Get_Sale_store'
+#   22: <Code38 code object Store_Opening at 0x16e85886d50, file Common\Backend.py>, line 401
+#   23: 'Store_Opening'
+#   24: <Code38 code object Get_opn at 0x16e85886e50, file Common\Backend.py>, line 429
+#   25: 'Get_opn'
+# Names:
+#    0: Common.Transaction
+#    1: purchase
+#    2: datetime
+#    3: date
+#    4: time
+#    5: strptime
+#    6: sqlite3
+#    7: connect
+#    8: conn
+#    9: cursor
+#   10: c
+#   11: Bill_store
+#   12: Bill_num
+#   13: Get_Billsday
+#   14: Get_delBills
+#   15: Get_specificbills
+#   16: del_billnum
+#   17: Sale_store
+#   18: Get_Sale_store
+#   19: Store_Opening
+#   20: Get_opn
+  1:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('purchase',))
+               4 IMPORT_NAME          (Common.Transaction)
+               6 IMPORT_FROM          (purchase)
+               8 STORE_NAME           (purchase)
+              10 POP_TOP
+
+  2:          12 LOAD_CONST           (0)
+              14 LOAD_CONST           (('date',))
+              16 IMPORT_NAME          (datetime)
+              18 IMPORT_FROM          (date)
+              20 STORE_NAME           (date)
+              22 POP_TOP
+
+  3:          24 LOAD_CONST           (0)
+              26 LOAD_CONST           (('strptime', 'time'))
+              28 IMPORT_NAME          (time)
+              30 IMPORT_FROM          (strptime)
+              32 STORE_NAME           (strptime)
+              34 IMPORT_FROM          (time)
+              36 STORE_NAME           (time)
+              38 POP_TOP
+
+  5:          40 LOAD_CONST           (0)
+              42 LOAD_CONST           (None)
+              44 IMPORT_NAME          (sqlite3)
+              46 STORE_NAME           (sqlite3)
+
+  6:          48 LOAD_NAME            (sqlite3)
+              50 LOAD_METHOD          (connect)
+              52 LOAD_CONST           ("database.db")
+              54 CALL_METHOD          (1 positional argument)
+              56 STORE_NAME           (conn)
+
+  7:          58 LOAD_NAME            (conn)
+              60 LOAD_METHOD          (cursor)
+              62 CALL_METHOD          (0 positional arguments)
+              64 STORE_NAME           (c)
+
+  9:          66 LOAD_CONST           (<Code38 code object Bill_store at 0x16e858d5400, file Common\Backend.py>, line 9)
+              68 LOAD_CONST           ("Bill_store")
+              70 MAKE_FUNCTION        (No arguments)
+              72 STORE_NAME           (Bill_store)
+
+109:          74 LOAD_CONST           (<Code38 code object Bill_num at 0x16e85878910, file Common\Backend.py>, line 109)
+              76 LOAD_CONST           ("Bill_num")
+              78 MAKE_FUNCTION        (No arguments)
+              80 STORE_NAME           (Bill_num)
+
+118:          82 LOAD_CONST           (<Code38 code object Get_Billsday at 0x16e858796d0, file Common\Backend.py>, line 118)
+              84 LOAD_CONST           ("Get_Billsday")
+              86 MAKE_FUNCTION        (No arguments)
+              88 STORE_NAME           (Get_Billsday)
+
+123:          90 LOAD_CONST           (<Code38 code object Get_delBills at 0x16e8584b820, file Common\Backend.py>, line 123)
+              92 LOAD_CONST           ("Get_delBills")
+              94 MAKE_FUNCTION        (No arguments)
+              96 STORE_NAME           (Get_delBills)
+
+128:          98 LOAD_CONST           (<Code38 code object Get_specificbills at 0x16e8584b100, file Common\Backend.py>, line 128)
+             100 LOAD_CONST           ("Get_specificbills")
+             102 MAKE_FUNCTION        (No arguments)
+             104 STORE_NAME           (Get_specificbills)
+
+152:         106 LOAD_CONST           (<Code38 code object del_billnum at 0x16e85781fd0, file Common\Backend.py>, line 152)
+             108 LOAD_CONST           ("del_billnum")
+             110 MAKE_FUNCTION        (No arguments)
+             112 STORE_NAME           (del_billnum)
+
+156:         114 LOAD_CONST           (<Code38 code object Sale_store at 0x16e8589c8d0, file Common\Backend.py>, line 156)
+             116 LOAD_CONST           ("Sale_store")
+             118 MAKE_FUNCTION        (No arguments)
+             120 STORE_NAME           (Sale_store)
+
+353:         122 LOAD_CONST           (<Code38 code object Get_Sale_store at 0x16e8589e7a0, file Common\Backend.py>, line 353)
+             124 LOAD_CONST           ("Get_Sale_store")
+             126 MAKE_FUNCTION        (No arguments)
+             128 STORE_NAME           (Get_Sale_store)
+
+401:         130 LOAD_CONST           (<Code38 code object Store_Opening at 0x16e85886d50, file Common\Backend.py>, line 401)
+             132 LOAD_CONST           ("Store_Opening")
+             134 MAKE_FUNCTION        (No arguments)
+             136 STORE_NAME           (Store_Opening)
+
+429:         138 LOAD_CONST           (<Code38 code object Get_opn at 0x16e85886e50, file Common\Backend.py>, line 429)
+             140 LOAD_CONST           ("Get_opn")
+             142 MAKE_FUNCTION        (No arguments)
+             144 STORE_NAME           (Get_opn)
+             146 LOAD_CONST           (None)
+             148 RETURN_VALUE
+
+
+# Method Name:       Bill_store
+# Filename:          Common\Backend.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  3
+# Stack size:        33
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        9
+# Constants:
+#    0: None
+#    1: 'create table if not exists bills (\n            cust_name text,\n            ph_num text,\n            bill_num integer,\n            item_names text,\n            item_id text,\n            purity text,\n            gold_grwt real,\n            gold_ntwt real,\n            silver_grwt real,\n            silver_ntwt real,\n            trans_type text,\n            amount integer,\n            cash integer,\n            card integer,\n            card_machine text,\n            UPI integer,\n            UPI_type text,\n            cheque integer,\n            cheque_num integer,\n            debt integer,\n            URD integer,\n            URD_name text,\n            URD_goldgrwt real,\n            URD_goldntwt real,\n            URD_silvergrwt real,\n            URD_silverntwt real,\n            other integer,\n            othername text,\n            date text)'
+#    2: 'insert into bills values (\n        :cust_name,\n        :ph_num,\n        :bill_num,\n        :items_name,\n        :item_id,\n        :purity,\n        :gold_grwt,\n        :gold_ntwt,\n        :silver_grwt,\n        :silver_ntwt,\n        :trans_type,\n        :amount,\n        :cash,\n        :card,\n        :card_machine,\n        :UPI,\n        :UPI_type,\n        :cheque,\n        :cheque_num,\n        :debt,\n        :URD,\n        :URD_name,\n        :URD_goldgrwt,\n        :URD_goldntwt,\n        :URD_silvergrwt,\n        :URD_silverntwt,\n        :other,\n        :othername,\n        :date)'
+#    3: ('cust_name', 'ph_num', 'bill_num', 'items_name', 'item_id', 'purity', 'gold_grwt', 'gold_ntwt', 'silver_grwt', 'silver_ntwt', 'trans_type', 'amount', 'cash', 'card', 'card_machine', 'UPI', 'UPI_type', 'cheque', 'cheque_num', 'debt', 'URD', 'URD_name', 'URD_goldgrwt', 'URD_goldntwt', 'URD_silvergrwt', 'URD_silverntwt', 'other', 'othername', 'date')
+#    4: 0.0
+#    5: 1
+#    6: 'Gold Purchase'
+#    7: 'Silver Purchase'
+# Names:
+#    0: c
+#    1: execute
+#    2: conn
+#    3: commit
+#    4: Bill_num
+#    5: cust_name
+#    6: ph_num
+#    7: items_name
+#    8: item_id
+#    9: purity
+#   10: gold_grwt
+#   11: gold_ntwt
+#   12: silver_grwt
+#   13: silver_ntwt
+#   14: trans_type
+#   15: amount
+#   16: cash
+#   17: card
+#   18: card_machine
+#   19: UPI
+#   20: UPI_type
+#   21: cheque
+#   22: cheque_num
+#   23: debt
+#   24: URD
+#   25: URD_name
+#   26: URD_goldgrwt
+#   27: URD_goldntwt
+#   28: URD_silvergrwt
+#   29: URD_silverntwt
+#   30: other
+#   31: othername
+#   32: date
+#   33: Sale_store
+#   34: purchase
+# Varnames:
+#	obj, lst, temp_bill
+# Positional arguments:
+#	obj, lst
+# Local variables:
+#    2: temp_bill
+ 10:           0 LOAD_GLOBAL          (c)
+               2 LOAD_METHOD          (execute)
+               4 LOAD_CONST           ("create table if not exists bills (\n            cust_name text,\n            ph_num text,\n            bill_num integer,\n            item_names text,\n            item_id text,\n            purity text,\n            gold_grwt real,\n            gold_ntwt real,\n            silver_grwt real,\n            silver_ntwt real,\n            trans_type text,\n            amount integer,\n            cash integer,\n            card integer,\n            card_machine text,\n            UPI integer,\n            UPI_type text,\n            cheque integer,\n            cheque_num integer,\n            debt integer,\n            URD integer,\n            URD_name text,\n            URD_goldgrwt real,\n            URD_goldntwt real,\n            URD_silvergrwt real,\n            URD_silverntwt real,\n            other integer,\n            othername text,\n            date text)")
+               6 CALL_METHOD          (1 positional argument)
+               8 POP_TOP
+
+ 40:          10 LOAD_GLOBAL          (conn)
+              12 LOAD_METHOD          (commit)
+              14 CALL_METHOD          (0 positional arguments)
+              16 POP_TOP
+
+ 41:          18 LOAD_GLOBAL          (Bill_num)
+              20 CALL_FUNCTION        (0 positional arguments)
+              22 STORE_FAST           (temp_bill)
+
+ 43:          24 LOAD_GLOBAL          (c)
+              26 LOAD_METHOD          (execute)
+              28 LOAD_CONST           ("insert into bills values (\n        :cust_name,\n        :ph_num,\n        :bill_num,\n        :items_name,\n        :item_id,\n        :purity,\n        :gold_grwt,\n        :gold_ntwt,\n        :silver_grwt,\n        :silver_ntwt,\n        :trans_type,\n        :amount,\n        :cash,\n        :card,\n        :card_machine,\n        :UPI,\n        :UPI_type,\n        :cheque,\n        :cheque_num,\n        :debt,\n        :URD,\n        :URD_name,\n        :URD_goldgrwt,\n        :URD_goldntwt,\n        :URD_silvergrwt,\n        :URD_silverntwt,\n        :other,\n        :othername,\n        :date)")
+
+ 73:          30 LOAD_FAST            (obj)
+              32 LOAD_ATTR            (cust_name)
+
+ 74:          34 LOAD_FAST            (obj)
+              36 LOAD_ATTR            (ph_num)
+
+ 75:          38 LOAD_FAST            (temp_bill)
+
+ 76:          40 LOAD_FAST            (obj)
+              42 LOAD_ATTR            (items_name)
+
+ 77:          44 LOAD_FAST            (obj)
+              46 LOAD_ATTR            (item_id)
+
+ 78:          48 LOAD_FAST            (obj)
+              50 LOAD_ATTR            (purity)
+
+ 79:          52 LOAD_FAST            (obj)
+              54 LOAD_ATTR            (gold_grwt)
+
+ 80:          56 LOAD_FAST            (obj)
+              58 LOAD_ATTR            (gold_ntwt)
+
+ 81:          60 LOAD_FAST            (obj)
+              62 LOAD_ATTR            (silver_grwt)
+
+ 82:          64 LOAD_FAST            (obj)
+              66 LOAD_ATTR            (silver_ntwt)
+
+ 83:          68 LOAD_FAST            (obj)
+              70 LOAD_ATTR            (trans_type)
+
+ 84:          72 LOAD_FAST            (obj)
+              74 LOAD_ATTR            (amount)
+
+ 85:          76 LOAD_FAST            (obj)
+              78 LOAD_ATTR            (cash)
+
+ 86:          80 LOAD_FAST            (obj)
+              82 LOAD_ATTR            (card)
+
+ 87:          84 LOAD_FAST            (obj)
+              86 LOAD_ATTR            (card_machine)
+
+ 88:          88 LOAD_FAST            (obj)
+              90 LOAD_ATTR            (UPI)
+
+ 89:          92 LOAD_FAST            (obj)
+              94 LOAD_ATTR            (UPI_type)
+
+ 90:          96 LOAD_FAST            (obj)
+              98 LOAD_ATTR            (cheque)
+
+ 91:         100 LOAD_FAST            (obj)
+             102 LOAD_ATTR            (cheque_num)
+
+ 92:         104 LOAD_FAST            (obj)
+             106 LOAD_ATTR            (debt)
+
+ 93:         108 LOAD_FAST            (obj)
+             110 LOAD_ATTR            (URD)
+
+ 94:         112 LOAD_FAST            (obj)
+             114 LOAD_ATTR            (URD_name)
+
+ 95:         116 LOAD_FAST            (obj)
+             118 LOAD_ATTR            (URD_goldgrwt)
+
+ 96:         120 LOAD_FAST            (obj)
+             122 LOAD_ATTR            (URD_goldntwt)
+
+ 97:         124 LOAD_FAST            (obj)
+             126 LOAD_ATTR            (URD_silvergrwt)
+
+ 98:         128 LOAD_FAST            (obj)
+             130 LOAD_ATTR            (URD_silverntwt)
+
+ 99:         132 LOAD_FAST            (obj)
+             134 LOAD_ATTR            (other)
+
+100:         136 LOAD_FAST            (obj)
+             138 LOAD_ATTR            (othername)
+
+101:         140 LOAD_FAST            (obj)
+             142 LOAD_ATTR            (date)
+
+ 73:         144 LOAD_CONST           (('cust_name', 'ph_num', 'bill_num', 'items_name', 'item_id', 'purity', 'gold_grwt', 'gold_ntwt', 'silver_grwt', 'silver_ntwt', 'trans_type', 'amount', 'cash', 'card', 'card_machine', 'UPI', 'UPI_type', 'cheque', 'cheque_num', 'debt', 'URD', 'URD_name', 'URD_goldgrwt', 'URD_goldntwt', 'URD_silvergrwt', 'URD_silverntwt', 'other', 'othername', 'date'))
+             146 BUILD_CONST_KEY_MAP  29
+
+ 43:         148 CALL_METHOD          (2 positional arguments)
+             150 POP_TOP
+
+102:         152 LOAD_GLOBAL          (conn)
+             154 LOAD_METHOD          (commit)
+             156 CALL_METHOD          (0 positional arguments)
+             158 POP_TOP
+
+103:         160 LOAD_FAST            (obj)
+             162 LOAD_ATTR            (URD_goldgrwt)
+             164 LOAD_CONST           (0.0)
+             166 COMPARE_OP           (>)
+             168 POP_JUMP_IF_FALSE    (to 204)
+
+104:         170 LOAD_GLOBAL          (Sale_store)
+             172 LOAD_CONST           (1)
+             174 LOAD_GLOBAL          (purchase)
+             176 LOAD_CONST           ("Gold Purchase")
+             178 LOAD_FAST            (obj)
+             180 LOAD_ATTR            (URD_name)
+             182 LOAD_FAST            (obj)
+             184 LOAD_ATTR            (URD_goldgrwt)
+             186 LOAD_FAST            (obj)
+             188 LOAD_ATTR            (URD_goldntwt)
+             190 LOAD_FAST            (obj)
+             192 LOAD_ATTR            (URD)
+             194 CALL_FUNCTION        (5 positional arguments)
+             196 BUILD_MAP            1
+             198 LOAD_FAST            (temp_bill)
+             200 CALL_FUNCTION        (2 positional arguments)
+             202 POP_TOP
+
+105:     >>  204 LOAD_FAST            (obj)
+             206 LOAD_ATTR            (URD_silvergrwt)
+             208 LOAD_CONST           (0.0)
+             210 COMPARE_OP           (>)
+             212 POP_JUMP_IF_FALSE    (to 248)
+
+106:         214 LOAD_GLOBAL          (Sale_store)
+             216 LOAD_CONST           (1)
+             218 LOAD_GLOBAL          (purchase)
+             220 LOAD_CONST           ("Silver Purchase")
+             222 LOAD_FAST            (obj)
+             224 LOAD_ATTR            (URD_name)
+             226 LOAD_FAST            (obj)
+             228 LOAD_ATTR            (URD_silvergrwt)
+             230 LOAD_FAST            (obj)
+             232 LOAD_ATTR            (URD_silverntwt)
+             234 LOAD_FAST            (obj)
+             236 LOAD_ATTR            (URD)
+             238 CALL_FUNCTION        (5 positional arguments)
+             240 BUILD_MAP            1
+             242 LOAD_FAST            (temp_bill)
+             244 CALL_FUNCTION        (2 positional arguments)
+             246 POP_TOP
+
+107:     >>  248 LOAD_GLOBAL          (Sale_store)
+             250 LOAD_FAST            (lst)
+             252 LOAD_FAST            (temp_bill)
+             254 CALL_FUNCTION        (2 positional arguments)
+             256 POP_TOP
+             258 LOAD_CONST           (None)
+             260 RETURN_VALUE
+
+
+# Method Name:       Bill_num
+# Filename:          Common\Backend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        3
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        109
+# Constants:
+#    0: None
+#    1: 'select max(bill_num) from bills\n    '
+#    2: 0
+#    3: 1
+# Names:
+#    0: c
+#    1: execute
+#    2: fetchone
+# Varnames:
+#	Bill_num
+# Local variables:
+#    0: Bill_num
+110:           0 LOAD_GLOBAL          (c)
+               2 LOAD_METHOD          (execute)
+               4 LOAD_CONST           ("select max(bill_num) from bills\n    ")
+               6 CALL_METHOD          (1 positional argument)
+               8 POP_TOP
+
+112:          10 LOAD_GLOBAL          (c)
+              12 LOAD_METHOD          (fetchone)
+              14 CALL_METHOD          (0 positional arguments)
+              16 STORE_FAST           (Bill_num)
+
+113:          18 LOAD_FAST            (Bill_num)
+              20 LOAD_CONST           (0)
+              22 BINARY_SUBSCR
+              24 LOAD_CONST           (None)
+              26 COMPARE_OP           (==)
+              28 POP_JUMP_IF_FALSE    (to 34)
+
+114:          30 LOAD_CONST           (1)
+              32 RETURN_VALUE
+
+116:     >>   34 LOAD_FAST            (Bill_num)
+              36 LOAD_CONST           (0)
+              38 BINARY_SUBSCR
+              40 LOAD_CONST           (1)
+              42 BINARY_ADD
+              44 RETURN_VALUE
+              46 LOAD_CONST           (None)
+              48 RETURN_VALUE
+
+
+# Method Name:       Get_Billsday
+# Filename:          Common\Backend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        5
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        118
+# Constants:
+#    0: None
+#    1: 'select * from bills where date=:date'
+#    2: 'date'
+# Names:
+#    0: c
+#    1: execute
+#    2: fetchall
+# Varnames:
+#	date, retval
+# Positional arguments:
+#	date
+# Local variables:
+#    1: retval
+119:           0 LOAD_GLOBAL          (c)
+               2 LOAD_METHOD          (execute)
+               4 LOAD_CONST           ("select * from bills where date=:date")
+               6 LOAD_CONST           ("date")
+               8 LOAD_FAST            (date)
+              10 BUILD_MAP            1
+              12 CALL_METHOD          (2 positional arguments)
+              14 POP_TOP
+
+120:          16 LOAD_GLOBAL          (c)
+              18 LOAD_METHOD          (fetchall)
+              20 CALL_METHOD          (0 positional arguments)
+              22 STORE_FAST           (retval)
+
+121:          24 LOAD_FAST            (retval)
+              26 RETURN_VALUE
+
+
+# Method Name:       Get_delBills
+# Filename:          Common\Backend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        3
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        123
+# Constants:
+#    0: None
+#    1: 'select bill_num, cust_name, trans_type, amount, date from bills order by bill_num desc'
+# Names:
+#    0: c
+#    1: execute
+#    2: fetchall
+# Varnames:
+#	retval
+# Local variables:
+#    0: retval
+124:           0 LOAD_GLOBAL          (c)
+               2 LOAD_METHOD          (execute)
+               4 LOAD_CONST           ("select bill_num, cust_name, trans_type, amount, date from bills order by bill_num desc")
+               6 CALL_METHOD          (1 positional argument)
+               8 POP_TOP
+
+125:          10 LOAD_GLOBAL          (c)
+              12 LOAD_METHOD          (fetchall)
+              14 CALL_METHOD          (0 positional arguments)
+              16 STORE_FAST           (retval)
+
+126:          18 LOAD_FAST            (retval)
+              20 RETURN_VALUE
+
+
+# Method Name:       Get_specificbills
+# Filename:          Common\Backend.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        6
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        128
+# Constants:
+#    0: None
+#    1: 'Shree plus'
+#    2: 'Misc plus'
+#    3: 'Shree minus'
+#    4: 'Misc minus'
+#    5: ''
+#    6: 'select bill_num, cust_name, trans_type,amount, date from bills where trans_type=:ttype order by bill_num desc'
+#    7: 'ttype'
+#    8: 'None'
+#    9: 'select bill_num, cust_name, trans_type,amount, date from bills where bill_num=:billnum order by bill_num desc'
+#   10: 'billnum'
+#   11: 'select bill_num, cust_name, trans_type,amount, date from bills where trans_type=:ttype, bill_num=:billnum order by bill_num desc'
+#   12: ('ttype', 'billnum')
+#   13: 'select bill_num, cust_name, trans_type, amount, date from bills where cust_name=:cust_name order by bill_num desc'
+#   14: 'cust_name'
+#   15: 'select bill_num, cust_name, trans_type, amount, date from bills where cust_name=:cust_name, ttype=:ttype order by bill_num desc'
+#   16: ('cust_name', 'ttype')
+# Names:
+#    0: c
+#    1: execute
+#    2: fetchall
+# Varnames:
+#	name, billnum, ttype, retval
+# Positional arguments:
+#	name, billnum, ttype
+# Local variables:
+#    3: retval
+129:           0 LOAD_FAST            (ttype)
+               2 LOAD_CONST           ("Shree plus")
+               4 COMPARE_OP           (==)
+               6 POP_JUMP_IF_FALSE    (to 12)
+               8 LOAD_CONST           ("Misc plus")
+              10 STORE_FAST           (ttype)
+
+130:     >>   12 LOAD_FAST            (ttype)
+              14 LOAD_CONST           ("Shree minus")
+              16 COMPARE_OP           (==)
+              18 POP_JUMP_IF_FALSE    (to 24)
+              20 LOAD_CONST           ("Misc minus")
+              22 STORE_FAST           (ttype)
+
+131:     >>   24 LOAD_FAST            (name)
+              26 LOAD_CONST           ("")
+              28 COMPARE_OP           (==)
+              30 POP_JUMP_IF_FALSE    (to 104)
+
+132:          32 LOAD_FAST            (billnum)
+              34 LOAD_CONST           ("")
+              36 COMPARE_OP           (==)
+              38 POP_JUMP_IF_FALSE    (to 58)
+
+133:          40 LOAD_GLOBAL          (c)
+              42 LOAD_METHOD          (execute)
+              44 LOAD_CONST           ("select bill_num, cust_name, trans_type,amount, date from bills where trans_type=:ttype order by bill_num desc")
+
+134:          46 LOAD_CONST           ("ttype")
+              48 LOAD_FAST            (ttype)
+              50 BUILD_MAP            1
+
+133:          52 CALL_METHOD          (2 positional arguments)
+              54 POP_TOP
+              56 JUMP_ABSOLUTE        (to 156)
+
+136:     >>   58 LOAD_FAST            (ttype)
+              60 LOAD_CONST           ("None")
+              62 COMPARE_OP           (==)
+              64 POP_JUMP_IF_FALSE    (to 84)
+
+137:          66 LOAD_GLOBAL          (c)
+              68 LOAD_METHOD          (execute)
+              70 LOAD_CONST           ("select bill_num, cust_name, trans_type,amount, date from bills where bill_num=:billnum order by bill_num desc")
+
+138:          72 LOAD_CONST           ("billnum")
+              74 LOAD_FAST            (billnum)
+              76 BUILD_MAP            1
+
+137:          78 CALL_METHOD          (2 positional arguments)
+              80 POP_TOP
+              82 JUMP_ABSOLUTE        (to 156)
+
+140:     >>   84 LOAD_GLOBAL          (c)
+              86 LOAD_METHOD          (execute)
+              88 LOAD_CONST           ("select bill_num, cust_name, trans_type,amount, date from bills where trans_type=:ttype, bill_num=:billnum order by bill_num desc")
+
+141:          90 LOAD_FAST            (ttype)
+              92 LOAD_FAST            (billnum)
+              94 LOAD_CONST           (('ttype', 'billnum'))
+              96 BUILD_CONST_KEY_MAP  2
+
+140:          98 CALL_METHOD          (2 positional arguments)
+             100 POP_TOP
+             102 JUMP_FORWARD         (to 156)
+
+142:     >>  104 LOAD_FAST            (billnum)
+             106 LOAD_CONST           ("")
+             108 COMPARE_OP           (==)
+             110 POP_JUMP_IF_FALSE    (to 156)
+
+143:         112 LOAD_FAST            (ttype)
+             114 LOAD_CONST           ("None")
+             116 COMPARE_OP           (==)
+             118 POP_JUMP_IF_FALSE    (to 138)
+
+144:         120 LOAD_GLOBAL          (c)
+             122 LOAD_METHOD          (execute)
+             124 LOAD_CONST           ("select bill_num, cust_name, trans_type, amount, date from bills where cust_name=:cust_name order by bill_num desc")
+
+145:         126 LOAD_CONST           ("cust_name")
+             128 LOAD_FAST            (name)
+             130 BUILD_MAP            1
+
+144:         132 CALL_METHOD          (2 positional arguments)
+             134 POP_TOP
+             136 JUMP_FORWARD         (to 156)
+
+147:     >>  138 LOAD_GLOBAL          (c)
+             140 LOAD_METHOD          (execute)
+             142 LOAD_CONST           ("select bill_num, cust_name, trans_type, amount, date from bills where cust_name=:cust_name, ttype=:ttype order by bill_num desc")
+
+148:         144 LOAD_FAST            (name)
+             146 LOAD_FAST            (ttype)
+             148 LOAD_CONST           (('cust_name', 'ttype'))
+             150 BUILD_CONST_KEY_MAP  2
+
+147:         152 CALL_METHOD          (2 positional arguments)
+             154 POP_TOP
+
+149:     >>  156 LOAD_GLOBAL          (c)
+             158 LOAD_METHOD          (fetchall)
+             160 CALL_METHOD          (0 positional arguments)
+             162 STORE_FAST           (retval)
+
+150:         164 LOAD_FAST            (retval)
+             166 RETURN_VALUE
+
+
+# Method Name:       del_billnum
+# Filename:          Common\Backend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        5
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        152
+# Constants:
+#    0: None
+#    1: 'delete from bills where bill_num=:billnum'
+#    2: 'billnum'
+# Names:
+#    0: c
+#    1: execute
+#    2: conn
+#    3: commit
+# Varnames:
+#	billnum
+# Positional arguments:
+#	billnum
+153:           0 LOAD_GLOBAL          (c)
+               2 LOAD_METHOD          (execute)
+               4 LOAD_CONST           ("delete from bills where bill_num=:billnum")
+               6 LOAD_CONST           ("billnum")
+               8 LOAD_FAST            (billnum)
+              10 BUILD_MAP            1
+              12 CALL_METHOD          (2 positional arguments)
+              14 POP_TOP
+
+154:          16 LOAD_GLOBAL          (conn)
+              18 LOAD_METHOD          (commit)
+              20 CALL_METHOD          (0 positional arguments)
+              22 POP_TOP
+              24 LOAD_CONST           (None)
+              26 RETURN_VALUE
+
+
+# Method Name:       Sale_store
+# Filename:          Common\Backend.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        15
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        156
+# Constants:
+#    0: None
+#    1: 'GoldSell'
+#    2: 'create table if not exists GoldSale(\n                billnum integer,\n                custname text,\n                ph_num text,\n                item_name text,\n                id integer,\n                grwt real,\n                ntwt real,\n                amount integer,\n                purity text,\n                date text)'
+#    3: 'insert into GoldSale values(\n                :billnum,\n                :custname,\n                :ph_num,\n                :item_name,\n                :id,\n                :grwt,\n                :ntwt,\n                :amount,\n                :purity,\n                :date)'
+#    4: ('custname', 'billnum', 'ph_num', 'item_name', 'id', 'grwt', 'ntwt', 'amount', 'purity', 'date')
+#    5: 'SilverSell'
+#    6: 'create table if not exists SilverSale (\n                billnum integer,\n                cust_name text,\n                ph_num text,\n                item_name text,\n                id integer,\n                grwt real,\n                ntwt real,\n                amount integer,\n                purity text,\n                date text)'
+#    7: 'insert into SilverSale values(\n                :billnum,\n                :cust_name,\n                :ph_num,\n                :item_name,\n                :id,\n                :grwt,\n                :ntwt,\n                :amount,\n                :purity,\n                :date)'
+#    8: ('billnum', 'cust_name', 'ph_num', 'item_name', 'id', 'grwt', 'ntwt', 'amount', 'purity', 'date')
+#    9: 'OldOrder'
+#   10: 'create table if not exists OldOrder(\n                billnum integer,\n                type text,\n                amount integer,\n                item text,\n                grwt real,\n                ntwt real)'
+#   11: 'insert into OldOrder values (\n                :billnum,\n                :type,\n                :amount,\n                :item,\n                :grwt,\n                :ntwt)'
+#   12: ('type', 'billnum', 'amount', 'item', 'grwt', 'ntwt')
+#   13: 'NO'
+#   14: 'create table if not exists NO(\n                billnum integer,\n                Est integer,\n                Adv integer,\n                item text,\n                Ggrwt real,\n                Gntwt real,\n                Sgrwt real,\n                Sntwt real)'
+#   15: 'insert into NO values (\n                :billnum,\n                :Est,\n                :Adv,\n                :item,\n                :Ggrwt,\n                :Gntwt,\n                :Sgrwt,\n                :Sntwt)'
+#   16: ('Est', 'billnum', 'Adv', 'item', 'Ggrwt', 'Gntwt', 'Sgrwt', 'Sntwt')
+#   17: 'VC'
+#   18: 'create table if not exists VC(\n                billnum integer,\n                type text,\n                item text,\n                amount integer,\n                grwt real,\n                ntwt real)'
+#   19: 'insert into VC values (\n                :billnum,\n                :type,\n                :item,\n                :amount,\n                :grwt,\n                :ntwt)'
+#   20: ('type', 'billnum', 'item', 'amount', 'grwt', 'ntwt')
+#   21: 'purchase'
+#   22: 'Gold Purchase'
+#   23: 'create table if not exists GP(\n                    billnum integer,\n                    item text,\n                    grwt real,\n                    ntwt real,\n                    amount integer,\n                    date text)'
+#   24: 'insert into GP values (\n                    :billnum,\n                    :item,\n                    :grwt,\n                    :ntwt,\n                    :amount,\n                    :date)'
+#   25: ('item', 'billnum', 'grwt', 'ntwt', 'amount', 'date')
+#   26: 'Silver Purchase'
+#   27: 'create table if not exists SP(\n                    billnum integer,\n                    item text,\n                    grwt real,\n                    ntwt real,\n                    amount integer,\n                    date text)'
+#   28: 'insert into SP values (\n                    :billnum,\n                    :item,\n                    :grwt,\n                    :ntwt,\n                    :amount,\n                    :date)'
+#   29: 'SP'
+# Names:
+#    0: keys
+#    1: type
+#    2: __name__
+#    3: c
+#    4: execute
+#    5: conn
+#    6: commit
+#    7: cust_name
+#    8: ph_num
+#    9: pr_name
+#   10: id
+#   11: gr_wt
+#   12: nt_wt
+#   13: amount
+#   14: purity
+#   15: date
+#   16: item
+#   17: grwt
+#   18: ntwt
+#   19: Est
+#   20: Adv
+#   21: Ggrwt
+#   22: Gntwt
+#   23: Sgrwt
+#   24: Sntwt
+#   25: today
+#   26: print
+# Varnames:
+#	lst, num, key, obj
+# Positional arguments:
+#	lst, num
+# Local variables:
+#    2: key
+#    3: obj
+157:           0 LOAD_FAST            (lst)
+               2 LOAD_METHOD          (keys)
+               4 CALL_METHOD          (0 positional arguments)
+               6 GET_ITER
+         >>    8 EXTENDED_ARG         (512)
+              10 FOR_ITER             (to 634)
+              12 STORE_FAST           (key)
+
+158:          14 LOAD_FAST            (lst)
+              16 LOAD_FAST            (key)
+              18 BINARY_SUBSCR
+              20 STORE_FAST           (obj)
+
+159:          22 LOAD_GLOBAL          (type)
+              24 LOAD_FAST            (obj)
+              26 CALL_FUNCTION        (1 positional argument)
+              28 LOAD_ATTR            (__name__)
+              30 LOAD_CONST           ("GoldSell")
+              32 COMPARE_OP           (==)
+              34 POP_JUMP_IF_FALSE    (to 116)
+
+160:          36 LOAD_GLOBAL          (c)
+              38 LOAD_METHOD          (execute)
+              40 LOAD_CONST           ("create table if not exists GoldSale(\n                billnum integer,\n                custname text,\n                ph_num text,\n                item_name text,\n                id integer,\n                grwt real,\n                ntwt real,\n                amount integer,\n                purity text,\n                date text)")
+              42 CALL_METHOD          (1 positional argument)
+              44 POP_TOP
+
+171:          46 LOAD_GLOBAL          (conn)
+              48 LOAD_METHOD          (commit)
+              50 CALL_METHOD          (0 positional arguments)
+              52 POP_TOP
+
+172:          54 LOAD_GLOBAL          (c)
+              56 LOAD_METHOD          (execute)
+              58 LOAD_CONST           ("insert into GoldSale values(\n                :billnum,\n                :custname,\n                :ph_num,\n                :item_name,\n                :id,\n                :grwt,\n                :ntwt,\n                :amount,\n                :purity,\n                :date)")
+
+183:          60 LOAD_FAST            (obj)
+              62 LOAD_ATTR            (cust_name)
+
+184:          64 LOAD_FAST            (num)
+
+185:          66 LOAD_FAST            (obj)
+              68 LOAD_ATTR            (ph_num)
+
+186:          70 LOAD_FAST            (obj)
+              72 LOAD_ATTR            (pr_name)
+
+187:          74 LOAD_FAST            (obj)
+              76 LOAD_ATTR            (id)
+
+188:          78 LOAD_FAST            (obj)
+              80 LOAD_ATTR            (gr_wt)
+
+189:          82 LOAD_FAST            (obj)
+              84 LOAD_ATTR            (nt_wt)
+
+190:          86 LOAD_FAST            (obj)
+              88 LOAD_ATTR            (amount)
+
+191:          90 LOAD_FAST            (obj)
+              92 LOAD_ATTR            (purity)
+
+192:          94 LOAD_FAST            (obj)
+              96 LOAD_ATTR            (date)
+
+183:          98 LOAD_CONST           (('custname', 'billnum', 'ph_num', 'item_name', 'id', 'grwt', 'ntwt', 'amount', 'purity', 'date'))
+             100 BUILD_CONST_KEY_MAP  10
+
+172:         102 CALL_METHOD          (2 positional arguments)
+             104 POP_TOP
+
+193:         106 LOAD_GLOBAL          (conn)
+             108 LOAD_METHOD          (commit)
+             110 CALL_METHOD          (0 positional arguments)
+             112 POP_TOP
+             114 JUMP_ABSOLUTE        (to 8)
+
+194:     >>  116 LOAD_GLOBAL          (type)
+             118 LOAD_FAST            (obj)
+             120 CALL_FUNCTION        (1 positional argument)
+             122 LOAD_ATTR            (__name__)
+             124 LOAD_CONST           ("SilverSell")
+             126 COMPARE_OP           (==)
+             128 POP_JUMP_IF_FALSE    (to 210)
+
+195:         130 LOAD_GLOBAL          (c)
+             132 LOAD_METHOD          (execute)
+             134 LOAD_CONST           ("create table if not exists SilverSale (\n                billnum integer,\n                cust_name text,\n                ph_num text,\n                item_name text,\n                id integer,\n                grwt real,\n                ntwt real,\n                amount integer,\n                purity text,\n                date text)")
+             136 CALL_METHOD          (1 positional argument)
+             138 POP_TOP
+
+206:         140 LOAD_GLOBAL          (conn)
+             142 LOAD_METHOD          (commit)
+             144 CALL_METHOD          (0 positional arguments)
+             146 POP_TOP
+
+207:         148 LOAD_GLOBAL          (c)
+             150 LOAD_METHOD          (execute)
+             152 LOAD_CONST           ("insert into SilverSale values(\n                :billnum,\n                :cust_name,\n                :ph_num,\n                :item_name,\n                :id,\n                :grwt,\n                :ntwt,\n                :amount,\n                :purity,\n                :date)")
+
+218:         154 LOAD_FAST            (num)
+
+219:         156 LOAD_FAST            (obj)
+             158 LOAD_ATTR            (cust_name)
+
+220:         160 LOAD_FAST            (obj)
+             162 LOAD_ATTR            (ph_num)
+
+221:         164 LOAD_FAST            (obj)
+             166 LOAD_ATTR            (pr_name)
+
+222:         168 LOAD_FAST            (obj)
+             170 LOAD_ATTR            (id)
+
+223:         172 LOAD_FAST            (obj)
+             174 LOAD_ATTR            (gr_wt)
+
+224:         176 LOAD_FAST            (obj)
+             178 LOAD_ATTR            (nt_wt)
+
+225:         180 LOAD_FAST            (obj)
+             182 LOAD_ATTR            (amount)
+
+226:         184 LOAD_FAST            (obj)
+             186 LOAD_ATTR            (purity)
+
+227:         188 LOAD_FAST            (obj)
+             190 LOAD_ATTR            (date)
+
+218:         192 LOAD_CONST           (('billnum', 'cust_name', 'ph_num', 'item_name', 'id', 'grwt', 'ntwt', 'amount', 'purity', 'date'))
+             194 BUILD_CONST_KEY_MAP  10
+
+207:         196 CALL_METHOD          (2 positional arguments)
+             198 POP_TOP
+
+228:         200 LOAD_GLOBAL          (conn)
+             202 LOAD_METHOD          (commit)
+             204 CALL_METHOD          (0 positional arguments)
+             206 POP_TOP
+             208 JUMP_ABSOLUTE        (to 8)
+
+229:     >>  210 LOAD_GLOBAL          (type)
+             212 LOAD_FAST            (obj)
+             214 CALL_FUNCTION        (1 positional argument)
+             216 LOAD_ATTR            (__name__)
+             218 LOAD_CONST           ("OldOrder")
+             220 COMPARE_OP           (==)
+             222 EXTENDED_ARG         (256)
+             224 POP_JUMP_IF_FALSE    (to 290)
+
+230:         226 LOAD_GLOBAL          (c)
+             228 LOAD_METHOD          (execute)
+             230 LOAD_CONST           ("create table if not exists OldOrder(\n                billnum integer,\n                type text,\n                amount integer,\n                item text,\n                grwt real,\n                ntwt real)")
+             232 CALL_METHOD          (1 positional argument)
+             234 POP_TOP
+
+237:         236 LOAD_GLOBAL          (conn)
+             238 LOAD_METHOD          (commit)
+             240 CALL_METHOD          (0 positional arguments)
+             242 POP_TOP
+
+238:         244 LOAD_GLOBAL          (c)
+             246 LOAD_METHOD          (execute)
+             248 LOAD_CONST           ("insert into OldOrder values (\n                :billnum,\n                :type,\n                :amount,\n                :item,\n                :grwt,\n                :ntwt)")
+
+245:         250 LOAD_FAST            (obj)
+             252 LOAD_ATTR            (type)
+
+246:         254 LOAD_FAST            (num)
+
+247:         256 LOAD_FAST            (obj)
+             258 LOAD_ATTR            (amount)
+
+248:         260 LOAD_FAST            (obj)
+             262 LOAD_ATTR            (item)
+
+249:         264 LOAD_FAST            (obj)
+             266 LOAD_ATTR            (grwt)
+
+250:         268 LOAD_FAST            (obj)
+             270 LOAD_ATTR            (ntwt)
+
+245:         272 LOAD_CONST           (('type', 'billnum', 'amount', 'item', 'grwt', 'ntwt'))
+             274 BUILD_CONST_KEY_MAP  6
+
+238:         276 CALL_METHOD          (2 positional arguments)
+             278 POP_TOP
+
+251:         280 LOAD_GLOBAL          (conn)
+             282 LOAD_METHOD          (commit)
+             284 CALL_METHOD          (0 positional arguments)
+             286 POP_TOP
+             288 JUMP_ABSOLUTE        (to 8)
+
+252:     >>  290 LOAD_GLOBAL          (type)
+             292 LOAD_FAST            (obj)
+             294 CALL_FUNCTION        (1 positional argument)
+             296 LOAD_ATTR            (__name__)
+             298 LOAD_CONST           ("NO")
+             300 COMPARE_OP           (==)
+             302 EXTENDED_ARG         (256)
+             304 POP_JUMP_IF_FALSE    (to 378)
+
+253:         306 LOAD_GLOBAL          (c)
+             308 LOAD_METHOD          (execute)
+             310 LOAD_CONST           ("create table if not exists NO(\n                billnum integer,\n                Est integer,\n                Adv integer,\n                item text,\n                Ggrwt real,\n                Gntwt real,\n                Sgrwt real,\n                Sntwt real)")
+             312 CALL_METHOD          (1 positional argument)
+             314 POP_TOP
+
+262:         316 LOAD_GLOBAL          (conn)
+             318 LOAD_METHOD          (commit)
+             320 CALL_METHOD          (0 positional arguments)
+             322 POP_TOP
+
+263:         324 LOAD_GLOBAL          (c)
+             326 LOAD_METHOD          (execute)
+             328 LOAD_CONST           ("insert into NO values (\n                :billnum,\n                :Est,\n                :Adv,\n                :item,\n                :Ggrwt,\n                :Gntwt,\n                :Sgrwt,\n                :Sntwt)")
+
+272:         330 LOAD_FAST            (obj)
+             332 LOAD_ATTR            (Est)
+
+273:         334 LOAD_FAST            (num)
+
+274:         336 LOAD_FAST            (obj)
+             338 LOAD_ATTR            (Adv)
+
+275:         340 LOAD_FAST            (obj)
+             342 LOAD_ATTR            (item)
+
+276:         344 LOAD_FAST            (obj)
+             346 LOAD_ATTR            (Ggrwt)
+
+277:         348 LOAD_FAST            (obj)
+             350 LOAD_ATTR            (Gntwt)
+
+278:         352 LOAD_FAST            (obj)
+             354 LOAD_ATTR            (Sgrwt)
+
+279:         356 LOAD_FAST            (obj)
+             358 LOAD_ATTR            (Sntwt)
+
+272:         360 LOAD_CONST           (('Est', 'billnum', 'Adv', 'item', 'Ggrwt', 'Gntwt', 'Sgrwt', 'Sntwt'))
+             362 BUILD_CONST_KEY_MAP  8
+
+263:         364 CALL_METHOD          (2 positional arguments)
+             366 POP_TOP
+
+280:         368 LOAD_GLOBAL          (conn)
+             370 LOAD_METHOD          (commit)
+             372 CALL_METHOD          (0 positional arguments)
+             374 POP_TOP
+             376 JUMP_ABSOLUTE        (to 8)
+
+281:     >>  378 LOAD_GLOBAL          (type)
+             380 LOAD_FAST            (obj)
+             382 CALL_FUNCTION        (1 positional argument)
+             384 LOAD_ATTR            (__name__)
+             386 LOAD_CONST           ("VC")
+             388 COMPARE_OP           (==)
+             390 EXTENDED_ARG         (256)
+             392 POP_JUMP_IF_FALSE    (to 458)
+
+282:         394 LOAD_GLOBAL          (c)
+             396 LOAD_METHOD          (execute)
+             398 LOAD_CONST           ("create table if not exists VC(\n                billnum integer,\n                type text,\n                item text,\n                amount integer,\n                grwt real,\n                ntwt real)")
+             400 CALL_METHOD          (1 positional argument)
+             402 POP_TOP
+
+289:         404 LOAD_GLOBAL          (conn)
+             406 LOAD_METHOD          (commit)
+             408 CALL_METHOD          (0 positional arguments)
+             410 POP_TOP
+
+290:         412 LOAD_GLOBAL          (c)
+             414 LOAD_METHOD          (execute)
+             416 LOAD_CONST           ("insert into VC values (\n                :billnum,\n                :type,\n                :item,\n                :amount,\n                :grwt,\n                :ntwt)")
+
+297:         418 LOAD_FAST            (obj)
+             420 LOAD_ATTR            (type)
+
+298:         422 LOAD_FAST            (num)
+
+299:         424 LOAD_FAST            (obj)
+             426 LOAD_ATTR            (item)
+
+300:         428 LOAD_FAST            (obj)
+             430 LOAD_ATTR            (amount)
+
+301:         432 LOAD_FAST            (obj)
+             434 LOAD_ATTR            (grwt)
+
+302:         436 LOAD_FAST            (obj)
+             438 LOAD_ATTR            (ntwt)
+
+297:         440 LOAD_CONST           (('type', 'billnum', 'item', 'amount', 'grwt', 'ntwt'))
+             442 BUILD_CONST_KEY_MAP  6
+
+290:         444 CALL_METHOD          (2 positional arguments)
+             446 POP_TOP
+
+303:         448 LOAD_GLOBAL          (conn)
+             450 LOAD_METHOD          (commit)
+             452 CALL_METHOD          (0 positional arguments)
+             454 POP_TOP
+             456 JUMP_ABSOLUTE        (to 8)
+
+304:     >>  458 LOAD_GLOBAL          (type)
+             460 LOAD_FAST            (obj)
+             462 CALL_FUNCTION        (1 positional argument)
+             464 LOAD_ATTR            (__name__)
+             466 LOAD_CONST           ("purchase")
+             468 COMPARE_OP           (==)
+             470 POP_JUMP_IF_FALSE    (to 8)
+
+305:         472 LOAD_FAST            (obj)
+             474 LOAD_ATTR            (type)
+             476 LOAD_CONST           ("Gold Purchase")
+             478 COMPARE_OP           (==)
+             480 EXTENDED_ARG         (512)
+             482 POP_JUMP_IF_FALSE    (to 550)
+
+306:         484 LOAD_GLOBAL          (c)
+             486 LOAD_METHOD          (execute)
+             488 LOAD_CONST           ("create table if not exists GP(\n                    billnum integer,\n                    item text,\n                    grwt real,\n                    ntwt real,\n                    amount integer,\n                    date text)")
+             490 CALL_METHOD          (1 positional argument)
+             492 POP_TOP
+
+313:         494 LOAD_GLOBAL          (conn)
+             496 LOAD_METHOD          (commit)
+             498 CALL_METHOD          (0 positional arguments)
+             500 POP_TOP
+
+314:         502 LOAD_GLOBAL          (c)
+             504 LOAD_METHOD          (execute)
+             506 LOAD_CONST           ("insert into GP values (\n                    :billnum,\n                    :item,\n                    :grwt,\n                    :ntwt,\n                    :amount,\n                    :date)")
+
+321:         508 LOAD_FAST            (obj)
+             510 LOAD_ATTR            (item)
+
+322:         512 LOAD_FAST            (num)
+
+323:         514 LOAD_FAST            (obj)
+             516 LOAD_ATTR            (grwt)
+
+324:         518 LOAD_FAST            (obj)
+             520 LOAD_ATTR            (ntwt)
+
+325:         522 LOAD_FAST            (obj)
+             524 LOAD_ATTR            (amount)
+
+326:         526 LOAD_GLOBAL          (date)
+             528 LOAD_METHOD          (today)
+             530 CALL_METHOD          (0 positional arguments)
+
+321:         532 LOAD_CONST           (('item', 'billnum', 'grwt', 'ntwt', 'amount', 'date'))
+             534 BUILD_CONST_KEY_MAP  6
+
+314:         536 CALL_METHOD          (2 positional arguments)
+             538 POP_TOP
+
+327:         540 LOAD_GLOBAL          (conn)
+             542 LOAD_METHOD          (commit)
+             544 CALL_METHOD          (0 positional arguments)
+             546 POP_TOP
+             548 JUMP_ABSOLUTE        (to 8)
+
+328:     >>  550 LOAD_FAST            (obj)
+             552 LOAD_ATTR            (type)
+             554 LOAD_CONST           ("Silver Purchase")
+             556 COMPARE_OP           (==)
+             558 POP_JUMP_IF_FALSE    (to 8)
+
+329:         560 LOAD_GLOBAL          (c)
+             562 LOAD_METHOD          (execute)
+             564 LOAD_CONST           ("create table if not exists SP(\n                    billnum integer,\n                    item text,\n                    grwt real,\n                    ntwt real,\n                    amount integer,\n                    date text)")
+             566 CALL_METHOD          (1 positional argument)
+             568 POP_TOP
+
+336:         570 LOAD_GLOBAL          (conn)
+             572 LOAD_METHOD          (commit)
+             574 CALL_METHOD          (0 positional arguments)
+             576 POP_TOP
+
+337:         578 LOAD_GLOBAL          (c)
+             580 LOAD_METHOD          (execute)
+             582 LOAD_CONST           ("insert into SP values (\n                    :billnum,\n                    :item,\n                    :grwt,\n                    :ntwt,\n                    :amount,\n                    :date)")
+
+344:         584 LOAD_FAST            (obj)
+             586 LOAD_ATTR            (item)
+
+345:         588 LOAD_FAST            (num)
+
+346:         590 LOAD_FAST            (obj)
+             592 LOAD_ATTR            (ntwt)
+
+347:         594 LOAD_FAST            (obj)
+             596 LOAD_ATTR            (ntwt)
+
+348:         598 LOAD_FAST            (obj)
+             600 LOAD_ATTR            (amount)
+
+349:         602 LOAD_GLOBAL          (date)
+             604 LOAD_METHOD          (today)
+             606 CALL_METHOD          (0 positional arguments)
+
+344:         608 LOAD_CONST           (('item', 'billnum', 'grwt', 'ntwt', 'amount', 'date'))
+             610 BUILD_CONST_KEY_MAP  6
+
+337:         612 CALL_METHOD          (2 positional arguments)
+             614 POP_TOP
+
+350:         616 LOAD_GLOBAL          (print)
+             618 LOAD_CONST           ("SP")
+             620 CALL_FUNCTION        (1 positional argument)
+             622 POP_TOP
+
+351:         624 LOAD_GLOBAL          (conn)
+             626 LOAD_METHOD          (commit)
+             628 CALL_METHOD          (0 positional arguments)
+             630 POP_TOP
+             632 JUMP_ABSOLUTE        (to 8)
+         >>  634 LOAD_CONST           (None)
+             636 RETURN_VALUE
+
+
+# Method Name:       Get_Sale_store
+# Filename:          Common\Backend.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  9
+# Stack size:        6
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        353
+# Constants:
+#    0: None
+#    1: 0
+#    2: ('datetime', 'timedelta')
+#    3: '%d-%m-%Y'
+#    4: 'Gold Purchase'
+#    5: 'Gold Sale'
+#    6: 'Silver Purchase'
+#    7: 'Silver Sale'
+#    8: 1
+#    9: ('days',)
+#   10: '%Y-%m-%d'
+#   11: 'select item_name, ntwt, amount from GoldSale where date=:date order by item_name'
+#   12: 'date'
+#   13: 'GS'
+#   14: 'select item_name, ntwt, amount from SilverSale where date=:date order by item_name'
+#   15: 'SS'
+#   16: 'select item, ntwt, amount from GP where date=:date order by item'
+#   17: 'GP'
+#   18: 'select item, ntwt, amount from SP where date=:date order by item'
+#   19: 'SP'
+# Names:
+#    0: datetime
+#    1: timedelta
+#    2: strptime
+#    3: strftime
+#    4: print
+#    5: c
+#    6: execute
+#    7: fetchall
+#    8: append
+# Varnames:
+#	startdate, enddate, datetime, timedelta, dte, enddte, temp_dict, temp_lst, strdate
+# Positional arguments:
+#	startdate, enddate
+# Local variables:
+#    2: datetime
+#    3: timedelta
+#    4: dte
+#    5: enddte
+#    6: temp_dict
+#    7: temp_lst
+#    8: strdate
+354:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('datetime', 'timedelta'))
+               4 IMPORT_NAME          (datetime)
+               6 IMPORT_FROM          (datetime)
+               8 STORE_FAST           (datetime)
+              10 IMPORT_FROM          (timedelta)
+              12 STORE_FAST           (timedelta)
+              14 POP_TOP
+
+355:          16 LOAD_FAST            (datetime)
+              18 LOAD_METHOD          (strptime)
+              20 LOAD_FAST            (startdate)
+              22 LOAD_CONST           ("%d-%m-%Y")
+              24 CALL_METHOD          (2 positional arguments)
+              26 STORE_FAST           (dte)
+
+356:          28 LOAD_FAST            (datetime)
+              30 LOAD_METHOD          (strptime)
+              32 LOAD_FAST            (enddate)
+              34 LOAD_CONST           ("%d-%m-%Y")
+              36 CALL_METHOD          (2 positional arguments)
+              38 STORE_FAST           (enddte)
+
+357:          40 LOAD_FAST            (dte)
+              42 LOAD_FAST            (enddte)
+              44 COMPARE_OP           (>)
+              46 POP_JUMP_IF_FALSE    (to 52)
+
+358:          48 LOAD_CONST           (None)
+              50 RETURN_VALUE
+
+359:     >>   52 BUILD_MAP            0
+              54 STORE_FAST           (temp_dict)
+
+360:          56 BUILD_LIST           0
+              58 LOAD_FAST            (temp_dict)
+              60 LOAD_CONST           ("Gold Purchase")
+              62 STORE_SUBSCR
+
+361:          64 BUILD_LIST           0
+              66 LOAD_FAST            (temp_dict)
+              68 LOAD_CONST           ("Gold Sale")
+              70 STORE_SUBSCR
+
+362:          72 BUILD_LIST           0
+              74 LOAD_FAST            (temp_dict)
+              76 LOAD_CONST           ("Silver Purchase")
+              78 STORE_SUBSCR
+
+363:          80 BUILD_LIST           0
+              82 LOAD_FAST            (temp_dict)
+              84 LOAD_CONST           ("Silver Sale")
+              86 STORE_SUBSCR
+
+364:          88 BUILD_LIST           0
+              90 STORE_FAST           (temp_lst)
+
+365:     >>   92 LOAD_FAST            (dte)
+              94 LOAD_FAST            (enddte)
+              96 LOAD_FAST            (timedelta)
+              98 LOAD_CONST           (1)
+             100 LOAD_CONST           (('days',))
+             102 CALL_FUNCTION_KW     (1 total positional and keyword args)
+             104 BINARY_ADD
+             106 COMPARE_OP           (!=)
+             108 EXTENDED_ARG         (256)
+             110 POP_JUMP_IF_FALSE    (to 454)
+
+366:         112 LOAD_FAST            (dte)
+             114 LOAD_METHOD          (strftime)
+             116 LOAD_CONST           ("%Y-%m-%d")
+             118 CALL_METHOD          (1 positional argument)
+             120 STORE_FAST           (strdate)
+
+367:         122 LOAD_GLOBAL          (print)
+             124 LOAD_FAST            (strdate)
+             126 CALL_FUNCTION        (1 positional argument)
+             128 POP_TOP
+
+368:         130 SETUP_FINALLY        (to 182)
+
+369:         132 LOAD_GLOBAL          (c)
+             134 LOAD_METHOD          (execute)
+             136 LOAD_CONST           ("select item_name, ntwt, amount from GoldSale where date=:date order by item_name")
+             138 LOAD_CONST           ("date")
+             140 LOAD_FAST            (strdate)
+             142 BUILD_MAP            1
+             144 CALL_METHOD          (2 positional arguments)
+             146 POP_TOP
+
+370:         148 LOAD_GLOBAL          (c)
+             150 LOAD_METHOD          (fetchall)
+             152 CALL_METHOD          (0 positional arguments)
+             154 STORE_FAST           (temp_lst)
+
+371:         156 LOAD_FAST            (temp_lst)
+             158 BUILD_LIST           0
+             160 COMPARE_OP           (!=)
+             162 POP_JUMP_IF_FALSE    (to 178)
+
+372:         164 LOAD_FAST            (temp_dict)
+             166 LOAD_CONST           ("Gold Sale")
+             168 BINARY_SUBSCR
+             170 LOAD_METHOD          (append)
+             172 LOAD_FAST            (temp_lst)
+             174 CALL_METHOD          (1 positional argument)
+             176 POP_TOP
+         >>  178 POP_BLOCK
+             180 JUMP_FORWARD         (to 202)
+
+373:     >>  182 POP_TOP
+             184 POP_TOP
+             186 POP_TOP
+
+374:         188 LOAD_GLOBAL          (print)
+             190 LOAD_CONST           ("GS")
+             192 CALL_FUNCTION        (1 positional argument)
+             194 POP_TOP
+             196 POP_EXCEPT
+             198 JUMP_FORWARD         (to 202)
+             200 RERAISE
+
+375:     >>  202 SETUP_FINALLY        (to 254)
+
+376:         204 LOAD_GLOBAL          (c)
+             206 LOAD_METHOD          (execute)
+             208 LOAD_CONST           ("select item_name, ntwt, amount from SilverSale where date=:date order by item_name")
+             210 LOAD_CONST           ("date")
+             212 LOAD_FAST            (strdate)
+             214 BUILD_MAP            1
+             216 CALL_METHOD          (2 positional arguments)
+             218 POP_TOP
+
+377:         220 LOAD_GLOBAL          (c)
+             222 LOAD_METHOD          (fetchall)
+             224 CALL_METHOD          (0 positional arguments)
+             226 STORE_FAST           (temp_lst)
+
+378:         228 LOAD_FAST            (temp_lst)
+             230 BUILD_LIST           0
+             232 COMPARE_OP           (!=)
+             234 POP_JUMP_IF_FALSE    (to 250)
+
+379:         236 LOAD_FAST            (temp_dict)
+             238 LOAD_CONST           ("Silver Sale")
+             240 BINARY_SUBSCR
+             242 LOAD_METHOD          (append)
+             244 LOAD_FAST            (temp_lst)
+             246 CALL_METHOD          (1 positional argument)
+             248 POP_TOP
+         >>  250 POP_BLOCK
+             252 JUMP_FORWARD         (to 274)
+
+380:     >>  254 POP_TOP
+             256 POP_TOP
+             258 POP_TOP
+
+381:         260 LOAD_GLOBAL          (print)
+             262 LOAD_CONST           ("SS")
+             264 CALL_FUNCTION        (1 positional argument)
+             266 POP_TOP
+             268 POP_EXCEPT
+             270 JUMP_FORWARD         (to 274)
+             272 RERAISE
+
+382:     >>  274 SETUP_FINALLY        (to 336)
+
+383:         276 LOAD_GLOBAL          (c)
+             278 LOAD_METHOD          (execute)
+             280 LOAD_CONST           ("select item, ntwt, amount from GP where date=:date order by item")
+             282 LOAD_CONST           ("date")
+             284 LOAD_FAST            (strdate)
+             286 BUILD_MAP            1
+             288 CALL_METHOD          (2 positional arguments)
+             290 POP_TOP
+
+384:         292 LOAD_GLOBAL          (c)
+             294 LOAD_METHOD          (fetchall)
+             296 CALL_METHOD          (0 positional arguments)
+             298 STORE_FAST           (temp_lst)
+
+385:         300 LOAD_GLOBAL          (print)
+             302 LOAD_FAST            (temp_lst)
+             304 CALL_FUNCTION        (1 positional argument)
+             306 POP_TOP
+
+386:         308 LOAD_FAST            (temp_lst)
+             310 BUILD_LIST           0
+             312 COMPARE_OP           (!=)
+             314 EXTENDED_ARG         (256)
+             316 POP_JUMP_IF_FALSE    (to 332)
+
+387:         318 LOAD_FAST            (temp_dict)
+             320 LOAD_CONST           ("Gold Purchase")
+             322 BINARY_SUBSCR
+             324 LOAD_METHOD          (append)
+             326 LOAD_FAST            (temp_lst)
+             328 CALL_METHOD          (1 positional argument)
+             330 POP_TOP
+         >>  332 POP_BLOCK
+             334 JUMP_FORWARD         (to 356)
+
+388:     >>  336 POP_TOP
+             338 POP_TOP
+             340 POP_TOP
+
+389:         342 LOAD_GLOBAL          (print)
+             344 LOAD_CONST           ("GP")
+             346 CALL_FUNCTION        (1 positional argument)
+             348 POP_TOP
+             350 POP_EXCEPT
+             352 JUMP_FORWARD         (to 356)
+             354 RERAISE
+
+390:     >>  356 SETUP_FINALLY        (to 418)
+
+391:         358 LOAD_GLOBAL          (c)
+             360 LOAD_METHOD          (execute)
+             362 LOAD_CONST           ("select item, ntwt, amount from SP where date=:date order by item")
+             364 LOAD_CONST           ("date")
+             366 LOAD_FAST            (strdate)
+             368 BUILD_MAP            1
+             370 CALL_METHOD          (2 positional arguments)
+             372 POP_TOP
+
+392:         374 LOAD_GLOBAL          (c)
+             376 LOAD_METHOD          (fetchall)
+             378 CALL_METHOD          (0 positional arguments)
+             380 STORE_FAST           (temp_lst)
+
+393:         382 LOAD_GLOBAL          (print)
+             384 LOAD_FAST            (temp_lst)
+             386 CALL_FUNCTION        (1 positional argument)
+             388 POP_TOP
+
+394:         390 LOAD_FAST            (temp_lst)
+             392 BUILD_LIST           0
+             394 COMPARE_OP           (!=)
+             396 EXTENDED_ARG         (256)
+             398 POP_JUMP_IF_FALSE    (to 414)
+
+395:         400 LOAD_FAST            (temp_dict)
+             402 LOAD_CONST           ("Silver Purchase")
+             404 BINARY_SUBSCR
+             406 LOAD_METHOD          (append)
+             408 LOAD_FAST            (temp_lst)
+             410 CALL_METHOD          (1 positional argument)
+             412 POP_TOP
+         >>  414 POP_BLOCK
+             416 JUMP_FORWARD         (to 438)
+
+396:     >>  418 POP_TOP
+             420 POP_TOP
+             422 POP_TOP
+
+397:         424 LOAD_GLOBAL          (print)
+             426 LOAD_CONST           ("SP")
+             428 CALL_FUNCTION        (1 positional argument)
+             430 POP_TOP
+             432 POP_EXCEPT
+             434 JUMP_FORWARD         (to 438)
+             436 RERAISE
+
+398:     >>  438 LOAD_FAST            (dte)
+             440 LOAD_FAST            (timedelta)
+             442 LOAD_CONST           (1)
+             444 LOAD_CONST           (('days',))
+             446 CALL_FUNCTION_KW     (1 total positional and keyword args)
+             448 INPLACE_ADD
+             450 STORE_FAST           (dte)
+             452 JUMP_ABSOLUTE        (to 92)
+
+399:     >>  454 LOAD_FAST            (temp_dict)
+             456 RETURN_VALUE
+
+
+# Method Name:       Store_Opening
+# Filename:          Common\Backend.py
+# Argument count:    3
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  5
+# Stack size:        9
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        401
+# Constants:
+#    0: None
+#    1: 0
+#    2: ('date',)
+#    3: 'create table if not exists Opening (\n        Sno integer,\n        GoldRate integer,\n        SilverRate integer,\n        OpeningCash integer,\n        date text)'
+#    4: 'select max(Sno) from Opening'
+#    5: 1
+#    6: 'insert into Opening values (\n                :Sno,\n                :GoldRate,\n                :SilverRate,\n                :OpeningCash,\n                :date)'
+#    7: ('Sno', 'GoldRate', 'SilverRate', 'OpeningCash', 'date')
+# Names:
+#    0: datetime
+#    1: date
+#    2: c
+#    3: execute
+#    4: conn
+#    5: commit
+#    6: fetchone
+#    7: today
+# Varnames:
+#	grate, srate, opncash, date, temp_sno
+# Positional arguments:
+#	grate, srate, opncash
+# Local variables:
+#    3: date
+#    4: temp_sno
+402:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('date',))
+               4 IMPORT_NAME          (datetime)
+               6 IMPORT_FROM          (date)
+               8 STORE_FAST           (date)
+              10 POP_TOP
+
+403:          12 LOAD_GLOBAL          (c)
+              14 LOAD_METHOD          (execute)
+              16 LOAD_CONST           ("create table if not exists Opening (\n        Sno integer,\n        GoldRate integer,\n        SilverRate integer,\n        OpeningCash integer,\n        date text)")
+              18 CALL_METHOD          (1 positional argument)
+              20 POP_TOP
+
+409:          22 LOAD_GLOBAL          (conn)
+              24 LOAD_METHOD          (commit)
+              26 CALL_METHOD          (0 positional arguments)
+              28 POP_TOP
+
+411:          30 LOAD_GLOBAL          (c)
+              32 LOAD_METHOD          (execute)
+              34 LOAD_CONST           ("select max(Sno) from Opening")
+              36 CALL_METHOD          (1 positional argument)
+              38 POP_TOP
+
+412:          40 LOAD_GLOBAL          (c)
+              42 LOAD_METHOD          (fetchone)
+              44 CALL_METHOD          (0 positional arguments)
+              46 STORE_FAST           (temp_sno)
+
+413:          48 LOAD_FAST            (temp_sno)
+              50 LOAD_CONST           (0)
+              52 BINARY_SUBSCR
+              54 LOAD_CONST           (None)
+              56 COMPARE_OP           (==)
+              58 POP_JUMP_IF_FALSE    (to 64)
+
+414:          60 LOAD_CONST           (1)
+              62 STORE_FAST           (temp_sno)
+
+416:     >>   64 LOAD_GLOBAL          (c)
+              66 LOAD_METHOD          (execute)
+              68 LOAD_CONST           ("insert into Opening values (\n                :Sno,\n                :GoldRate,\n                :SilverRate,\n                :OpeningCash,\n                :date)")
+
+422:          70 LOAD_FAST            (temp_sno)
+
+423:          72 LOAD_FAST            (grate)
+
+424:          74 LOAD_FAST            (srate)
+
+425:          76 LOAD_FAST            (opncash)
+
+426:          78 LOAD_FAST            (date)
+              80 LOAD_METHOD          (today)
+              82 CALL_METHOD          (0 positional arguments)
+
+422:          84 LOAD_CONST           (('Sno', 'GoldRate', 'SilverRate', 'OpeningCash', 'date'))
+              86 BUILD_CONST_KEY_MAP  5
+
+416:          88 CALL_METHOD          (2 positional arguments)
+              90 POP_TOP
+
+427:          92 LOAD_GLOBAL          (conn)
+              94 LOAD_METHOD          (commit)
+              96 CALL_METHOD          (0 positional arguments)
+              98 POP_TOP
+             100 LOAD_CONST           (None)
+             102 RETURN_VALUE
+
+
+# Method Name:       Get_opn
+# Filename:          Common\Backend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        5
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        429
+# Constants:
+#    0: None
+#    1: 'select OpeningCash from Opening where date=:date'
+#    2: 'date'
+#    3: (0,)
+#    4: 0
+# Names:
+#    0: c
+#    1: execute
+#    2: fetchone
+# Varnames:
+#	today, temp_opn
+# Positional arguments:
+#	today
+# Local variables:
+#    1: temp_opn
+430:           0 LOAD_GLOBAL          (c)
+               2 LOAD_METHOD          (execute)
+               4 LOAD_CONST           ("select OpeningCash from Opening where date=:date")
+               6 LOAD_CONST           ("date")
+               8 LOAD_FAST            (today)
+              10 BUILD_MAP            1
+              12 CALL_METHOD          (2 positional arguments)
+              14 POP_TOP
+
+431:          16 LOAD_GLOBAL          (c)
+              18 LOAD_METHOD          (fetchone)
+              20 CALL_METHOD          (0 positional arguments)
+              22 STORE_FAST           (temp_opn)
+
+432:          24 LOAD_FAST            (temp_opn)
+              26 LOAD_CONST           (None)
+              28 COMPARE_OP           (==)
+              30 POP_JUMP_IF_FALSE    (to 36)
+              32 LOAD_CONST           ((0,))
+              34 STORE_FAST           (temp_opn)
+
+433:     >>   36 LOAD_FAST            (temp_opn)
+              38 LOAD_CONST           (0)
+              40 BINARY_SUBSCR
+              42 RETURN_VALUE
+

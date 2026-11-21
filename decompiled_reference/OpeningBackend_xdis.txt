@@ -1,0 +1,398 @@
+# pydisasm version 6.1.7
+# Python bytecode 3.9.0 (3425)
+# Disassembled from Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+# Timestamp in code: 0 (1970-01-01 05:30:00)
+# Source code size mod 2**32: 0 bytes
+# Method Name:       <module>
+# Filename:          Common\OpeningBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        4
+# Flags:             0x00000040 (NOFREE)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: ('loadUi',)
+#    2: ('QtWidgets',)
+#    3: ('QMessageBox',)
+#    4: ('Store_Opening',)
+#    5: <Code38 code object Opening at 0x16e8593de10, file Common\OpeningBackend.py>, line 6
+#    6: 'Opening'
+#    7: '__main__'
+#    8: None
+# Names:
+#    0: PyQt5.uic
+#    1: loadUi
+#    2: PyQt5
+#    3: QtWidgets
+#    4: PyQt5.QtWidgets
+#    5: QMessageBox
+#    6: Common.Backend
+#    7: Store_Opening
+#    8: QDialog
+#    9: Opening
+#   10: __name__
+#   11: sys
+#   12: QApplication
+#   13: argv
+#   14: app
+#   15: dialog
+#   16: exit
+#   17: exec_
+  1:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('loadUi',))
+               4 IMPORT_NAME          (PyQt5.uic)
+               6 IMPORT_FROM          (loadUi)
+               8 STORE_NAME           (loadUi)
+              10 POP_TOP
+
+  2:          12 LOAD_CONST           (0)
+              14 LOAD_CONST           (('QtWidgets',))
+              16 IMPORT_NAME          (PyQt5)
+              18 IMPORT_FROM          (QtWidgets)
+              20 STORE_NAME           (QtWidgets)
+              22 POP_TOP
+
+  3:          24 LOAD_CONST           (0)
+              26 LOAD_CONST           (('QMessageBox',))
+              28 IMPORT_NAME          (PyQt5.QtWidgets)
+              30 IMPORT_FROM          (QMessageBox)
+              32 STORE_NAME           (QMessageBox)
+              34 POP_TOP
+
+  4:          36 LOAD_CONST           (0)
+              38 LOAD_CONST           (('Store_Opening',))
+              40 IMPORT_NAME          (Common.Backend)
+              42 IMPORT_FROM          (Store_Opening)
+              44 STORE_NAME           (Store_Opening)
+              46 POP_TOP
+
+  6:          48 LOAD_BUILD_CLASS
+              50 LOAD_CONST           (<Code38 code object Opening at 0x16e8593de10, file Common\OpeningBackend.py>, line 6)
+              52 LOAD_CONST           ("Opening")
+              54 MAKE_FUNCTION        (No arguments)
+              56 LOAD_CONST           ("Opening")
+              58 LOAD_NAME            (QtWidgets)
+              60 LOAD_ATTR            (QDialog)
+              62 CALL_FUNCTION        (3 positional arguments)
+              64 STORE_NAME           (Opening)
+
+ 30:          66 LOAD_NAME            (__name__)
+              68 LOAD_CONST           ("__main__")
+              70 COMPARE_OP           (==)
+              72 POP_JUMP_IF_FALSE    (to 114)
+
+ 31:          74 LOAD_CONST           (0)
+              76 LOAD_CONST           (None)
+              78 IMPORT_NAME          (sys)
+              80 STORE_NAME           (sys)
+
+ 32:          82 LOAD_NAME            (QtWidgets)
+              84 LOAD_METHOD          (QApplication)
+              86 LOAD_NAME            (sys)
+              88 LOAD_ATTR            (argv)
+              90 CALL_METHOD          (1 positional argument)
+              92 STORE_NAME           (app)
+
+ 33:          94 LOAD_NAME            (Opening)
+              96 CALL_FUNCTION        (0 positional arguments)
+              98 STORE_NAME           (dialog)
+
+ 34:         100 LOAD_NAME            (sys)
+             102 LOAD_METHOD          (exit)
+             104 LOAD_NAME            (app)
+             106 LOAD_METHOD          (exec_)
+             108 CALL_METHOD          (0 positional arguments)
+             110 CALL_METHOD          (1 positional argument)
+             112 POP_TOP
+         >>  114 LOAD_CONST           (None)
+             116 RETURN_VALUE
+
+
+# Method Name:       Opening
+# Filename:          Common\OpeningBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        6
+# Constants:
+#    0: 'Opening'
+#    1: <Code38 code object __init__ at 0x16e8593dc50, file Common\OpeningBackend.py>, line 7
+#    2: 'Opening.__init__'
+#    3: <Code38 code object Submit_data at 0x16e8593dd30, file Common\OpeningBackend.py>, line 13
+#    4: 'Opening.Submit_data'
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: Submit_data
+#    5: __classcell__
+# Cell variables:
+#    0: __class__
+  6:           0 LOAD_NAME            (__name__)
+               2 STORE_NAME           (__module__)
+               4 LOAD_CONST           ("Opening")
+               6 STORE_NAME           (__qualname__)
+
+  7:           8 LOAD_CLOSURE         (__class__)
+              10 BUILD_TUPLE          1
+              12 LOAD_CONST           (<Code38 code object __init__ at 0x16e8593dc50, file Common\OpeningBackend.py>, line 7)
+              14 LOAD_CONST           ("Opening.__init__")
+              16 MAKE_FUNCTION        (closure)
+              18 STORE_NAME           (__init__)
+
+ 13:          20 LOAD_CONST           (<Code38 code object Submit_data at 0x16e8593dd30, file Common\OpeningBackend.py>, line 13)
+              22 LOAD_CONST           ("Opening.Submit_data")
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (Submit_data)
+              28 LOAD_CLOSURE         (__class__)
+              30 DUP_TOP
+              32 STORE_NAME           (__classcell__)
+              34 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          Common\OpeningBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        7
+# Constants:
+#    0: None
+#    1: 'Common\\Opening.ui'
+#    2: <Code38 code object <lambda> at 0x16e8593d710, file Common\OpeningBackend.py>, line 10
+#    3: 'Opening.__init__.<locals>.<lambda>'
+# Names:
+#    0: super
+#    1: Opening
+#    2: __init__
+#    3: loadUi
+#    4: Submit
+#    5: clicked
+#    6: connect
+#    7: show
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+# Free variables:
+#    0: __class__
+# Cell variables:
+#    0: self
+  8:           0 LOAD_GLOBAL          (super)
+               2 LOAD_GLOBAL          (Opening)
+               4 LOAD_DEREF           (self)
+               6 CALL_FUNCTION        (2 positional arguments)
+               8 LOAD_METHOD          (__init__)
+              10 CALL_METHOD          (0 positional arguments)
+              12 POP_TOP
+
+  9:          14 LOAD_GLOBAL          (loadUi)
+              16 LOAD_CONST           ("Common\\Opening.ui")
+              18 LOAD_DEREF           (self)
+              20 CALL_FUNCTION        (2 positional arguments)
+              22 POP_TOP
+
+ 10:          24 LOAD_DEREF           (self)
+              26 LOAD_ATTR            (Submit)
+              28 LOAD_ATTR            (clicked)
+              30 LOAD_METHOD          (connect)
+              32 LOAD_CLOSURE         (self)
+              34 BUILD_TUPLE          1
+              36 LOAD_CONST           (<Code38 code object <lambda> at 0x16e8593d710, file Common\OpeningBackend.py>, line 10)
+              38 LOAD_CONST           ("Opening.__init__.<locals>.<lambda>")
+              40 MAKE_FUNCTION        (closure)
+              42 CALL_METHOD          (1 positional argument)
+              44 POP_TOP
+
+ 11:          46 LOAD_DEREF           (self)
+              48 LOAD_METHOD          (show)
+              50 CALL_METHOD          (0 positional arguments)
+              52 POP_TOP
+              54 LOAD_CONST           (None)
+              56 RETURN_VALUE
+
+
+# Method Name:       Submit_data
+# Filename:          Common\OpeningBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  4
+# Stack size:        5
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        13
+# Constants:
+#    0: None
+#    1: 0
+#    2: 'Data Entry Confirmation'
+#    3: 'The Details have been entered'
+#    4: 'Invalid Entry'
+#    5: 'Please retry your details'
+# Names:
+#    0: GoldRate
+#    1: value
+#    2: SilverRate
+#    3: OpnCash
+#    4: Store_Opening
+#    5: QtWidgets
+#    6: QMessageBox
+#    7: setIcon
+#    8: Information
+#    9: setWindowTitle
+#   10: setText
+#   11: setStandardButtons
+#   12: Ok
+#   13: exec_
+#   14: Warning
+# Varnames:
+#	self, Opnsub, retval, OpnWarn
+# Positional arguments:
+#	self
+# Local variables:
+#    1: Opnsub
+#    2: retval
+#    3: OpnWarn
+ 14:           0 LOAD_FAST            (self)
+               2 LOAD_ATTR            (GoldRate)
+               4 LOAD_METHOD          (value)
+               6 CALL_METHOD          (0 positional arguments)
+               8 LOAD_CONST           (0)
+              10 COMPARE_OP           (!=)
+              12 POP_JUMP_IF_FALSE    (to 134)
+              14 LOAD_FAST            (self)
+              16 LOAD_ATTR            (SilverRate)
+              18 LOAD_METHOD          (value)
+              20 CALL_METHOD          (0 positional arguments)
+              22 LOAD_CONST           (0)
+              24 COMPARE_OP           (!=)
+              26 POP_JUMP_IF_FALSE    (to 134)
+              28 LOAD_FAST            (self)
+              30 LOAD_ATTR            (OpnCash)
+              32 LOAD_METHOD          (value)
+              34 CALL_METHOD          (0 positional arguments)
+              36 LOAD_CONST           (0)
+              38 COMPARE_OP           (!=)
+              40 POP_JUMP_IF_FALSE    (to 134)
+
+ 15:          42 LOAD_GLOBAL          (Store_Opening)
+              44 LOAD_FAST            (self)
+              46 LOAD_ATTR            (GoldRate)
+              48 LOAD_METHOD          (value)
+              50 CALL_METHOD          (0 positional arguments)
+              52 LOAD_FAST            (self)
+              54 LOAD_ATTR            (SilverRate)
+              56 LOAD_METHOD          (value)
+              58 CALL_METHOD          (0 positional arguments)
+              60 LOAD_FAST            (self)
+              62 LOAD_ATTR            (OpnCash)
+              64 LOAD_METHOD          (value)
+              66 CALL_METHOD          (0 positional arguments)
+              68 CALL_FUNCTION        (3 positional arguments)
+              70 POP_TOP
+
+ 16:          72 LOAD_GLOBAL          (QtWidgets)
+              74 LOAD_METHOD          (QMessageBox)
+              76 CALL_METHOD          (0 positional arguments)
+              78 STORE_FAST           (Opnsub)
+
+ 17:          80 LOAD_FAST            (Opnsub)
+              82 LOAD_METHOD          (setIcon)
+              84 LOAD_GLOBAL          (QMessageBox)
+              86 LOAD_ATTR            (Information)
+              88 CALL_METHOD          (1 positional argument)
+              90 POP_TOP
+
+ 18:          92 LOAD_FAST            (Opnsub)
+              94 LOAD_METHOD          (setWindowTitle)
+              96 LOAD_CONST           ("Data Entry Confirmation")
+              98 CALL_METHOD          (1 positional argument)
+             100 POP_TOP
+
+ 19:         102 LOAD_FAST            (Opnsub)
+             104 LOAD_METHOD          (setText)
+             106 LOAD_CONST           ("The Details have been entered")
+             108 CALL_METHOD          (1 positional argument)
+             110 POP_TOP
+
+ 20:         112 LOAD_FAST            (Opnsub)
+             114 LOAD_METHOD          (setStandardButtons)
+             116 LOAD_GLOBAL          (QMessageBox)
+             118 LOAD_ATTR            (Ok)
+             120 CALL_METHOD          (1 positional argument)
+             122 POP_TOP
+
+ 21:         124 LOAD_FAST            (Opnsub)
+             126 LOAD_METHOD          (exec_)
+             128 CALL_METHOD          (0 positional arguments)
+             130 STORE_FAST           (retval)
+             132 JUMP_FORWARD         (to 194)
+
+ 23:     >>  134 LOAD_GLOBAL          (QtWidgets)
+             136 LOAD_METHOD          (QMessageBox)
+             138 CALL_METHOD          (0 positional arguments)
+             140 STORE_FAST           (OpnWarn)
+
+ 24:         142 LOAD_FAST            (OpnWarn)
+             144 LOAD_METHOD          (setIcon)
+             146 LOAD_GLOBAL          (QMessageBox)
+             148 LOAD_ATTR            (Warning)
+             150 CALL_METHOD          (1 positional argument)
+             152 POP_TOP
+
+ 25:         154 LOAD_FAST            (OpnWarn)
+             156 LOAD_METHOD          (setWindowTitle)
+             158 LOAD_CONST           ("Invalid Entry")
+             160 CALL_METHOD          (1 positional argument)
+             162 POP_TOP
+
+ 26:         164 LOAD_FAST            (OpnWarn)
+             166 LOAD_METHOD          (setText)
+             168 LOAD_CONST           ("Please retry your details")
+             170 CALL_METHOD          (1 positional argument)
+             172 POP_TOP
+
+ 27:         174 LOAD_FAST            (OpnWarn)
+             176 LOAD_METHOD          (setStandardButtons)
+             178 LOAD_GLOBAL          (QMessageBox)
+             180 LOAD_ATTR            (Ok)
+             182 CALL_METHOD          (1 positional argument)
+             184 POP_TOP
+
+ 28:         186 LOAD_FAST            (OpnWarn)
+             188 LOAD_METHOD          (exec_)
+             190 CALL_METHOD          (0 positional arguments)
+             192 STORE_FAST           (retval)
+         >>  194 LOAD_CONST           (None)
+             196 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\OpeningBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        10
+# Constants:
+#    0: None
+# Names:
+#    0: Submit_data
+# Free variables:
+#    0: self
+ 10:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (Submit_data)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+

@@ -1,0 +1,661 @@
+# pydisasm version 6.1.7
+# Python bytecode 3.9.0 (3425)
+# Disassembled from Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+# Timestamp in code: 0 (1970-01-01 05:30:00)
+# Source code size mod 2**32: 0 bytes
+# Method Name:       <module>
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        4
+# Flags:             0x00000040 (NOFREE)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: ('loadUi',)
+#    2: ('QtWidgets',)
+#    3: ('Get_Billsday', 'Get_opn')
+#    4: ('date',)
+#    5: <Code38 code object CCCalc at 0x16e858d0bb0, file Common\CCCalcBackend.py>, line 6
+#    6: 'CCCalc'
+#    7: None
+# Names:
+#    0: PyQt5.uic
+#    1: loadUi
+#    2: PyQt5
+#    3: QtWidgets
+#    4: Common.Backend
+#    5: Get_Billsday
+#    6: Get_opn
+#    7: datetime
+#    8: date
+#    9: QDialog
+#   10: CCCalc
+  1:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('loadUi',))
+               4 IMPORT_NAME          (PyQt5.uic)
+               6 IMPORT_FROM          (loadUi)
+               8 STORE_NAME           (loadUi)
+              10 POP_TOP
+
+  2:          12 LOAD_CONST           (0)
+              14 LOAD_CONST           (('QtWidgets',))
+              16 IMPORT_NAME          (PyQt5)
+              18 IMPORT_FROM          (QtWidgets)
+              20 STORE_NAME           (QtWidgets)
+              22 POP_TOP
+
+  3:          24 LOAD_CONST           (0)
+              26 LOAD_CONST           (('Get_Billsday', 'Get_opn'))
+              28 IMPORT_NAME          (Common.Backend)
+              30 IMPORT_FROM          (Get_Billsday)
+              32 STORE_NAME           (Get_Billsday)
+              34 IMPORT_FROM          (Get_opn)
+              36 STORE_NAME           (Get_opn)
+              38 POP_TOP
+
+  4:          40 LOAD_CONST           (0)
+              42 LOAD_CONST           (('date',))
+              44 IMPORT_NAME          (datetime)
+              46 IMPORT_FROM          (date)
+              48 STORE_NAME           (date)
+              50 POP_TOP
+
+  6:          52 LOAD_BUILD_CLASS
+              54 LOAD_CONST           (<Code38 code object CCCalc at 0x16e858d0bb0, file Common\CCCalcBackend.py>, line 6)
+              56 LOAD_CONST           ("CCCalc")
+              58 MAKE_FUNCTION        (No arguments)
+              60 LOAD_CONST           ("CCCalc")
+              62 LOAD_NAME            (QtWidgets)
+              64 LOAD_ATTR            (QDialog)
+              66 CALL_FUNCTION        (3 positional arguments)
+              68 STORE_NAME           (CCCalc)
+              70 LOAD_CONST           (None)
+              72 RETURN_VALUE
+
+
+# Method Name:       CCCalc
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        3
+# Flags:             0x00000000 (0x0)
+# First Line:        6
+# Constants:
+#    0: 'CCCalc'
+#    1: <Code38 code object __init__ at 0x16e858d09f0, file Common\CCCalcBackend.py>, line 7
+#    2: 'CCCalc.__init__'
+#    3: <Code38 code object CashCalc at 0x16e858d0830, file Common\CCCalcBackend.py>, line 18
+#    4: 'CCCalc.CashCalc'
+#    5: <Code38 code object DiffCalc at 0x16e858d0ad0, file Common\CCCalcBackend.py>, line 55
+#    6: 'CCCalc.DiffCalc'
+# Names:
+#    0: __name__
+#    1: __module__
+#    2: __qualname__
+#    3: __init__
+#    4: CashCalc
+#    5: DiffCalc
+#    6: __classcell__
+# Cell variables:
+#    0: __class__
+  6:           0 LOAD_NAME            (__name__)
+               2 STORE_NAME           (__module__)
+               4 LOAD_CONST           ("CCCalc")
+               6 STORE_NAME           (__qualname__)
+
+  7:           8 LOAD_CLOSURE         (__class__)
+              10 BUILD_TUPLE          1
+              12 LOAD_CONST           (<Code38 code object __init__ at 0x16e858d09f0, file Common\CCCalcBackend.py>, line 7)
+              14 LOAD_CONST           ("CCCalc.__init__")
+              16 MAKE_FUNCTION        (closure)
+              18 STORE_NAME           (__init__)
+
+ 18:          20 LOAD_CONST           (<Code38 code object CashCalc at 0x16e858d0830, file Common\CCCalcBackend.py>, line 18)
+              22 LOAD_CONST           ("CCCalc.CashCalc")
+              24 MAKE_FUNCTION        (No arguments)
+              26 STORE_NAME           (CashCalc)
+
+ 55:          28 LOAD_CONST           (<Code38 code object DiffCalc at 0x16e858d0ad0, file Common\CCCalcBackend.py>, line 55)
+              30 LOAD_CONST           ("CCCalc.DiffCalc")
+              32 MAKE_FUNCTION        (No arguments)
+              34 STORE_NAME           (DiffCalc)
+              36 LOAD_CLOSURE         (__class__)
+              38 DUP_TOP
+              40 STORE_NAME           (__classcell__)
+              42 RETURN_VALUE
+
+
+# Method Name:       __init__
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  1
+# Stack size:        5
+# Flags:             0x00000003 (NEWLOCALS | OPTIMIZED)
+# First Line:        7
+# Constants:
+#    0: None
+#    1: 'Common\\CCCalc.ui'
+#    2: <Code38 code object <lambda> at 0x16e858b8c80, file Common\CCCalcBackend.py>, line 10
+#    3: 'CCCalc.__init__.<locals>.<lambda>'
+#    4: '99-99-9999'
+#    5: '%d-%m-%Y'
+#    6: <Code38 code object <lambda> at 0x16e85813930, file Common\CCCalcBackend.py>, line 13
+#    7: 0
+# Names:
+#    0: super
+#    1: CCCalc
+#    2: __init__
+#    3: loadUi
+#    4: Cashinhand
+#    5: valueChanged
+#    6: connect
+#    7: Dateentry
+#    8: setInputMask
+#    9: setText
+#   10: date
+#   11: today
+#   12: strftime
+#   13: textChanged
+#   14: total
+#   15: CashCalc
+#   16: show
+# Varnames:
+#	self
+# Positional arguments:
+#	self
+# Free variables:
+#    0: __class__
+# Cell variables:
+#    0: self
+  8:           0 LOAD_GLOBAL          (super)
+               2 LOAD_GLOBAL          (CCCalc)
+               4 LOAD_DEREF           (self)
+               6 CALL_FUNCTION        (2 positional arguments)
+               8 LOAD_METHOD          (__init__)
+              10 CALL_METHOD          (0 positional arguments)
+              12 POP_TOP
+
+  9:          14 LOAD_GLOBAL          (loadUi)
+              16 LOAD_CONST           ("Common\\CCCalc.ui")
+              18 LOAD_DEREF           (self)
+              20 CALL_FUNCTION        (2 positional arguments)
+              22 POP_TOP
+
+ 10:          24 LOAD_DEREF           (self)
+              26 LOAD_ATTR            (Cashinhand)
+              28 LOAD_ATTR            (valueChanged)
+              30 LOAD_METHOD          (connect)
+              32 LOAD_CLOSURE         (self)
+              34 BUILD_TUPLE          1
+              36 LOAD_CONST           (<Code38 code object <lambda> at 0x16e858b8c80, file Common\CCCalcBackend.py>, line 10)
+              38 LOAD_CONST           ("CCCalc.__init__.<locals>.<lambda>")
+              40 MAKE_FUNCTION        (closure)
+              42 CALL_METHOD          (1 positional argument)
+              44 POP_TOP
+
+ 11:          46 LOAD_DEREF           (self)
+              48 LOAD_ATTR            (Dateentry)
+              50 LOAD_METHOD          (setInputMask)
+              52 LOAD_CONST           ("99-99-9999")
+              54 CALL_METHOD          (1 positional argument)
+              56 POP_TOP
+
+ 12:          58 LOAD_DEREF           (self)
+              60 LOAD_ATTR            (Dateentry)
+              62 LOAD_METHOD          (setText)
+              64 LOAD_GLOBAL          (date)
+              66 LOAD_METHOD          (today)
+              68 CALL_METHOD          (0 positional arguments)
+              70 LOAD_METHOD          (strftime)
+              72 LOAD_CONST           ("%d-%m-%Y")
+              74 CALL_METHOD          (1 positional argument)
+              76 CALL_METHOD          (1 positional argument)
+              78 POP_TOP
+
+ 13:          80 LOAD_DEREF           (self)
+              82 LOAD_ATTR            (Dateentry)
+              84 LOAD_ATTR            (textChanged)
+              86 LOAD_METHOD          (connect)
+              88 LOAD_CLOSURE         (self)
+              90 BUILD_TUPLE          1
+              92 LOAD_CONST           (<Code38 code object <lambda> at 0x16e85813930, file Common\CCCalcBackend.py>, line 13)
+              94 LOAD_CONST           ("CCCalc.__init__.<locals>.<lambda>")
+              96 MAKE_FUNCTION        (closure)
+              98 CALL_METHOD          (1 positional argument)
+             100 POP_TOP
+
+ 14:         102 LOAD_CONST           (0)
+             104 LOAD_DEREF           (self)
+             106 STORE_ATTR           (total)
+
+ 15:         108 LOAD_DEREF           (self)
+             110 LOAD_METHOD          (CashCalc)
+             112 CALL_METHOD          (0 positional arguments)
+             114 POP_TOP
+
+ 16:         116 LOAD_DEREF           (self)
+             118 LOAD_METHOD          (show)
+             120 CALL_METHOD          (0 positional arguments)
+             122 POP_TOP
+             124 LOAD_CONST           (None)
+             126 RETURN_VALUE
+
+
+# Method Name:       CashCalc
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  6
+# Stack size:        5
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        18
+# Constants:
+#    0: None
+#    1: 0
+#    2: ('datetime',)
+#    3: '%d-%m-%Y'
+#    4: '%Y-%m-%d'
+#    5: 10
+#    6: 'Gold Sale'
+#    7: 11
+#    8: 'Silver Sale'
+#    9: 'Old Order'
+#   10: 'New Order'
+#   11: 'VC'
+#   12: 'Misc plus'
+#   13: 'Silver Purchase'
+#   14: 'Misc minus'
+#   15: 'Expense'
+#   16: 'Gold Purchase'
+#   17: 13
+#   18: 15
+#   19: 17
+#   20: 19
+#   21: 'Expected Cash:      '
+# Names:
+#    0: datetime
+#    1: strptime
+#    2: Dateentry
+#    3: text
+#    4: Get_Billsday
+#    5: strftime
+#    6: Get_opn
+#    7: total
+#    8: ExpCash
+#    9: setText
+# Varnames:
+#	self, datetime, dte, db, temp_total, i
+# Positional arguments:
+#	self
+# Local variables:
+#    1: datetime
+#    2: dte
+#    3: db
+#    4: temp_total
+#    5: i
+ 19:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('datetime',))
+               4 IMPORT_NAME          (datetime)
+               6 IMPORT_FROM          (datetime)
+               8 STORE_FAST           (datetime)
+              10 POP_TOP
+
+ 20:          12 LOAD_FAST            (datetime)
+              14 LOAD_METHOD          (strptime)
+              16 LOAD_FAST            (self)
+              18 LOAD_ATTR            (Dateentry)
+              20 LOAD_METHOD          (text)
+              22 CALL_METHOD          (0 positional arguments)
+              24 LOAD_CONST           ("%d-%m-%Y")
+              26 CALL_METHOD          (2 positional arguments)
+              28 STORE_FAST           (dte)
+
+ 21:          30 LOAD_GLOBAL          (Get_Billsday)
+              32 LOAD_FAST            (datetime)
+              34 LOAD_METHOD          (strftime)
+              36 LOAD_FAST            (dte)
+              38 LOAD_CONST           ("%Y-%m-%d")
+              40 CALL_METHOD          (2 positional arguments)
+              42 CALL_FUNCTION        (1 positional argument)
+              44 STORE_FAST           (db)
+
+ 22:          46 LOAD_GLOBAL          (Get_opn)
+              48 LOAD_FAST            (datetime)
+              50 LOAD_METHOD          (strftime)
+              52 LOAD_FAST            (dte)
+              54 LOAD_CONST           ("%Y-%m-%d")
+              56 CALL_METHOD          (2 positional arguments)
+              58 CALL_FUNCTION        (1 positional argument)
+              60 STORE_FAST           (temp_total)
+
+ 23:          62 LOAD_FAST            (db)
+              64 GET_ITER
+         >>   66 EXTENDED_ARG         (256)
+              68 FOR_ITER             (to 440)
+              70 STORE_FAST           (i)
+
+ 24:          72 LOAD_FAST            (i)
+              74 LOAD_CONST           (10)
+              76 BINARY_SUBSCR
+              78 LOAD_CONST           ("Gold Sale")
+              80 COMPARE_OP           (==)
+              82 POP_JUMP_IF_FALSE    (to 98)
+
+ 25:          84 LOAD_FAST            (temp_total)
+              86 LOAD_FAST            (i)
+              88 LOAD_CONST           (11)
+              90 BINARY_SUBSCR
+              92 INPLACE_ADD
+              94 STORE_FAST           (temp_total)
+              96 JUMP_FORWARD         (to 336)
+
+ 26:     >>   98 LOAD_FAST            (i)
+             100 LOAD_CONST           (10)
+             102 BINARY_SUBSCR
+             104 LOAD_CONST           ("Silver Sale")
+             106 COMPARE_OP           (==)
+             108 POP_JUMP_IF_FALSE    (to 124)
+
+ 27:         110 LOAD_FAST            (temp_total)
+             112 LOAD_FAST            (i)
+             114 LOAD_CONST           (11)
+             116 BINARY_SUBSCR
+             118 INPLACE_ADD
+             120 STORE_FAST           (temp_total)
+             122 JUMP_FORWARD         (to 336)
+
+ 28:     >>  124 LOAD_FAST            (i)
+             126 LOAD_CONST           (10)
+             128 BINARY_SUBSCR
+             130 LOAD_CONST           ("Old Order")
+             132 COMPARE_OP           (==)
+             134 POP_JUMP_IF_FALSE    (to 150)
+
+ 29:         136 LOAD_FAST            (temp_total)
+             138 LOAD_FAST            (i)
+             140 LOAD_CONST           (11)
+             142 BINARY_SUBSCR
+             144 INPLACE_ADD
+             146 STORE_FAST           (temp_total)
+             148 JUMP_FORWARD         (to 336)
+
+ 30:     >>  150 LOAD_FAST            (i)
+             152 LOAD_CONST           (10)
+             154 BINARY_SUBSCR
+             156 LOAD_CONST           ("New Order")
+             158 COMPARE_OP           (==)
+             160 POP_JUMP_IF_FALSE    (to 176)
+
+ 31:         162 LOAD_FAST            (temp_total)
+             164 LOAD_FAST            (i)
+             166 LOAD_CONST           (11)
+             168 BINARY_SUBSCR
+             170 INPLACE_ADD
+             172 STORE_FAST           (temp_total)
+             174 JUMP_FORWARD         (to 336)
+
+ 32:     >>  176 LOAD_FAST            (i)
+             178 LOAD_CONST           (10)
+             180 BINARY_SUBSCR
+             182 LOAD_CONST           ("VC")
+             184 COMPARE_OP           (==)
+             186 POP_JUMP_IF_FALSE    (to 202)
+
+ 33:         188 LOAD_FAST            (temp_total)
+             190 LOAD_FAST            (i)
+             192 LOAD_CONST           (11)
+             194 BINARY_SUBSCR
+             196 INPLACE_ADD
+             198 STORE_FAST           (temp_total)
+             200 JUMP_FORWARD         (to 336)
+
+ 34:     >>  202 LOAD_FAST            (i)
+             204 LOAD_CONST           (10)
+             206 BINARY_SUBSCR
+             208 LOAD_CONST           ("Misc plus")
+             210 COMPARE_OP           (==)
+             212 POP_JUMP_IF_FALSE    (to 228)
+
+ 35:         214 LOAD_FAST            (temp_total)
+             216 LOAD_FAST            (i)
+             218 LOAD_CONST           (11)
+             220 BINARY_SUBSCR
+             222 INPLACE_ADD
+             224 STORE_FAST           (temp_total)
+             226 JUMP_FORWARD         (to 336)
+
+ 36:     >>  228 LOAD_FAST            (i)
+             230 LOAD_CONST           (10)
+             232 BINARY_SUBSCR
+             234 LOAD_CONST           ("Silver Purchase")
+             236 COMPARE_OP           (==)
+             238 POP_JUMP_IF_FALSE    (to 254)
+
+ 37:         240 LOAD_FAST            (temp_total)
+             242 LOAD_FAST            (i)
+             244 LOAD_CONST           (11)
+             246 BINARY_SUBSCR
+             248 INPLACE_SUBTRACT
+             250 STORE_FAST           (temp_total)
+             252 JUMP_FORWARD         (to 336)
+
+ 38:     >>  254 LOAD_FAST            (i)
+             256 LOAD_CONST           (10)
+             258 BINARY_SUBSCR
+             260 LOAD_CONST           ("Misc minus")
+             262 COMPARE_OP           (==)
+             264 EXTENDED_ARG         (256)
+             266 POP_JUMP_IF_FALSE    (to 282)
+
+ 39:         268 LOAD_FAST            (temp_total)
+             270 LOAD_FAST            (i)
+             272 LOAD_CONST           (11)
+             274 BINARY_SUBSCR
+             276 INPLACE_SUBTRACT
+             278 STORE_FAST           (temp_total)
+             280 JUMP_FORWARD         (to 336)
+
+ 40:     >>  282 LOAD_FAST            (i)
+             284 LOAD_CONST           (10)
+             286 BINARY_SUBSCR
+             288 LOAD_CONST           ("Expense")
+             290 COMPARE_OP           (==)
+             292 EXTENDED_ARG         (256)
+             294 POP_JUMP_IF_FALSE    (to 310)
+
+ 41:         296 LOAD_FAST            (temp_total)
+             298 LOAD_FAST            (i)
+             300 LOAD_CONST           (11)
+             302 BINARY_SUBSCR
+             304 INPLACE_SUBTRACT
+             306 STORE_FAST           (temp_total)
+             308 JUMP_FORWARD         (to 336)
+
+ 42:     >>  310 LOAD_FAST            (i)
+             312 LOAD_CONST           (10)
+             314 BINARY_SUBSCR
+             316 LOAD_CONST           ("Gold Purchase")
+             318 COMPARE_OP           (==)
+             320 EXTENDED_ARG         (256)
+             322 POP_JUMP_IF_FALSE    (to 336)
+
+ 43:         324 LOAD_FAST            (temp_total)
+             326 LOAD_FAST            (i)
+             328 LOAD_CONST           (11)
+             330 BINARY_SUBSCR
+             332 INPLACE_SUBTRACT
+             334 STORE_FAST           (temp_total)
+
+ 44:     >>  336 LOAD_FAST            (i)
+             338 LOAD_CONST           (13)
+             340 BINARY_SUBSCR
+             342 LOAD_CONST           (0)
+             344 COMPARE_OP           (>)
+             346 EXTENDED_ARG         (256)
+             348 POP_JUMP_IF_FALSE    (to 362)
+
+ 45:         350 LOAD_FAST            (temp_total)
+             352 LOAD_FAST            (i)
+             354 LOAD_CONST           (13)
+             356 BINARY_SUBSCR
+             358 INPLACE_SUBTRACT
+             360 STORE_FAST           (temp_total)
+
+ 46:     >>  362 LOAD_FAST            (i)
+             364 LOAD_CONST           (15)
+             366 BINARY_SUBSCR
+             368 LOAD_CONST           (0)
+             370 COMPARE_OP           (>)
+             372 EXTENDED_ARG         (256)
+             374 POP_JUMP_IF_FALSE    (to 388)
+
+ 47:         376 LOAD_FAST            (temp_total)
+             378 LOAD_FAST            (i)
+             380 LOAD_CONST           (15)
+             382 BINARY_SUBSCR
+             384 INPLACE_SUBTRACT
+             386 STORE_FAST           (temp_total)
+
+ 48:     >>  388 LOAD_FAST            (i)
+             390 LOAD_CONST           (17)
+             392 BINARY_SUBSCR
+             394 LOAD_CONST           (0)
+             396 COMPARE_OP           (>)
+             398 EXTENDED_ARG         (256)
+             400 POP_JUMP_IF_FALSE    (to 414)
+
+ 49:         402 LOAD_FAST            (temp_total)
+             404 LOAD_FAST            (i)
+             406 LOAD_CONST           (17)
+             408 BINARY_SUBSCR
+             410 INPLACE_SUBTRACT
+             412 STORE_FAST           (temp_total)
+
+ 50:     >>  414 LOAD_FAST            (i)
+             416 LOAD_CONST           (19)
+             418 BINARY_SUBSCR
+             420 LOAD_CONST           (0)
+             422 COMPARE_OP           (>)
+             424 POP_JUMP_IF_FALSE    (to 66)
+
+ 51:         426 LOAD_FAST            (temp_total)
+             428 LOAD_FAST            (i)
+             430 LOAD_CONST           (19)
+             432 BINARY_SUBSCR
+             434 INPLACE_SUBTRACT
+             436 STORE_FAST           (temp_total)
+             438 JUMP_ABSOLUTE        (to 66)
+
+ 52:     >>  440 LOAD_FAST            (temp_total)
+             442 LOAD_FAST            (self)
+             444 STORE_ATTR           (total)
+
+ 53:         446 LOAD_FAST            (self)
+             448 LOAD_ATTR            (ExpCash)
+             450 LOAD_METHOD          (setText)
+             452 LOAD_CONST           ("Expected Cash:      ")
+             454 LOAD_FAST            (self)
+             456 LOAD_ATTR            (total)
+             458 FORMAT_VALUE         0
+             460 BUILD_STRING         2
+             462 CALL_METHOD          (1 positional argument)
+             464 POP_TOP
+             466 LOAD_CONST           (None)
+             468 RETURN_VALUE
+
+
+# Method Name:       DiffCalc
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        4
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        55
+# Constants:
+#    0: None
+#    1: 'Difference:            '
+# Names:
+#    0: Cashinhand
+#    1: value
+#    2: total
+#    3: Diff
+#    4: setText
+# Varnames:
+#	self, val
+# Positional arguments:
+#	self
+# Local variables:
+#    1: val
+ 56:           0 LOAD_FAST            (self)
+               2 LOAD_ATTR            (Cashinhand)
+               4 LOAD_METHOD          (value)
+               6 CALL_METHOD          (0 positional arguments)
+               8 LOAD_FAST            (self)
+              10 LOAD_ATTR            (total)
+              12 BINARY_SUBTRACT
+              14 STORE_FAST           (val)
+
+ 57:          16 LOAD_FAST            (self)
+              18 LOAD_ATTR            (Diff)
+              20 LOAD_METHOD          (setText)
+              22 LOAD_CONST           ("Difference:            ")
+              24 LOAD_FAST            (val)
+              26 FORMAT_VALUE         0
+              28 BUILD_STRING         2
+              30 CALL_METHOD          (1 positional argument)
+              32 POP_TOP
+              34 LOAD_CONST           (None)
+              36 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        10
+# Constants:
+#    0: None
+# Names:
+#    0: DiffCalc
+# Free variables:
+#    0: self
+ 10:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (DiffCalc)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+
+
+# Method Name:       <lambda>
+# Filename:          Common\CCCalcBackend.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000013 (NESTED | NEWLOCALS | OPTIMIZED)
+# First Line:        13
+# Constants:
+#    0: None
+# Names:
+#    0: CashCalc
+# Free variables:
+#    0: self
+ 13:           0 LOAD_DEREF           (self)
+               2 LOAD_METHOD          (CashCalc)
+               4 CALL_METHOD          (0 positional arguments)
+               6 RETURN_VALUE
+

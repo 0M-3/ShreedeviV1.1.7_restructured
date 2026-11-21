@@ -1,0 +1,2558 @@
+# pydisasm version 6.1.7
+# Python bytecode 3.9.0 (3425)
+# Disassembled from Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+# Timestamp in code: 0 (1970-01-01 05:30:00)
+# Source code size mod 2**32: 0 bytes
+# Method Name:       <module>
+# Filename:          Common\createdocx.py
+# Argument count:    0
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  0
+# Stack size:        2
+# Flags:             0x00000040 (NOFREE)
+# First Line:        1
+# Constants:
+#    0: 0
+#    1: ('SectionProxy',)
+#    2: ('Get_Billsday', 'Get_Sale_store', 'Get_opn')
+#    3: ('date', 'timedelta')
+#    4: ('Document',)
+#    5: ('qn',)
+#    6: ('WD_SECTION',)
+#    7: '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num'
+#    8: <Code38 code object set_number_of_columns at 0x16e8593cbb0, file Common\createdocx.py>, line 13
+#    9: 'set_number_of_columns'
+#   10: <Code38 code object del_para at 0x16e8593d7f0, file Common\createdocx.py>, line 17
+#   11: 'del_para'
+#   12: <Code38 code object gen_billtoday at 0x16e8593d9b0, file Common\createdocx.py>, line 22
+#   13: 'gen_billtoday'
+#   14: <Code38 code object gen_sum at 0x16e8593d8d0, file Common\createdocx.py>, line 247
+#   15: 'gen_sum'
+#   16: '__main__'
+#   17: None
+# Names:
+#    0: configparser
+#    1: SectionProxy
+#    2: Common.Backend
+#    3: Get_Billsday
+#    4: Get_Sale_store
+#    5: Get_opn
+#    6: datetime
+#    7: date
+#    8: timedelta
+#    9: docx
+#   10: Document
+#   11: docx.oxml.ns
+#   12: qn
+#   13: docx.enum.section
+#   14: WD_SECTION
+#   15: today
+#   16: dte
+#   17: WNS_COLS_NUM
+#   18: set_number_of_columns
+#   19: del_para
+#   20: gen_billtoday
+#   21: gen_sum
+#   22: __name__
+  1:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('SectionProxy',))
+               4 IMPORT_NAME          (configparser)
+               6 IMPORT_FROM          (SectionProxy)
+               8 STORE_NAME           (SectionProxy)
+              10 POP_TOP
+
+  2:          12 LOAD_CONST           (0)
+              14 LOAD_CONST           (('Get_Billsday', 'Get_Sale_store', 'Get_opn'))
+              16 IMPORT_NAME          (Common.Backend)
+              18 IMPORT_FROM          (Get_Billsday)
+              20 STORE_NAME           (Get_Billsday)
+              22 IMPORT_FROM          (Get_Sale_store)
+              24 STORE_NAME           (Get_Sale_store)
+              26 IMPORT_FROM          (Get_opn)
+              28 STORE_NAME           (Get_opn)
+              30 POP_TOP
+
+  3:          32 LOAD_CONST           (0)
+              34 LOAD_CONST           (('date', 'timedelta'))
+              36 IMPORT_NAME          (datetime)
+              38 IMPORT_FROM          (date)
+              40 STORE_NAME           (date)
+              42 IMPORT_FROM          (timedelta)
+              44 STORE_NAME           (timedelta)
+              46 POP_TOP
+
+  4:          48 LOAD_CONST           (0)
+              50 LOAD_CONST           (('Document',))
+              52 IMPORT_NAME          (docx)
+              54 IMPORT_FROM          (Document)
+              56 STORE_NAME           (Document)
+              58 POP_TOP
+
+  5:          60 LOAD_CONST           (0)
+              62 LOAD_CONST           (('qn',))
+              64 IMPORT_NAME          (docx.oxml.ns)
+              66 IMPORT_FROM          (qn)
+              68 STORE_NAME           (qn)
+              70 POP_TOP
+
+  6:          72 LOAD_CONST           (0)
+              74 LOAD_CONST           (('WD_SECTION',))
+              76 IMPORT_NAME          (docx.enum.section)
+              78 IMPORT_FROM          (WD_SECTION)
+              80 STORE_NAME           (WD_SECTION)
+              82 POP_TOP
+
+  8:          84 LOAD_NAME            (date)
+              86 LOAD_METHOD          (today)
+              88 CALL_METHOD          (0 positional arguments)
+              90 STORE_NAME           (dte)
+
+ 10:          92 LOAD_CONST           ("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num")
+              94 STORE_NAME           (WNS_COLS_NUM)
+
+ 13:          96 LOAD_CONST           (<Code38 code object set_number_of_columns at 0x16e8593cbb0, file Common\createdocx.py>, line 13)
+              98 LOAD_CONST           ("set_number_of_columns")
+             100 MAKE_FUNCTION        (No arguments)
+             102 STORE_NAME           (set_number_of_columns)
+
+ 17:         104 LOAD_CONST           (<Code38 code object del_para at 0x16e8593d7f0, file Common\createdocx.py>, line 17)
+             106 LOAD_CONST           ("del_para")
+             108 MAKE_FUNCTION        (No arguments)
+             110 STORE_NAME           (del_para)
+
+ 22:         112 LOAD_CONST           (<Code38 code object gen_billtoday at 0x16e8593d9b0, file Common\createdocx.py>, line 22)
+             114 LOAD_CONST           ("gen_billtoday")
+             116 MAKE_FUNCTION        (No arguments)
+             118 STORE_NAME           (gen_billtoday)
+
+247:         120 LOAD_CONST           (<Code38 code object gen_sum at 0x16e8593d8d0, file Common\createdocx.py>, line 247)
+             122 LOAD_CONST           ("gen_sum")
+             124 MAKE_FUNCTION        (No arguments)
+             126 STORE_NAME           (gen_sum)
+
+287:         128 LOAD_NAME            (__name__)
+             130 LOAD_CONST           ("__main__")
+             132 COMPARE_OP           (==)
+             134 POP_JUMP_IF_FALSE    (to 144)
+
+289:         136 LOAD_NAME            (gen_sum)
+             138 LOAD_NAME            (dte)
+             140 CALL_FUNCTION        (1 positional argument)
+             142 POP_TOP
+         >>  144 LOAD_CONST           (None)
+             146 RETURN_VALUE
+
+
+# Method Name:       set_number_of_columns
+# Filename:          Common\createdocx.py
+# Argument count:    2
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        5
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        13
+# Constants:
+#    0: ' sets number of columns through xpath. '
+#    1: './w:cols'
+#    2: 0
+#    3: None
+# Names:
+#    0: _sectPr
+#    1: xpath
+#    2: set
+#    3: WNS_COLS_NUM
+#    4: str
+# Varnames:
+#	section, cols
+# Positional arguments:
+#	section, cols
+ 15:           0 LOAD_FAST            (section)
+               2 LOAD_ATTR            (_sectPr)
+               4 LOAD_METHOD          (xpath)
+               6 LOAD_CONST           ("./w:cols")
+               8 CALL_METHOD          (1 positional argument)
+              10 LOAD_CONST           (0)
+              12 BINARY_SUBSCR
+              14 LOAD_METHOD          (set)
+              16 LOAD_GLOBAL          (WNS_COLS_NUM)
+              18 LOAD_GLOBAL          (str)
+              20 LOAD_FAST            (cols)
+              22 CALL_FUNCTION        (1 positional argument)
+              24 CALL_METHOD          (2 positional arguments)
+              26 POP_TOP
+              28 LOAD_CONST           (None)
+              30 RETURN_VALUE
+
+
+# Method Name:       del_para
+# Filename:          Common\createdocx.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  2
+# Stack size:        3
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        17
+# Constants:
+#    0: None
+# Names:
+#    0: _element
+#    1: getparent
+#    2: remove
+#    3: _p
+# Varnames:
+#	para, p
+# Positional arguments:
+#	para
+# Local variables:
+#    1: p
+ 18:           0 LOAD_FAST            (para)
+               2 LOAD_ATTR            (_element)
+               4 STORE_FAST           (p)
+
+ 19:           6 LOAD_FAST            (p)
+               8 LOAD_METHOD          (getparent)
+              10 CALL_METHOD          (0 positional arguments)
+              12 LOAD_METHOD          (remove)
+              14 LOAD_FAST            (p)
+              16 CALL_METHOD          (1 positional argument)
+              18 POP_TOP
+
+ 20:          20 LOAD_CONST           (None)
+              22 DUP_TOP
+              24 LOAD_FAST            (p)
+              26 STORE_ATTR           (_p)
+              28 LOAD_FAST            (p)
+              30 STORE_ATTR           (_element)
+              32 LOAD_CONST           (None)
+              34 RETURN_VALUE
+
+
+# Method Name:       gen_billtoday
+# Filename:          Common\createdocx.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  64
+# Stack size:        10
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        22
+# Constants:
+#    0: None
+#    1: 0
+#    2: ('convert',)
+#    3: 2
+#    4: 'Opening Cash-'
+#    5: ('level',)
+#    6: 'Silver Sale'
+#    7: 1
+#    8: 4
+#    9: ('rows', 'cols')
+#   10: 'TableGrid'
+#   11: 'Amount'
+#   12: 'Item'
+#   13: 'Gr Wt'
+#   14: 'Nt Wt'
+#   15: 3
+#   16: 'Misc/Shree Aaya'
+#   17: 'Type'
+#   18: 'Old Order'
+#   19: 5
+#   20: 'Cust Name'
+#   21: 'Gold Sale'
+#   22: 'Name'
+#   23: 'New Order'
+#   24: 6
+#   25: 'Est Amt'
+#   26: 'Adv'
+#   27: 'VC'
+#   28: 'Silver Purchase'
+#   29: 'Misc/Shree Gaya'
+#   30: 'Bank Entries'
+#   31: 'Expenses'
+#   32: 'Gold Purchase'
+#   33: 'Closing Cash'
+#   34: (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+#   35: (0.0, 0.0, 0.0, 0.0)
+#   36: 10
+#   37: 7
+#   38: 11
+#   39: 'Misc Plus'
+#   40: 'Misc Minus'
+#   41: 'Expense'
+#   42: 19
+#   43: ' (CR)'
+#   44: 13
+#   45: 14
+#   46: 15
+#   47: 16
+#   48: 17
+#   49: 'Chq-'
+#   50: 18
+#   51: ' - '
+#   52: 'Total'
+#   53: ' -  '
+#   54: '.docx'
+#   55: 'pdf\\'
+#   56: 'pdf.pdf'
+#   57: 'doc2pdf not working'
+# Names:
+#    0: docx2pdf
+#    1: convert
+#    2: os
+#    3: Get_Billsday
+#    4: Get_opn
+#    5: print
+#    6: Document
+#    7: add_section
+#    8: WD_SECTION
+#    9: ODD_PAGE
+#   10: set_number_of_columns
+#   11: add_heading
+#   12: add_table
+#   13: style
+#   14: rows
+#   15: cells
+#   16: text
+#   17: NEW_COLUMN
+#   18: add_row
+#   19: str
+#   20: j
+#   21: add_run
+#   22: paragraphs
+#   23: del_para
+#   24: save
+#   25: rmdir
+# Varnames:
+#	today, convert, os, db, opn, billdoc, sec1, opening, SSh, SSp, SSpr, SHPh, SHPp, OOh, OOp, GSh, GSp, NOh, NOp, VCh, VCp, section, SPh, SPp, SHMh, SHMp, BEh, BEp, Exh, Exp, GPh, GPp, CCh, GStotal, SStotal, OOtotal, NOtotal, VCtotal, GPtotal, SPtotal, SHPtotal, SHMtotal, EXtotal, SSntwt, GSntwt, GPntwt, SPntwt, i, GSrow, SSrow, OOrow, NOrow, VCrow, GProw, SProw, SHProw, SHMrow, Exprow, BEprow, GSlastline, SSlastline, GPlastline, SPlastline, para1
+# Positional arguments:
+#	today
+# Local variables:
+#    1: convert
+#    2: os
+#    3: db
+#    4: opn
+#    5: billdoc
+#    6: sec1
+#    7: opening
+#    8: SSh
+#    9: SSp
+#   10: SSpr
+#   11: SHPh
+#   12: SHPp
+#   13: OOh
+#   14: OOp
+#   15: GSh
+#   16: GSp
+#   17: NOh
+#   18: NOp
+#   19: VCh
+#   20: VCp
+#   21: section
+#   22: SPh
+#   23: SPp
+#   24: SHMh
+#   25: SHMp
+#   26: BEh
+#   27: BEp
+#   28: Exh
+#   29: Exp
+#   30: GPh
+#   31: GPp
+#   32: CCh
+#   33: GStotal
+#   34: SStotal
+#   35: OOtotal
+#   36: NOtotal
+#   37: VCtotal
+#   38: GPtotal
+#   39: SPtotal
+#   40: SHPtotal
+#   41: SHMtotal
+#   42: EXtotal
+#   43: SSntwt
+#   44: GSntwt
+#   45: GPntwt
+#   46: SPntwt
+#   47: i
+#   48: GSrow
+#   49: SSrow
+#   50: OOrow
+#   51: NOrow
+#   52: VCrow
+#   53: GProw
+#   54: SProw
+#   55: SHProw
+#   56: SHMrow
+#   57: Exprow
+#   58: BEprow
+#   59: GSlastline
+#   60: SSlastline
+#   61: GPlastline
+#   62: SPlastline
+#   63: para1
+ 23:           0 LOAD_CONST           (0)
+               2 LOAD_CONST           (('convert',))
+               4 IMPORT_NAME          (docx2pdf)
+               6 IMPORT_FROM          (convert)
+               8 STORE_FAST           (convert)
+              10 POP_TOP
+
+ 24:          12 LOAD_CONST           (0)
+              14 LOAD_CONST           (None)
+              16 IMPORT_NAME          (os)
+              18 STORE_FAST           (os)
+
+ 25:          20 LOAD_GLOBAL          (Get_Billsday)
+              22 LOAD_FAST            (today)
+              24 CALL_FUNCTION        (1 positional argument)
+              26 STORE_FAST           (db)
+
+ 26:          28 LOAD_GLOBAL          (Get_opn)
+              30 LOAD_FAST            (today)
+              32 CALL_FUNCTION        (1 positional argument)
+              34 STORE_FAST           (opn)
+
+ 27:          36 LOAD_GLOBAL          (print)
+              38 LOAD_FAST            (db)
+              40 CALL_FUNCTION        (1 positional argument)
+              42 POP_TOP
+
+ 28:          44 LOAD_GLOBAL          (Document)
+              46 CALL_FUNCTION        (0 positional arguments)
+              48 STORE_FAST           (billdoc)
+
+ 29:          50 LOAD_FAST            (billdoc)
+              52 LOAD_METHOD          (add_section)
+              54 LOAD_GLOBAL          (WD_SECTION)
+              56 LOAD_ATTR            (ODD_PAGE)
+              58 CALL_METHOD          (1 positional argument)
+              60 STORE_FAST           (sec1)
+
+ 30:          62 LOAD_GLOBAL          (set_number_of_columns)
+              64 LOAD_FAST            (sec1)
+              66 LOAD_CONST           (2)
+              68 CALL_FUNCTION        (2 positional arguments)
+              70 POP_TOP
+
+ 31:          72 LOAD_FAST            (billdoc)
+              74 LOAD_ATTR            (add_heading)
+              76 LOAD_CONST           ("Opening Cash-")
+              78 LOAD_FAST            (opn)
+              80 FORMAT_VALUE         0
+              82 BUILD_STRING         2
+              84 LOAD_CONST           (2)
+              86 LOAD_CONST           (('level',))
+              88 CALL_FUNCTION_KW     (2 total positional and keyword args)
+              90 STORE_FAST           (opening)
+
+ 32:          92 LOAD_FAST            (billdoc)
+              94 LOAD_ATTR            (add_heading)
+              96 LOAD_CONST           ("Silver Sale")
+              98 LOAD_CONST           (2)
+             100 LOAD_CONST           (('level',))
+             102 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             104 STORE_FAST           (SSh)
+
+ 33:         106 LOAD_FAST            (billdoc)
+             108 LOAD_ATTR            (add_table)
+             110 LOAD_CONST           (1)
+             112 LOAD_CONST           (4)
+             114 LOAD_CONST           (('rows', 'cols'))
+             116 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             118 STORE_FAST           (SSp)
+
+ 34:         120 LOAD_CONST           ("TableGrid")
+             122 LOAD_FAST            (SSp)
+             124 STORE_ATTR           (style)
+
+ 35:         126 LOAD_FAST            (SSp)
+             128 LOAD_ATTR            (rows)
+             130 LOAD_CONST           (0)
+             132 BINARY_SUBSCR
+             134 LOAD_ATTR            (cells)
+             136 STORE_FAST           (SSpr)
+
+ 36:         138 LOAD_CONST           ("Amount")
+             140 LOAD_FAST            (SSpr)
+             142 LOAD_CONST           (0)
+             144 BINARY_SUBSCR
+             146 STORE_ATTR           (text)
+
+ 37:         148 LOAD_CONST           ("Item")
+             150 LOAD_FAST            (SSpr)
+             152 LOAD_CONST           (1)
+             154 BINARY_SUBSCR
+             156 STORE_ATTR           (text)
+
+ 38:         158 LOAD_CONST           ("Gr Wt")
+             160 LOAD_FAST            (SSpr)
+             162 LOAD_CONST           (2)
+             164 BINARY_SUBSCR
+             166 STORE_ATTR           (text)
+
+ 39:         168 LOAD_CONST           ("Nt Wt")
+             170 LOAD_FAST            (SSpr)
+             172 LOAD_CONST           (3)
+             174 BINARY_SUBSCR
+             176 STORE_ATTR           (text)
+
+ 40:         178 LOAD_FAST            (billdoc)
+             180 LOAD_ATTR            (add_heading)
+             182 LOAD_CONST           ("Misc/Shree Aaya")
+             184 LOAD_CONST           (2)
+             186 LOAD_CONST           (('level',))
+             188 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             190 STORE_FAST           (SHPh)
+
+ 41:         192 LOAD_FAST            (billdoc)
+             194 LOAD_ATTR            (add_table)
+             196 LOAD_CONST           (1)
+             198 LOAD_CONST           (2)
+             200 LOAD_CONST           (('rows', 'cols'))
+             202 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             204 STORE_FAST           (SHPp)
+
+ 42:         206 LOAD_CONST           ("TableGrid")
+             208 LOAD_FAST            (SHPp)
+             210 STORE_ATTR           (style)
+
+ 43:         212 LOAD_CONST           ("Amount")
+             214 LOAD_FAST            (SHPp)
+             216 LOAD_ATTR            (rows)
+             218 LOAD_CONST           (0)
+             220 BINARY_SUBSCR
+             222 LOAD_ATTR            (cells)
+             224 LOAD_CONST           (0)
+             226 BINARY_SUBSCR
+             228 STORE_ATTR           (text)
+
+ 44:         230 LOAD_CONST           ("Type")
+             232 LOAD_FAST            (SHPp)
+             234 LOAD_ATTR            (rows)
+             236 LOAD_CONST           (0)
+             238 BINARY_SUBSCR
+             240 LOAD_ATTR            (cells)
+             242 LOAD_CONST           (1)
+             244 BINARY_SUBSCR
+             246 STORE_ATTR           (text)
+
+ 45:         248 LOAD_FAST            (billdoc)
+             250 LOAD_ATTR            (add_heading)
+             252 LOAD_CONST           ("Old Order")
+             254 LOAD_CONST           (2)
+             256 LOAD_CONST           (('level',))
+             258 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             260 STORE_FAST           (OOh)
+
+ 46:         262 LOAD_FAST            (billdoc)
+             264 LOAD_ATTR            (add_table)
+             266 LOAD_CONST           (1)
+             268 LOAD_CONST           (5)
+             270 LOAD_CONST           (('rows', 'cols'))
+             272 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             274 STORE_FAST           (OOp)
+
+ 47:         276 LOAD_CONST           ("TableGrid")
+             278 LOAD_FAST            (OOp)
+             280 STORE_ATTR           (style)
+
+ 48:         282 LOAD_CONST           ("Amount")
+             284 LOAD_FAST            (OOp)
+             286 LOAD_ATTR            (rows)
+             288 LOAD_CONST           (0)
+             290 BINARY_SUBSCR
+             292 LOAD_ATTR            (cells)
+             294 LOAD_CONST           (0)
+             296 BINARY_SUBSCR
+             298 STORE_ATTR           (text)
+
+ 49:         300 LOAD_CONST           ("Cust Name")
+             302 LOAD_FAST            (OOp)
+             304 LOAD_ATTR            (rows)
+             306 LOAD_CONST           (0)
+             308 BINARY_SUBSCR
+             310 LOAD_ATTR            (cells)
+             312 LOAD_CONST           (1)
+             314 BINARY_SUBSCR
+             316 STORE_ATTR           (text)
+
+ 50:         318 LOAD_CONST           ("Item")
+             320 LOAD_FAST            (OOp)
+             322 LOAD_ATTR            (rows)
+             324 LOAD_CONST           (0)
+             326 BINARY_SUBSCR
+             328 LOAD_ATTR            (cells)
+             330 LOAD_CONST           (2)
+             332 BINARY_SUBSCR
+             334 STORE_ATTR           (text)
+
+ 51:         336 LOAD_CONST           ("Gr Wt")
+             338 LOAD_FAST            (OOp)
+             340 LOAD_ATTR            (rows)
+             342 LOAD_CONST           (0)
+             344 BINARY_SUBSCR
+             346 LOAD_ATTR            (cells)
+             348 LOAD_CONST           (3)
+             350 BINARY_SUBSCR
+             352 STORE_ATTR           (text)
+
+ 52:         354 LOAD_CONST           ("Nt Wt")
+             356 LOAD_FAST            (OOp)
+             358 LOAD_ATTR            (rows)
+             360 LOAD_CONST           (0)
+             362 BINARY_SUBSCR
+             364 LOAD_ATTR            (cells)
+             366 LOAD_CONST           (4)
+             368 BINARY_SUBSCR
+             370 STORE_ATTR           (text)
+
+ 53:         372 LOAD_FAST            (billdoc)
+             374 LOAD_ATTR            (add_heading)
+             376 LOAD_CONST           ("Gold Sale")
+             378 LOAD_CONST           (2)
+             380 LOAD_CONST           (('level',))
+             382 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             384 STORE_FAST           (GSh)
+
+ 54:         386 LOAD_FAST            (billdoc)
+             388 LOAD_ATTR            (add_table)
+             390 LOAD_CONST           (1)
+             392 LOAD_CONST           (5)
+             394 LOAD_CONST           (('rows', 'cols'))
+             396 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             398 STORE_FAST           (GSp)
+
+ 55:         400 LOAD_CONST           ("TableGrid")
+             402 LOAD_FAST            (GSp)
+             404 STORE_ATTR           (style)
+
+ 56:         406 LOAD_CONST           ("Item")
+             408 LOAD_FAST            (GSp)
+             410 LOAD_ATTR            (rows)
+             412 LOAD_CONST           (0)
+             414 BINARY_SUBSCR
+             416 LOAD_ATTR            (cells)
+             418 LOAD_CONST           (0)
+             420 BINARY_SUBSCR
+             422 STORE_ATTR           (text)
+
+ 57:         424 LOAD_CONST           ("Gr Wt")
+             426 LOAD_FAST            (GSp)
+             428 LOAD_ATTR            (rows)
+             430 LOAD_CONST           (0)
+             432 BINARY_SUBSCR
+             434 LOAD_ATTR            (cells)
+             436 LOAD_CONST           (1)
+             438 BINARY_SUBSCR
+             440 STORE_ATTR           (text)
+
+ 58:         442 LOAD_CONST           ("Nt Wt")
+             444 LOAD_FAST            (GSp)
+             446 LOAD_ATTR            (rows)
+             448 LOAD_CONST           (0)
+             450 BINARY_SUBSCR
+             452 LOAD_ATTR            (cells)
+             454 LOAD_CONST           (2)
+             456 BINARY_SUBSCR
+             458 STORE_ATTR           (text)
+
+ 59:         460 LOAD_CONST           ("Name")
+             462 LOAD_FAST            (GSp)
+             464 LOAD_ATTR            (rows)
+             466 LOAD_CONST           (0)
+             468 BINARY_SUBSCR
+             470 LOAD_ATTR            (cells)
+             472 LOAD_CONST           (3)
+             474 BINARY_SUBSCR
+             476 STORE_ATTR           (text)
+
+ 60:         478 LOAD_CONST           ("Amount")
+             480 LOAD_FAST            (GSp)
+             482 LOAD_ATTR            (rows)
+             484 LOAD_CONST           (0)
+             486 BINARY_SUBSCR
+             488 LOAD_ATTR            (cells)
+             490 LOAD_CONST           (4)
+             492 BINARY_SUBSCR
+             494 STORE_ATTR           (text)
+
+ 61:         496 LOAD_FAST            (billdoc)
+             498 LOAD_ATTR            (add_heading)
+             500 LOAD_CONST           ("New Order")
+             502 LOAD_CONST           (2)
+             504 LOAD_CONST           (('level',))
+             506 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             508 STORE_FAST           (NOh)
+
+ 62:         510 LOAD_FAST            (billdoc)
+             512 LOAD_ATTR            (add_table)
+             514 LOAD_CONST           (1)
+             516 LOAD_CONST           (6)
+             518 LOAD_CONST           (('rows', 'cols'))
+             520 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             522 STORE_FAST           (NOp)
+
+ 63:         524 LOAD_CONST           ("TableGrid")
+             526 LOAD_FAST            (NOp)
+             528 STORE_ATTR           (style)
+
+ 64:         530 LOAD_CONST           ("Est Amt")
+             532 LOAD_FAST            (NOp)
+             534 LOAD_ATTR            (rows)
+             536 LOAD_CONST           (0)
+             538 BINARY_SUBSCR
+             540 LOAD_ATTR            (cells)
+             542 LOAD_CONST           (0)
+             544 BINARY_SUBSCR
+             546 STORE_ATTR           (text)
+
+ 65:         548 LOAD_CONST           ("Adv")
+             550 LOAD_FAST            (NOp)
+             552 LOAD_ATTR            (rows)
+             554 LOAD_CONST           (0)
+             556 BINARY_SUBSCR
+             558 LOAD_ATTR            (cells)
+             560 LOAD_CONST           (1)
+             562 BINARY_SUBSCR
+             564 STORE_ATTR           (text)
+
+ 66:         566 LOAD_CONST           ("Name")
+             568 LOAD_FAST            (NOp)
+             570 LOAD_ATTR            (rows)
+             572 LOAD_CONST           (0)
+             574 BINARY_SUBSCR
+             576 LOAD_ATTR            (cells)
+             578 LOAD_CONST           (2)
+             580 BINARY_SUBSCR
+             582 STORE_ATTR           (text)
+
+ 67:         584 LOAD_CONST           ("Item")
+             586 LOAD_FAST            (NOp)
+             588 LOAD_ATTR            (rows)
+             590 LOAD_CONST           (0)
+             592 BINARY_SUBSCR
+             594 LOAD_ATTR            (cells)
+             596 LOAD_CONST           (3)
+             598 BINARY_SUBSCR
+             600 STORE_ATTR           (text)
+
+ 68:         602 LOAD_CONST           ("Gr Wt")
+             604 LOAD_FAST            (NOp)
+             606 LOAD_ATTR            (rows)
+             608 LOAD_CONST           (0)
+             610 BINARY_SUBSCR
+             612 LOAD_ATTR            (cells)
+             614 LOAD_CONST           (4)
+             616 BINARY_SUBSCR
+             618 STORE_ATTR           (text)
+
+ 69:         620 LOAD_CONST           ("Nt Wt")
+             622 LOAD_FAST            (NOp)
+             624 LOAD_ATTR            (rows)
+             626 LOAD_CONST           (0)
+             628 BINARY_SUBSCR
+             630 LOAD_ATTR            (cells)
+             632 LOAD_CONST           (5)
+             634 BINARY_SUBSCR
+             636 STORE_ATTR           (text)
+
+ 70:         638 LOAD_FAST            (billdoc)
+             640 LOAD_ATTR            (add_heading)
+             642 LOAD_CONST           ("VC")
+             644 LOAD_CONST           (2)
+             646 LOAD_CONST           (('level',))
+             648 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             650 STORE_FAST           (VCh)
+
+ 71:         652 LOAD_FAST            (billdoc)
+             654 LOAD_ATTR            (add_table)
+             656 LOAD_CONST           (1)
+             658 LOAD_CONST           (5)
+             660 LOAD_CONST           (('rows', 'cols'))
+             662 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             664 STORE_FAST           (VCp)
+
+ 72:         666 LOAD_CONST           ("TableGrid")
+             668 LOAD_FAST            (VCp)
+             670 STORE_ATTR           (style)
+
+ 73:         672 LOAD_CONST           ("Amount")
+             674 LOAD_FAST            (VCp)
+             676 LOAD_ATTR            (rows)
+             678 LOAD_CONST           (0)
+             680 BINARY_SUBSCR
+             682 LOAD_ATTR            (cells)
+             684 LOAD_CONST           (0)
+             686 BINARY_SUBSCR
+             688 STORE_ATTR           (text)
+
+ 74:         690 LOAD_CONST           ("Name")
+             692 LOAD_FAST            (VCp)
+             694 LOAD_ATTR            (rows)
+             696 LOAD_CONST           (0)
+             698 BINARY_SUBSCR
+             700 LOAD_ATTR            (cells)
+             702 LOAD_CONST           (1)
+             704 BINARY_SUBSCR
+             706 STORE_ATTR           (text)
+
+ 75:         708 LOAD_CONST           ("Item")
+             710 LOAD_FAST            (VCp)
+             712 LOAD_ATTR            (rows)
+             714 LOAD_CONST           (0)
+             716 BINARY_SUBSCR
+             718 LOAD_ATTR            (cells)
+             720 LOAD_CONST           (2)
+             722 BINARY_SUBSCR
+             724 STORE_ATTR           (text)
+
+ 76:         726 LOAD_CONST           ("Gr Wt")
+             728 LOAD_FAST            (VCp)
+             730 LOAD_ATTR            (rows)
+             732 LOAD_CONST           (0)
+             734 BINARY_SUBSCR
+             736 LOAD_ATTR            (cells)
+             738 LOAD_CONST           (3)
+             740 BINARY_SUBSCR
+             742 STORE_ATTR           (text)
+
+ 77:         744 LOAD_CONST           ("Nt Wt")
+             746 LOAD_FAST            (VCp)
+             748 LOAD_ATTR            (rows)
+             750 LOAD_CONST           (0)
+             752 BINARY_SUBSCR
+             754 LOAD_ATTR            (cells)
+             756 LOAD_CONST           (4)
+             758 BINARY_SUBSCR
+             760 STORE_ATTR           (text)
+
+ 78:         762 LOAD_FAST            (billdoc)
+             764 LOAD_METHOD          (add_section)
+             766 LOAD_GLOBAL          (WD_SECTION)
+             768 LOAD_ATTR            (NEW_COLUMN)
+             770 CALL_METHOD          (1 positional argument)
+             772 STORE_FAST           (section)
+
+ 79:         774 LOAD_FAST            (billdoc)
+             776 LOAD_ATTR            (add_heading)
+             778 LOAD_CONST           ("Silver Purchase")
+             780 LOAD_CONST           (2)
+             782 LOAD_CONST           (('level',))
+             784 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             786 STORE_FAST           (SPh)
+
+ 80:         788 LOAD_FAST            (billdoc)
+             790 LOAD_ATTR            (add_table)
+             792 LOAD_CONST           (1)
+             794 LOAD_CONST           (4)
+             796 LOAD_CONST           (('rows', 'cols'))
+             798 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             800 STORE_FAST           (SPp)
+
+ 81:         802 LOAD_CONST           ("TableGrid")
+             804 LOAD_FAST            (SPp)
+             806 STORE_ATTR           (style)
+
+ 82:         808 LOAD_CONST           ("Amount")
+             810 LOAD_FAST            (SPp)
+             812 LOAD_ATTR            (rows)
+             814 LOAD_CONST           (0)
+             816 BINARY_SUBSCR
+             818 LOAD_ATTR            (cells)
+             820 LOAD_CONST           (0)
+             822 BINARY_SUBSCR
+             824 STORE_ATTR           (text)
+
+ 83:         826 LOAD_CONST           ("Item")
+             828 LOAD_FAST            (SPp)
+             830 LOAD_ATTR            (rows)
+             832 LOAD_CONST           (0)
+             834 BINARY_SUBSCR
+             836 LOAD_ATTR            (cells)
+             838 LOAD_CONST           (1)
+             840 BINARY_SUBSCR
+             842 STORE_ATTR           (text)
+
+ 84:         844 LOAD_CONST           ("Gr Wt")
+             846 LOAD_FAST            (SPp)
+             848 LOAD_ATTR            (rows)
+             850 LOAD_CONST           (0)
+             852 BINARY_SUBSCR
+             854 LOAD_ATTR            (cells)
+             856 LOAD_CONST           (2)
+             858 BINARY_SUBSCR
+             860 STORE_ATTR           (text)
+
+ 85:         862 LOAD_CONST           ("Nt Wt")
+             864 LOAD_FAST            (SPp)
+             866 LOAD_ATTR            (rows)
+             868 LOAD_CONST           (0)
+             870 BINARY_SUBSCR
+             872 LOAD_ATTR            (cells)
+             874 LOAD_CONST           (3)
+             876 BINARY_SUBSCR
+             878 STORE_ATTR           (text)
+
+ 86:         880 LOAD_FAST            (billdoc)
+             882 LOAD_ATTR            (add_heading)
+             884 LOAD_CONST           ("Misc/Shree Gaya")
+             886 LOAD_CONST           (2)
+             888 LOAD_CONST           (('level',))
+             890 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             892 STORE_FAST           (SHMh)
+
+ 87:         894 LOAD_FAST            (billdoc)
+             896 LOAD_ATTR            (add_table)
+             898 LOAD_CONST           (1)
+             900 LOAD_CONST           (2)
+             902 LOAD_CONST           (('rows', 'cols'))
+             904 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             906 STORE_FAST           (SHMp)
+
+ 88:         908 LOAD_CONST           ("TableGrid")
+             910 LOAD_FAST            (SHMp)
+             912 STORE_ATTR           (style)
+
+ 89:         914 LOAD_CONST           ("Amount")
+             916 LOAD_FAST            (SHMp)
+             918 LOAD_ATTR            (rows)
+             920 LOAD_CONST           (0)
+             922 BINARY_SUBSCR
+             924 LOAD_ATTR            (cells)
+             926 LOAD_CONST           (0)
+             928 BINARY_SUBSCR
+             930 STORE_ATTR           (text)
+
+ 90:         932 LOAD_CONST           ("Type")
+             934 LOAD_FAST            (SHMp)
+             936 LOAD_ATTR            (rows)
+             938 LOAD_CONST           (0)
+             940 BINARY_SUBSCR
+             942 LOAD_ATTR            (cells)
+             944 LOAD_CONST           (1)
+             946 BINARY_SUBSCR
+             948 STORE_ATTR           (text)
+
+ 91:         950 LOAD_FAST            (billdoc)
+             952 LOAD_ATTR            (add_heading)
+             954 LOAD_CONST           ("Bank Entries")
+             956 LOAD_CONST           (2)
+             958 LOAD_CONST           (('level',))
+             960 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             962 STORE_FAST           (BEh)
+
+ 92:         964 LOAD_FAST            (billdoc)
+             966 LOAD_ATTR            (add_table)
+             968 LOAD_CONST           (1)
+             970 LOAD_CONST           (3)
+             972 LOAD_CONST           (('rows', 'cols'))
+             974 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             976 STORE_FAST           (BEp)
+
+ 93:         978 LOAD_CONST           ("TableGrid")
+             980 LOAD_FAST            (BEp)
+             982 STORE_ATTR           (style)
+
+ 94:         984 LOAD_CONST           ("Amount")
+             986 LOAD_FAST            (BEp)
+             988 LOAD_ATTR            (rows)
+             990 LOAD_CONST           (0)
+             992 BINARY_SUBSCR
+             994 LOAD_ATTR            (cells)
+             996 LOAD_CONST           (0)
+             998 BINARY_SUBSCR
+            1000 STORE_ATTR           (text)
+
+ 95:        1002 LOAD_CONST           ("Type")
+            1004 LOAD_FAST            (BEp)
+            1006 LOAD_ATTR            (rows)
+            1008 LOAD_CONST           (0)
+            1010 BINARY_SUBSCR
+            1012 LOAD_ATTR            (cells)
+            1014 LOAD_CONST           (1)
+            1016 BINARY_SUBSCR
+            1018 STORE_ATTR           (text)
+
+ 96:        1020 LOAD_CONST           ("Name")
+            1022 LOAD_FAST            (BEp)
+            1024 LOAD_ATTR            (rows)
+            1026 LOAD_CONST           (0)
+            1028 BINARY_SUBSCR
+            1030 LOAD_ATTR            (cells)
+            1032 LOAD_CONST           (2)
+            1034 BINARY_SUBSCR
+            1036 STORE_ATTR           (text)
+
+ 97:        1038 LOAD_FAST            (billdoc)
+            1040 LOAD_ATTR            (add_heading)
+            1042 LOAD_CONST           ("Expenses")
+            1044 LOAD_CONST           (2)
+            1046 LOAD_CONST           (('level',))
+            1048 CALL_FUNCTION_KW     (2 total positional and keyword args)
+            1050 STORE_FAST           (Exh)
+
+ 98:        1052 LOAD_FAST            (billdoc)
+            1054 LOAD_ATTR            (add_table)
+            1056 LOAD_CONST           (1)
+            1058 LOAD_CONST           (2)
+            1060 LOAD_CONST           (('rows', 'cols'))
+            1062 CALL_FUNCTION_KW     (2 total positional and keyword args)
+            1064 STORE_FAST           (Exp)
+
+ 99:        1066 LOAD_CONST           ("TableGrid")
+            1068 LOAD_FAST            (Exp)
+            1070 STORE_ATTR           (style)
+
+100:        1072 LOAD_CONST           ("Amount")
+            1074 LOAD_FAST            (Exp)
+            1076 LOAD_ATTR            (rows)
+            1078 LOAD_CONST           (0)
+            1080 BINARY_SUBSCR
+            1082 LOAD_ATTR            (cells)
+            1084 LOAD_CONST           (0)
+            1086 BINARY_SUBSCR
+            1088 STORE_ATTR           (text)
+
+101:        1090 LOAD_CONST           ("Type")
+            1092 LOAD_FAST            (Exp)
+            1094 LOAD_ATTR            (rows)
+            1096 LOAD_CONST           (0)
+            1098 BINARY_SUBSCR
+            1100 LOAD_ATTR            (cells)
+            1102 LOAD_CONST           (1)
+            1104 BINARY_SUBSCR
+            1106 STORE_ATTR           (text)
+
+102:        1108 LOAD_FAST            (billdoc)
+            1110 LOAD_ATTR            (add_heading)
+            1112 LOAD_CONST           ("Gold Purchase")
+            1114 LOAD_CONST           (2)
+            1116 LOAD_CONST           (('level',))
+            1118 CALL_FUNCTION_KW     (2 total positional and keyword args)
+            1120 STORE_FAST           (GPh)
+
+103:        1122 LOAD_FAST            (billdoc)
+            1124 LOAD_ATTR            (add_table)
+            1126 LOAD_CONST           (1)
+            1128 LOAD_CONST           (5)
+            1130 LOAD_CONST           (('rows', 'cols'))
+            1132 CALL_FUNCTION_KW     (2 total positional and keyword args)
+            1134 STORE_FAST           (GPp)
+
+104:        1136 LOAD_CONST           ("TableGrid")
+            1138 LOAD_FAST            (GPp)
+            1140 STORE_ATTR           (style)
+
+105:        1142 LOAD_CONST           ("Item")
+            1144 LOAD_FAST            (GPp)
+            1146 LOAD_ATTR            (rows)
+            1148 LOAD_CONST           (0)
+            1150 BINARY_SUBSCR
+            1152 LOAD_ATTR            (cells)
+            1154 LOAD_CONST           (0)
+            1156 BINARY_SUBSCR
+            1158 STORE_ATTR           (text)
+
+106:        1160 LOAD_CONST           ("Gr Wt")
+            1162 LOAD_FAST            (GPp)
+            1164 LOAD_ATTR            (rows)
+            1166 LOAD_CONST           (0)
+            1168 BINARY_SUBSCR
+            1170 LOAD_ATTR            (cells)
+            1172 LOAD_CONST           (1)
+            1174 BINARY_SUBSCR
+            1176 STORE_ATTR           (text)
+
+107:        1178 LOAD_CONST           ("Nt Wt")
+            1180 LOAD_FAST            (GPp)
+            1182 LOAD_ATTR            (rows)
+            1184 LOAD_CONST           (0)
+            1186 BINARY_SUBSCR
+            1188 LOAD_ATTR            (cells)
+            1190 LOAD_CONST           (2)
+            1192 BINARY_SUBSCR
+            1194 STORE_ATTR           (text)
+
+108:        1196 LOAD_CONST           ("Name")
+            1198 LOAD_FAST            (GPp)
+            1200 LOAD_ATTR            (rows)
+            1202 LOAD_CONST           (0)
+            1204 BINARY_SUBSCR
+            1206 LOAD_ATTR            (cells)
+            1208 LOAD_CONST           (3)
+            1210 BINARY_SUBSCR
+            1212 STORE_ATTR           (text)
+
+109:        1214 LOAD_CONST           ("Amount")
+            1216 LOAD_FAST            (GPp)
+            1218 LOAD_ATTR            (rows)
+            1220 LOAD_CONST           (0)
+            1222 BINARY_SUBSCR
+            1224 LOAD_ATTR            (cells)
+            1226 LOAD_CONST           (4)
+            1228 BINARY_SUBSCR
+            1230 STORE_ATTR           (text)
+
+110:        1232 LOAD_FAST            (billdoc)
+            1234 LOAD_ATTR            (add_heading)
+            1236 LOAD_CONST           ("Closing Cash")
+            1238 LOAD_CONST           (2)
+            1240 LOAD_CONST           (('level',))
+            1242 CALL_FUNCTION_KW     (2 total positional and keyword args)
+            1244 STORE_FAST           (CCh)
+
+111:        1246 LOAD_CONST           ((0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+            1248 UNPACK_SEQUENCE      10
+            1250 STORE_FAST           (GStotal)
+            1252 STORE_FAST           (SStotal)
+            1254 STORE_FAST           (OOtotal)
+            1256 STORE_FAST           (NOtotal)
+            1258 STORE_FAST           (VCtotal)
+            1260 STORE_FAST           (GPtotal)
+            1262 STORE_FAST           (SPtotal)
+            1264 STORE_FAST           (SHPtotal)
+            1266 STORE_FAST           (SHMtotal)
+            1268 STORE_FAST           (EXtotal)
+
+112:        1270 LOAD_CONST           ((0.0, 0.0, 0.0, 0.0))
+            1272 UNPACK_SEQUENCE      4
+            1274 STORE_FAST           (SSntwt)
+            1276 STORE_FAST           (GSntwt)
+            1278 STORE_FAST           (GPntwt)
+            1280 STORE_FAST           (SPntwt)
+
+113:        1282 LOAD_FAST            (db)
+            1284 GET_ITER
+         >> 1286 EXTENDED_ARG         (1280)
+            1288 FOR_ITER             (to 2774)
+            1290 STORE_FAST           (i)
+
+114:        1292 LOAD_GLOBAL          (print)
+            1294 LOAD_FAST            (i)
+            1296 CALL_FUNCTION        (1 positional argument)
+            1298 POP_TOP
+
+115:        1300 LOAD_FAST            (i)
+            1302 LOAD_CONST           (10)
+            1304 BINARY_SUBSCR
+            1306 LOAD_CONST           ("Gold Sale")
+            1308 COMPARE_OP           (==)
+            1310 EXTENDED_ARG         (1280)
+            1312 POP_JUMP_IF_FALSE    (to 1442)
+
+116:        1314 LOAD_FAST            (GSp)
+            1316 LOAD_METHOD          (add_row)
+            1318 CALL_METHOD          (0 positional arguments)
+            1320 LOAD_ATTR            (cells)
+            1322 STORE_FAST           (GSrow)
+
+117:        1324 LOAD_GLOBAL          (str)
+            1326 LOAD_FAST            (i)
+            1328 LOAD_CONST           (3)
+            1330 BINARY_SUBSCR
+            1332 CALL_FUNCTION        (1 positional argument)
+            1334 LOAD_FAST            (GSrow)
+            1336 LOAD_CONST           (0)
+            1338 BINARY_SUBSCR
+            1340 STORE_ATTR           (text)
+
+118:        1342 LOAD_GLOBAL          (str)
+            1344 LOAD_FAST            (i)
+            1346 LOAD_CONST           (6)
+            1348 BINARY_SUBSCR
+            1350 CALL_FUNCTION        (1 positional argument)
+            1352 LOAD_FAST            (GSrow)
+            1354 LOAD_CONST           (1)
+            1356 BINARY_SUBSCR
+            1358 STORE_ATTR           (text)
+
+119:        1360 LOAD_GLOBAL          (str)
+            1362 LOAD_FAST            (i)
+            1364 LOAD_CONST           (7)
+            1366 BINARY_SUBSCR
+            1368 CALL_FUNCTION        (1 positional argument)
+            1370 LOAD_FAST            (GSrow)
+            1372 LOAD_CONST           (2)
+            1374 BINARY_SUBSCR
+            1376 STORE_ATTR           (text)
+
+120:        1378 LOAD_GLOBAL          (str)
+            1380 LOAD_FAST            (i)
+            1382 LOAD_CONST           (0)
+            1384 BINARY_SUBSCR
+            1386 CALL_FUNCTION        (1 positional argument)
+            1388 LOAD_FAST            (GSrow)
+            1390 LOAD_CONST           (3)
+            1392 BINARY_SUBSCR
+            1394 STORE_ATTR           (text)
+
+121:        1396 LOAD_GLOBAL          (str)
+            1398 LOAD_FAST            (i)
+            1400 LOAD_CONST           (11)
+            1402 BINARY_SUBSCR
+            1404 CALL_FUNCTION        (1 positional argument)
+            1406 LOAD_FAST            (GSrow)
+            1408 LOAD_CONST           (4)
+            1410 BINARY_SUBSCR
+            1412 STORE_ATTR           (text)
+
+122:        1414 LOAD_FAST            (GStotal)
+            1416 LOAD_FAST            (i)
+            1418 LOAD_CONST           (11)
+            1420 BINARY_SUBSCR
+            1422 INPLACE_ADD
+            1424 STORE_FAST           (GStotal)
+
+123:        1426 LOAD_FAST            (GSntwt)
+            1428 LOAD_FAST            (i)
+            1430 LOAD_CONST           (7)
+            1432 BINARY_SUBSCR
+            1434 INPLACE_ADD
+            1436 STORE_FAST           (GSntwt)
+            1438 EXTENDED_ARG         (768)
+            1440 JUMP_FORWARD         (to 2458)
+
+124:     >> 1442 LOAD_FAST            (i)
+            1444 LOAD_CONST           (10)
+            1446 BINARY_SUBSCR
+            1448 LOAD_CONST           ("Silver Sale")
+            1450 COMPARE_OP           (==)
+            1452 EXTENDED_ARG         (1536)
+            1454 POP_JUMP_IF_FALSE    (to 1566)
+
+125:        1456 LOAD_FAST            (SSp)
+            1458 LOAD_METHOD          (add_row)
+            1460 CALL_METHOD          (0 positional arguments)
+            1462 LOAD_ATTR            (cells)
+            1464 STORE_FAST           (SSrow)
+
+126:        1466 LOAD_GLOBAL          (str)
+            1468 LOAD_FAST            (i)
+            1470 LOAD_CONST           (11)
+            1472 BINARY_SUBSCR
+            1474 CALL_FUNCTION        (1 positional argument)
+            1476 LOAD_FAST            (SSrow)
+            1478 LOAD_CONST           (0)
+            1480 BINARY_SUBSCR
+            1482 STORE_ATTR           (text)
+
+127:        1484 LOAD_GLOBAL          (str)
+            1486 LOAD_FAST            (i)
+            1488 LOAD_CONST           (3)
+            1490 BINARY_SUBSCR
+            1492 CALL_FUNCTION        (1 positional argument)
+            1494 LOAD_FAST            (SSrow)
+            1496 LOAD_CONST           (1)
+            1498 BINARY_SUBSCR
+            1500 STORE_ATTR           (text)
+
+128:        1502 LOAD_GLOBAL          (str)
+            1504 LOAD_FAST            (i)
+            1506 LOAD_CONST           (6)
+            1508 BINARY_SUBSCR
+            1510 CALL_FUNCTION        (1 positional argument)
+            1512 LOAD_FAST            (SSrow)
+            1514 LOAD_CONST           (2)
+            1516 BINARY_SUBSCR
+            1518 STORE_ATTR           (text)
+
+129:        1520 LOAD_GLOBAL          (str)
+            1522 LOAD_FAST            (i)
+            1524 LOAD_CONST           (7)
+            1526 BINARY_SUBSCR
+            1528 CALL_FUNCTION        (1 positional argument)
+            1530 LOAD_FAST            (SSrow)
+            1532 LOAD_CONST           (3)
+            1534 BINARY_SUBSCR
+            1536 STORE_ATTR           (text)
+
+130:        1538 LOAD_FAST            (SStotal)
+            1540 LOAD_FAST            (i)
+            1542 LOAD_CONST           (11)
+            1544 BINARY_SUBSCR
+            1546 INPLACE_ADD
+            1548 STORE_FAST           (SStotal)
+
+131:        1550 LOAD_FAST            (SSntwt)
+            1552 LOAD_FAST            (i)
+            1554 LOAD_CONST           (7)
+            1556 BINARY_SUBSCR
+            1558 INPLACE_ADD
+            1560 STORE_FAST           (SSntwt)
+            1562 EXTENDED_ARG         (768)
+            1564 JUMP_FORWARD         (to 2458)
+
+132:     >> 1566 LOAD_FAST            (i)
+            1568 LOAD_CONST           (10)
+            1570 BINARY_SUBSCR
+            1572 LOAD_CONST           ("Old Order")
+            1574 COMPARE_OP           (==)
+            1576 EXTENDED_ARG         (1536)
+            1578 POP_JUMP_IF_FALSE    (to 1696)
+
+133:        1580 LOAD_FAST            (OOp)
+            1582 LOAD_METHOD          (add_row)
+            1584 CALL_METHOD          (0 positional arguments)
+            1586 LOAD_ATTR            (cells)
+            1588 STORE_FAST           (OOrow)
+
+134:        1590 LOAD_GLOBAL          (str)
+            1592 LOAD_FAST            (i)
+            1594 LOAD_CONST           (11)
+            1596 BINARY_SUBSCR
+            1598 CALL_FUNCTION        (1 positional argument)
+            1600 LOAD_FAST            (OOrow)
+            1602 LOAD_CONST           (0)
+            1604 BINARY_SUBSCR
+            1606 STORE_ATTR           (text)
+
+135:        1608 LOAD_GLOBAL          (str)
+            1610 LOAD_FAST            (i)
+            1612 LOAD_CONST           (0)
+            1614 BINARY_SUBSCR
+            1616 CALL_FUNCTION        (1 positional argument)
+            1618 LOAD_FAST            (OOrow)
+            1620 LOAD_CONST           (1)
+            1622 BINARY_SUBSCR
+            1624 STORE_ATTR           (text)
+
+136:        1626 LOAD_GLOBAL          (str)
+            1628 LOAD_FAST            (i)
+            1630 LOAD_CONST           (3)
+            1632 BINARY_SUBSCR
+            1634 CALL_FUNCTION        (1 positional argument)
+            1636 LOAD_FAST            (OOrow)
+            1638 LOAD_CONST           (2)
+            1640 BINARY_SUBSCR
+            1642 STORE_ATTR           (text)
+
+137:        1644 LOAD_GLOBAL          (str)
+            1646 LOAD_FAST            (i)
+            1648 LOAD_CONST           (6)
+            1650 BINARY_SUBSCR
+            1652 CALL_FUNCTION        (1 positional argument)
+            1654 LOAD_FAST            (OOrow)
+            1656 LOAD_CONST           (3)
+            1658 BINARY_SUBSCR
+            1660 STORE_ATTR           (text)
+
+138:        1662 LOAD_GLOBAL          (str)
+            1664 LOAD_FAST            (i)
+            1666 LOAD_CONST           (7)
+            1668 BINARY_SUBSCR
+            1670 CALL_FUNCTION        (1 positional argument)
+            1672 LOAD_FAST            (OOrow)
+            1674 LOAD_CONST           (4)
+            1676 BINARY_SUBSCR
+            1678 STORE_ATTR           (text)
+
+139:        1680 LOAD_FAST            (OOtotal)
+            1682 LOAD_FAST            (i)
+            1684 LOAD_CONST           (11)
+            1686 BINARY_SUBSCR
+            1688 INPLACE_ADD
+            1690 STORE_FAST           (OOtotal)
+            1692 EXTENDED_ARG         (512)
+            1694 JUMP_FORWARD         (to 2458)
+
+140:     >> 1696 LOAD_FAST            (i)
+            1698 LOAD_CONST           (10)
+            1700 BINARY_SUBSCR
+            1702 LOAD_CONST           ("New Order")
+            1704 COMPARE_OP           (==)
+            1706 EXTENDED_ARG         (1792)
+            1708 POP_JUMP_IF_FALSE    (to 1844)
+
+141:        1710 LOAD_FAST            (NOp)
+            1712 LOAD_METHOD          (add_row)
+            1714 CALL_METHOD          (0 positional arguments)
+            1716 LOAD_ATTR            (cells)
+            1718 STORE_FAST           (NOrow)
+
+142:        1720 LOAD_GLOBAL          (str)
+            1722 LOAD_FAST            (i)
+            1724 LOAD_CONST           (4)
+            1726 BINARY_SUBSCR
+            1728 CALL_FUNCTION        (1 positional argument)
+            1730 LOAD_FAST            (NOrow)
+            1732 LOAD_CONST           (0)
+            1734 BINARY_SUBSCR
+            1736 STORE_ATTR           (text)
+
+143:        1738 LOAD_GLOBAL          (str)
+            1740 LOAD_FAST            (i)
+            1742 LOAD_CONST           (11)
+            1744 BINARY_SUBSCR
+            1746 CALL_FUNCTION        (1 positional argument)
+            1748 LOAD_FAST            (NOrow)
+            1750 LOAD_CONST           (1)
+            1752 BINARY_SUBSCR
+            1754 STORE_ATTR           (text)
+
+144:        1756 LOAD_GLOBAL          (str)
+            1758 LOAD_FAST            (i)
+            1760 LOAD_CONST           (0)
+            1762 BINARY_SUBSCR
+            1764 CALL_FUNCTION        (1 positional argument)
+            1766 LOAD_FAST            (NOrow)
+            1768 LOAD_CONST           (2)
+            1770 BINARY_SUBSCR
+            1772 STORE_ATTR           (text)
+
+145:        1774 LOAD_GLOBAL          (str)
+            1776 LOAD_FAST            (i)
+            1778 LOAD_CONST           (3)
+            1780 BINARY_SUBSCR
+            1782 CALL_FUNCTION        (1 positional argument)
+            1784 LOAD_FAST            (NOrow)
+            1786 LOAD_CONST           (3)
+            1788 BINARY_SUBSCR
+            1790 STORE_ATTR           (text)
+
+146:        1792 LOAD_GLOBAL          (str)
+            1794 LOAD_FAST            (i)
+            1796 LOAD_CONST           (6)
+            1798 BINARY_SUBSCR
+            1800 CALL_FUNCTION        (1 positional argument)
+            1802 LOAD_FAST            (NOrow)
+            1804 LOAD_CONST           (4)
+            1806 BINARY_SUBSCR
+            1808 STORE_ATTR           (text)
+
+147:        1810 LOAD_GLOBAL          (str)
+            1812 LOAD_FAST            (i)
+            1814 LOAD_CONST           (7)
+            1816 BINARY_SUBSCR
+            1818 CALL_FUNCTION        (1 positional argument)
+            1820 LOAD_FAST            (NOrow)
+            1822 LOAD_CONST           (5)
+            1824 BINARY_SUBSCR
+            1826 STORE_ATTR           (text)
+
+148:        1828 LOAD_FAST            (NOtotal)
+            1830 LOAD_FAST            (i)
+            1832 LOAD_CONST           (11)
+            1834 BINARY_SUBSCR
+            1836 INPLACE_ADD
+            1838 STORE_FAST           (NOtotal)
+            1840 EXTENDED_ARG         (512)
+            1842 JUMP_FORWARD         (to 2458)
+
+149:     >> 1844 LOAD_FAST            (i)
+            1846 LOAD_CONST           (10)
+            1848 BINARY_SUBSCR
+            1850 LOAD_CONST           ("VC")
+            1852 COMPARE_OP           (==)
+            1854 EXTENDED_ARG         (1792)
+            1856 POP_JUMP_IF_FALSE    (to 1974)
+
+150:        1858 LOAD_FAST            (VCp)
+            1860 LOAD_METHOD          (add_row)
+            1862 CALL_METHOD          (0 positional arguments)
+            1864 LOAD_ATTR            (cells)
+            1866 STORE_FAST           (VCrow)
+
+151:        1868 LOAD_GLOBAL          (str)
+            1870 LOAD_FAST            (i)
+            1872 LOAD_CONST           (11)
+            1874 BINARY_SUBSCR
+            1876 CALL_FUNCTION        (1 positional argument)
+            1878 LOAD_FAST            (VCrow)
+            1880 LOAD_CONST           (0)
+            1882 BINARY_SUBSCR
+            1884 STORE_ATTR           (text)
+
+152:        1886 LOAD_GLOBAL          (str)
+            1888 LOAD_FAST            (i)
+            1890 LOAD_CONST           (0)
+            1892 BINARY_SUBSCR
+            1894 CALL_FUNCTION        (1 positional argument)
+            1896 LOAD_FAST            (VCrow)
+            1898 LOAD_CONST           (1)
+            1900 BINARY_SUBSCR
+            1902 STORE_ATTR           (text)
+
+153:        1904 LOAD_GLOBAL          (str)
+            1906 LOAD_FAST            (i)
+            1908 LOAD_CONST           (3)
+            1910 BINARY_SUBSCR
+            1912 CALL_FUNCTION        (1 positional argument)
+            1914 LOAD_FAST            (VCrow)
+            1916 LOAD_CONST           (2)
+            1918 BINARY_SUBSCR
+            1920 STORE_ATTR           (text)
+
+154:        1922 LOAD_GLOBAL          (str)
+            1924 LOAD_FAST            (i)
+            1926 LOAD_CONST           (6)
+            1928 BINARY_SUBSCR
+            1930 CALL_FUNCTION        (1 positional argument)
+            1932 LOAD_FAST            (VCrow)
+            1934 LOAD_CONST           (3)
+            1936 BINARY_SUBSCR
+            1938 STORE_ATTR           (text)
+
+155:        1940 LOAD_GLOBAL          (str)
+            1942 LOAD_FAST            (i)
+            1944 LOAD_CONST           (7)
+            1946 BINARY_SUBSCR
+            1948 CALL_FUNCTION        (1 positional argument)
+            1950 LOAD_FAST            (VCrow)
+            1952 LOAD_CONST           (4)
+            1954 BINARY_SUBSCR
+            1956 STORE_ATTR           (text)
+
+156:        1958 LOAD_FAST            (VCtotal)
+            1960 LOAD_FAST            (i)
+            1962 LOAD_CONST           (11)
+            1964 BINARY_SUBSCR
+            1966 INPLACE_ADD
+            1968 STORE_FAST           (VCtotal)
+            1970 EXTENDED_ARG         (256)
+            1972 JUMP_FORWARD         (to 2458)
+
+157:     >> 1974 LOAD_FAST            (i)
+            1976 LOAD_CONST           (10)
+            1978 BINARY_SUBSCR
+            1980 LOAD_CONST           ("Gold Purchase")
+            1982 COMPARE_OP           (==)
+            1984 EXTENDED_ARG         (2048)
+            1986 POP_JUMP_IF_FALSE    (to 2116)
+
+158:        1988 LOAD_FAST            (GPp)
+            1990 LOAD_METHOD          (add_row)
+            1992 CALL_METHOD          (0 positional arguments)
+            1994 LOAD_ATTR            (cells)
+            1996 STORE_FAST           (GProw)
+
+159:        1998 LOAD_GLOBAL          (str)
+            2000 LOAD_FAST            (i)
+            2002 LOAD_CONST           (3)
+            2004 BINARY_SUBSCR
+            2006 CALL_FUNCTION        (1 positional argument)
+            2008 LOAD_FAST            (GProw)
+            2010 LOAD_CONST           (0)
+            2012 BINARY_SUBSCR
+            2014 STORE_ATTR           (text)
+
+160:        2016 LOAD_GLOBAL          (str)
+            2018 LOAD_FAST            (i)
+            2020 LOAD_CONST           (6)
+            2022 BINARY_SUBSCR
+            2024 CALL_FUNCTION        (1 positional argument)
+            2026 LOAD_FAST            (GProw)
+            2028 LOAD_CONST           (1)
+            2030 BINARY_SUBSCR
+            2032 STORE_ATTR           (text)
+
+161:        2034 LOAD_GLOBAL          (str)
+            2036 LOAD_FAST            (i)
+            2038 LOAD_CONST           (7)
+            2040 BINARY_SUBSCR
+            2042 CALL_FUNCTION        (1 positional argument)
+            2044 LOAD_FAST            (GProw)
+            2046 LOAD_CONST           (2)
+            2048 BINARY_SUBSCR
+            2050 STORE_ATTR           (text)
+
+162:        2052 LOAD_GLOBAL          (str)
+            2054 LOAD_FAST            (i)
+            2056 LOAD_CONST           (0)
+            2058 BINARY_SUBSCR
+            2060 CALL_FUNCTION        (1 positional argument)
+            2062 LOAD_FAST            (GProw)
+            2064 LOAD_CONST           (3)
+            2066 BINARY_SUBSCR
+            2068 STORE_ATTR           (text)
+
+163:        2070 LOAD_GLOBAL          (str)
+            2072 LOAD_FAST            (i)
+            2074 LOAD_CONST           (11)
+            2076 BINARY_SUBSCR
+            2078 CALL_FUNCTION        (1 positional argument)
+            2080 LOAD_FAST            (GProw)
+            2082 LOAD_CONST           (4)
+            2084 BINARY_SUBSCR
+            2086 STORE_ATTR           (text)
+
+164:        2088 LOAD_FAST            (GPtotal)
+            2090 LOAD_FAST            (i)
+            2092 LOAD_CONST           (11)
+            2094 BINARY_SUBSCR
+            2096 INPLACE_ADD
+            2098 STORE_FAST           (GPtotal)
+
+165:        2100 LOAD_FAST            (GPntwt)
+            2102 LOAD_FAST            (i)
+            2104 LOAD_CONST           (7)
+            2106 BINARY_SUBSCR
+            2108 INPLACE_ADD
+            2110 STORE_FAST           (GPntwt)
+            2112 EXTENDED_ARG         (256)
+            2114 JUMP_FORWARD         (to 2458)
+
+166:     >> 2116 LOAD_FAST            (i)
+            2118 LOAD_CONST           (10)
+            2120 BINARY_SUBSCR
+            2122 LOAD_CONST           ("Silver Purchase")
+            2124 COMPARE_OP           (==)
+            2126 EXTENDED_ARG         (2048)
+            2128 POP_JUMP_IF_FALSE    (to 2238)
+
+167:        2130 LOAD_FAST            (SPp)
+            2132 LOAD_METHOD          (add_row)
+            2134 CALL_METHOD          (0 positional arguments)
+            2136 LOAD_ATTR            (cells)
+            2138 STORE_FAST           (SProw)
+
+168:        2140 LOAD_GLOBAL          (str)
+            2142 LOAD_FAST            (i)
+            2144 LOAD_CONST           (11)
+            2146 BINARY_SUBSCR
+            2148 CALL_FUNCTION        (1 positional argument)
+            2150 LOAD_FAST            (SProw)
+            2152 LOAD_CONST           (0)
+            2154 BINARY_SUBSCR
+            2156 STORE_ATTR           (text)
+
+169:        2158 LOAD_GLOBAL          (str)
+            2160 LOAD_FAST            (i)
+            2162 LOAD_CONST           (3)
+            2164 BINARY_SUBSCR
+            2166 CALL_FUNCTION        (1 positional argument)
+            2168 LOAD_FAST            (SProw)
+            2170 LOAD_CONST           (1)
+            2172 BINARY_SUBSCR
+            2174 STORE_ATTR           (text)
+
+170:        2176 LOAD_GLOBAL          (str)
+            2178 LOAD_FAST            (i)
+            2180 LOAD_CONST           (6)
+            2182 BINARY_SUBSCR
+            2184 CALL_FUNCTION        (1 positional argument)
+            2186 LOAD_FAST            (SProw)
+            2188 LOAD_CONST           (2)
+            2190 BINARY_SUBSCR
+            2192 STORE_ATTR           (text)
+
+171:        2194 LOAD_GLOBAL          (str)
+            2196 LOAD_FAST            (i)
+            2198 LOAD_CONST           (7)
+            2200 BINARY_SUBSCR
+            2202 CALL_FUNCTION        (1 positional argument)
+            2204 LOAD_FAST            (SProw)
+            2206 LOAD_CONST           (3)
+            2208 BINARY_SUBSCR
+            2210 STORE_ATTR           (text)
+
+172:        2212 LOAD_FAST            (SPtotal)
+            2214 LOAD_FAST            (i)
+            2216 LOAD_CONST           (11)
+            2218 BINARY_SUBSCR
+            2220 INPLACE_ADD
+            2222 STORE_FAST           (SPtotal)
+
+173:        2224 LOAD_FAST            (SPntwt)
+            2226 LOAD_FAST            (i)
+            2228 LOAD_CONST           (7)
+            2230 BINARY_SUBSCR
+            2232 INPLACE_ADD
+            2234 STORE_FAST           (SPntwt)
+            2236 JUMP_FORWARD         (to 2458)
+
+174:     >> 2238 LOAD_FAST            (i)
+            2240 LOAD_CONST           (10)
+            2242 BINARY_SUBSCR
+            2244 LOAD_CONST           ("Misc Plus")
+            2246 COMPARE_OP           (==)
+            2248 EXTENDED_ARG         (2304)
+            2250 POP_JUMP_IF_FALSE    (to 2312)
+
+175:        2252 LOAD_FAST            (SHPp)
+            2254 LOAD_METHOD          (add_row)
+            2256 CALL_METHOD          (0 positional arguments)
+            2258 LOAD_ATTR            (cells)
+            2260 STORE_FAST           (SHProw)
+
+176:        2262 LOAD_GLOBAL          (str)
+            2264 LOAD_FAST            (i)
+            2266 LOAD_CONST           (11)
+            2268 BINARY_SUBSCR
+            2270 CALL_FUNCTION        (1 positional argument)
+            2272 LOAD_FAST            (SHProw)
+            2274 LOAD_CONST           (0)
+            2276 BINARY_SUBSCR
+            2278 STORE_ATTR           (text)
+
+177:        2280 LOAD_GLOBAL          (str)
+            2282 LOAD_FAST            (i)
+            2284 LOAD_CONST           (0)
+            2286 BINARY_SUBSCR
+            2288 CALL_FUNCTION        (1 positional argument)
+            2290 LOAD_FAST            (SHProw)
+            2292 LOAD_CONST           (1)
+            2294 BINARY_SUBSCR
+            2296 STORE_ATTR           (text)
+
+178:        2298 LOAD_FAST            (SHPtotal)
+            2300 LOAD_FAST            (i)
+            2302 LOAD_CONST           (11)
+            2304 BINARY_SUBSCR
+            2306 INPLACE_ADD
+            2308 STORE_FAST           (SHPtotal)
+            2310 JUMP_FORWARD         (to 2458)
+
+179:     >> 2312 LOAD_FAST            (i)
+            2314 LOAD_CONST           (10)
+            2316 BINARY_SUBSCR
+            2318 LOAD_CONST           ("Misc Minus")
+            2320 COMPARE_OP           (==)
+            2322 EXTENDED_ARG         (2304)
+            2324 POP_JUMP_IF_FALSE    (to 2386)
+
+180:        2326 LOAD_FAST            (SHMp)
+            2328 LOAD_METHOD          (add_row)
+            2330 CALL_METHOD          (0 positional arguments)
+            2332 LOAD_ATTR            (cells)
+            2334 STORE_FAST           (SHMrow)
+
+181:        2336 LOAD_GLOBAL          (str)
+            2338 LOAD_FAST            (i)
+            2340 LOAD_CONST           (11)
+            2342 BINARY_SUBSCR
+            2344 CALL_FUNCTION        (1 positional argument)
+            2346 LOAD_FAST            (SHMrow)
+            2348 LOAD_CONST           (0)
+            2350 BINARY_SUBSCR
+            2352 STORE_ATTR           (text)
+
+182:        2354 LOAD_GLOBAL          (str)
+            2356 LOAD_FAST            (i)
+            2358 LOAD_CONST           (0)
+            2360 BINARY_SUBSCR
+            2362 CALL_FUNCTION        (1 positional argument)
+            2364 LOAD_FAST            (SHMrow)
+            2366 LOAD_CONST           (1)
+            2368 BINARY_SUBSCR
+            2370 STORE_ATTR           (text)
+
+183:        2372 LOAD_FAST            (SHMtotal)
+            2374 LOAD_FAST            (i)
+            2376 LOAD_CONST           (11)
+            2378 BINARY_SUBSCR
+            2380 INPLACE_ADD
+            2382 STORE_FAST           (SHMtotal)
+            2384 JUMP_FORWARD         (to 2458)
+
+184:     >> 2386 LOAD_FAST            (i)
+            2388 LOAD_CONST           (10)
+            2390 BINARY_SUBSCR
+            2392 LOAD_CONST           ("Expense")
+            2394 COMPARE_OP           (==)
+            2396 EXTENDED_ARG         (2304)
+            2398 POP_JUMP_IF_FALSE    (to 2458)
+
+185:        2400 LOAD_FAST            (Exp)
+            2402 LOAD_METHOD          (add_row)
+            2404 CALL_METHOD          (0 positional arguments)
+            2406 LOAD_ATTR            (cells)
+            2408 STORE_FAST           (Exprow)
+
+186:        2410 LOAD_GLOBAL          (str)
+            2412 LOAD_FAST            (i)
+            2414 LOAD_CONST           (11)
+            2416 BINARY_SUBSCR
+            2418 CALL_FUNCTION        (1 positional argument)
+            2420 LOAD_FAST            (Exprow)
+            2422 LOAD_CONST           (0)
+            2424 BINARY_SUBSCR
+            2426 STORE_ATTR           (text)
+
+187:        2428 LOAD_GLOBAL          (str)
+            2430 LOAD_FAST            (i)
+            2432 LOAD_CONST           (0)
+            2434 BINARY_SUBSCR
+            2436 CALL_FUNCTION        (1 positional argument)
+            2438 LOAD_FAST            (Exprow)
+            2440 LOAD_CONST           (1)
+            2442 BINARY_SUBSCR
+            2444 STORE_ATTR           (text)
+
+188:        2446 LOAD_FAST            (EXtotal)
+            2448 LOAD_FAST            (i)
+            2450 LOAD_CONST           (11)
+            2452 BINARY_SUBSCR
+            2454 INPLACE_ADD
+            2456 STORE_FAST           (EXtotal)
+
+189:     >> 2458 LOAD_FAST            (i)
+            2460 LOAD_CONST           (19)
+            2462 BINARY_SUBSCR
+            2464 LOAD_CONST           (0)
+            2466 COMPARE_OP           (>)
+            2468 EXTENDED_ARG         (2304)
+            2470 POP_JUMP_IF_FALSE    (to 2534)
+
+190:        2472 LOAD_FAST            (SHMp)
+            2474 LOAD_METHOD          (add_row)
+            2476 CALL_METHOD          (0 positional arguments)
+            2478 LOAD_ATTR            (cells)
+            2480 STORE_FAST           (SHMrow)
+
+191:        2482 LOAD_GLOBAL          (str)
+            2484 LOAD_FAST            (i)
+            2486 LOAD_CONST           (11)
+            2488 BINARY_SUBSCR
+            2490 CALL_FUNCTION        (1 positional argument)
+            2492 LOAD_FAST            (SHMrow)
+            2494 LOAD_CONST           (0)
+            2496 BINARY_SUBSCR
+            2498 STORE_ATTR           (text)
+
+192:        2500 LOAD_GLOBAL          (str)
+            2502 LOAD_FAST            (i)
+            2504 LOAD_CONST           (0)
+            2506 BINARY_SUBSCR
+            2508 LOAD_CONST           (" (CR)")
+            2510 BINARY_ADD
+            2512 CALL_FUNCTION        (1 positional argument)
+            2514 LOAD_FAST            (SHMrow)
+            2516 LOAD_CONST           (1)
+            2518 BINARY_SUBSCR
+            2520 STORE_ATTR           (text)
+
+193:        2522 LOAD_FAST            (SHMtotal)
+            2524 LOAD_FAST            (i)
+            2526 LOAD_CONST           (11)
+            2528 BINARY_SUBSCR
+            2530 INPLACE_ADD
+            2532 STORE_FAST           (SHMtotal)
+
+194:     >> 2534 LOAD_GLOBAL          (j)
+            2536 LOAD_CONST           (13)
+            2538 BINARY_SUBSCR
+            2540 LOAD_CONST           (0)
+            2542 COMPARE_OP           (!=)
+            2544 EXTENDED_ARG         (2560)
+            2546 POP_JUMP_IF_FALSE    (to 2612)
+
+195:        2548 LOAD_FAST            (BEp)
+            2550 LOAD_METHOD          (add_row)
+            2552 CALL_METHOD          (0 positional arguments)
+            2554 LOAD_ATTR            (cells)
+            2556 STORE_FAST           (BEprow)
+
+196:        2558 LOAD_GLOBAL          (str)
+            2560 LOAD_GLOBAL          (j)
+            2562 LOAD_CONST           (13)
+            2564 BINARY_SUBSCR
+            2566 CALL_FUNCTION        (1 positional argument)
+            2568 LOAD_FAST            (BEprow)
+            2570 LOAD_CONST           (0)
+            2572 BINARY_SUBSCR
+            2574 STORE_ATTR           (text)
+
+197:        2576 LOAD_GLOBAL          (str)
+            2578 LOAD_GLOBAL          (j)
+            2580 LOAD_CONST           (14)
+            2582 BINARY_SUBSCR
+            2584 CALL_FUNCTION        (1 positional argument)
+            2586 LOAD_FAST            (BEprow)
+            2588 LOAD_CONST           (1)
+            2590 BINARY_SUBSCR
+            2592 STORE_ATTR           (text)
+
+198:        2594 LOAD_GLOBAL          (str)
+            2596 LOAD_GLOBAL          (j)
+            2598 LOAD_CONST           (0)
+            2600 BINARY_SUBSCR
+            2602 CALL_FUNCTION        (1 positional argument)
+            2604 LOAD_FAST            (BEprow)
+            2606 LOAD_CONST           (2)
+            2608 BINARY_SUBSCR
+            2610 STORE_ATTR           (text)
+
+199:     >> 2612 LOAD_FAST            (i)
+            2614 LOAD_CONST           (15)
+            2616 BINARY_SUBSCR
+            2618 LOAD_CONST           (0)
+            2620 COMPARE_OP           (!=)
+            2622 EXTENDED_ARG         (2560)
+            2624 POP_JUMP_IF_FALSE    (to 2690)
+
+200:        2626 LOAD_FAST            (BEp)
+            2628 LOAD_METHOD          (add_row)
+            2630 CALL_METHOD          (0 positional arguments)
+            2632 LOAD_ATTR            (cells)
+            2634 STORE_FAST           (BEprow)
+
+201:        2636 LOAD_GLOBAL          (str)
+            2638 LOAD_GLOBAL          (j)
+            2640 LOAD_CONST           (15)
+            2642 BINARY_SUBSCR
+            2644 CALL_FUNCTION        (1 positional argument)
+            2646 LOAD_FAST            (BEprow)
+            2648 LOAD_CONST           (0)
+            2650 BINARY_SUBSCR
+            2652 STORE_ATTR           (text)
+
+202:        2654 LOAD_GLOBAL          (str)
+            2656 LOAD_GLOBAL          (j)
+            2658 LOAD_CONST           (16)
+            2660 BINARY_SUBSCR
+            2662 CALL_FUNCTION        (1 positional argument)
+            2664 LOAD_FAST            (BEprow)
+            2666 LOAD_CONST           (1)
+            2668 BINARY_SUBSCR
+            2670 STORE_ATTR           (text)
+
+203:        2672 LOAD_GLOBAL          (str)
+            2674 LOAD_GLOBAL          (j)
+            2676 LOAD_CONST           (0)
+            2678 BINARY_SUBSCR
+            2680 CALL_FUNCTION        (1 positional argument)
+            2682 LOAD_FAST            (BEprow)
+            2684 LOAD_CONST           (2)
+            2686 BINARY_SUBSCR
+            2688 STORE_ATTR           (text)
+
+204:     >> 2690 LOAD_FAST            (i)
+            2692 LOAD_CONST           (17)
+            2694 BINARY_SUBSCR
+            2696 LOAD_CONST           (0)
+            2698 COMPARE_OP           (!=)
+            2700 EXTENDED_ARG         (1280)
+            2702 POP_JUMP_IF_FALSE    (to 1286)
+
+205:        2704 LOAD_FAST            (BEp)
+            2706 LOAD_METHOD          (add_row)
+            2708 CALL_METHOD          (0 positional arguments)
+            2710 LOAD_ATTR            (cells)
+            2712 STORE_FAST           (BEprow)
+
+206:        2714 LOAD_GLOBAL          (str)
+            2716 LOAD_GLOBAL          (j)
+            2718 LOAD_CONST           (17)
+            2720 BINARY_SUBSCR
+            2722 CALL_FUNCTION        (1 positional argument)
+            2724 LOAD_FAST            (BEprow)
+            2726 LOAD_CONST           (0)
+            2728 BINARY_SUBSCR
+            2730 STORE_ATTR           (text)
+
+207:        2732 LOAD_CONST           ("Chq-")
+            2734 LOAD_FAST            (i)
+            2736 LOAD_CONST           (18)
+            2738 BINARY_SUBSCR
+            2740 FORMAT_VALUE         0
+            2742 BUILD_STRING         2
+            2744 LOAD_FAST            (BEprow)
+            2746 LOAD_CONST           (1)
+            2748 BINARY_SUBSCR
+            2750 STORE_ATTR           (text)
+
+208:        2752 LOAD_GLOBAL          (str)
+            2754 LOAD_GLOBAL          (j)
+            2756 LOAD_CONST           (0)
+            2758 BINARY_SUBSCR
+            2760 CALL_FUNCTION        (1 positional argument)
+            2762 LOAD_FAST            (BEprow)
+            2764 LOAD_CONST           (2)
+            2766 BINARY_SUBSCR
+            2768 STORE_ATTR           (text)
+            2770 EXTENDED_ARG         (1280)
+            2772 JUMP_ABSOLUTE        (to 1286)
+
+211:     >> 2774 LOAD_FAST            (GSh)
+            2776 LOAD_METHOD          (add_run)
+            2778 LOAD_CONST           (" - ")
+            2780 LOAD_FAST            (GStotal)
+            2782 FORMAT_VALUE         0
+            2784 BUILD_STRING         2
+            2786 CALL_METHOD          (1 positional argument)
+            2788 POP_TOP
+
+212:        2790 LOAD_FAST            (GSp)
+            2792 LOAD_METHOD          (add_row)
+            2794 CALL_METHOD          (0 positional arguments)
+            2796 LOAD_ATTR            (cells)
+            2798 STORE_FAST           (GSlastline)
+
+213:        2800 LOAD_CONST           ("Total")
+            2802 LOAD_FAST            (GSlastline)
+            2804 LOAD_CONST           (0)
+            2806 BINARY_SUBSCR
+            2808 STORE_ATTR           (text)
+
+214:        2810 LOAD_GLOBAL          (str)
+            2812 LOAD_FAST            (GSntwt)
+            2814 CALL_FUNCTION        (1 positional argument)
+            2816 LOAD_FAST            (GSlastline)
+            2818 LOAD_CONST           (2)
+            2820 BINARY_SUBSCR
+            2822 STORE_ATTR           (text)
+
+215:        2824 LOAD_FAST            (SSh)
+            2826 LOAD_METHOD          (add_run)
+            2828 LOAD_CONST           (" - ")
+            2830 LOAD_FAST            (SStotal)
+            2832 FORMAT_VALUE         0
+            2834 BUILD_STRING         2
+            2836 CALL_METHOD          (1 positional argument)
+            2838 POP_TOP
+
+216:        2840 LOAD_FAST            (SSp)
+            2842 LOAD_METHOD          (add_row)
+            2844 CALL_METHOD          (0 positional arguments)
+            2846 LOAD_ATTR            (cells)
+            2848 STORE_FAST           (SSlastline)
+
+217:        2850 LOAD_CONST           ("Total")
+            2852 LOAD_FAST            (SSlastline)
+            2854 LOAD_CONST           (0)
+            2856 BINARY_SUBSCR
+            2858 STORE_ATTR           (text)
+
+218:        2860 LOAD_GLOBAL          (str)
+            2862 LOAD_FAST            (SSntwt)
+            2864 CALL_FUNCTION        (1 positional argument)
+            2866 LOAD_FAST            (SSlastline)
+            2868 LOAD_CONST           (3)
+            2870 BINARY_SUBSCR
+            2872 STORE_ATTR           (text)
+
+219:        2874 LOAD_FAST            (OOh)
+            2876 LOAD_METHOD          (add_run)
+            2878 LOAD_CONST           (" - ")
+            2880 LOAD_FAST            (OOtotal)
+            2882 FORMAT_VALUE         0
+            2884 BUILD_STRING         2
+            2886 CALL_METHOD          (1 positional argument)
+            2888 POP_TOP
+
+220:        2890 LOAD_FAST            (NOh)
+            2892 LOAD_METHOD          (add_run)
+            2894 LOAD_CONST           (" - ")
+            2896 LOAD_FAST            (NOtotal)
+            2898 FORMAT_VALUE         0
+            2900 BUILD_STRING         2
+            2902 CALL_METHOD          (1 positional argument)
+            2904 POP_TOP
+
+221:        2906 LOAD_FAST            (VCh)
+            2908 LOAD_METHOD          (add_run)
+            2910 LOAD_CONST           (" - ")
+            2912 LOAD_FAST            (VCtotal)
+            2914 FORMAT_VALUE         0
+            2916 BUILD_STRING         2
+            2918 CALL_METHOD          (1 positional argument)
+            2920 POP_TOP
+
+222:        2922 LOAD_FAST            (GPh)
+            2924 LOAD_METHOD          (add_run)
+            2926 LOAD_CONST           (" - ")
+            2928 LOAD_FAST            (GPtotal)
+            2930 FORMAT_VALUE         0
+            2932 BUILD_STRING         2
+            2934 CALL_METHOD          (1 positional argument)
+            2936 POP_TOP
+
+223:        2938 LOAD_FAST            (GPp)
+            2940 LOAD_METHOD          (add_row)
+            2942 CALL_METHOD          (0 positional arguments)
+            2944 LOAD_ATTR            (cells)
+            2946 STORE_FAST           (GPlastline)
+
+224:        2948 LOAD_CONST           ("Total")
+            2950 LOAD_FAST            (GPlastline)
+            2952 LOAD_CONST           (0)
+            2954 BINARY_SUBSCR
+            2956 STORE_ATTR           (text)
+
+225:        2958 LOAD_GLOBAL          (str)
+            2960 LOAD_FAST            (GPntwt)
+            2962 CALL_FUNCTION        (1 positional argument)
+            2964 LOAD_FAST            (GPlastline)
+            2966 LOAD_CONST           (2)
+            2968 BINARY_SUBSCR
+            2970 STORE_ATTR           (text)
+
+226:        2972 LOAD_FAST            (SPh)
+            2974 LOAD_METHOD          (add_run)
+            2976 LOAD_CONST           (" - ")
+            2978 LOAD_FAST            (SPtotal)
+            2980 FORMAT_VALUE         0
+            2982 BUILD_STRING         2
+            2984 CALL_METHOD          (1 positional argument)
+            2986 POP_TOP
+
+227:        2988 LOAD_FAST            (SPp)
+            2990 LOAD_METHOD          (add_row)
+            2992 CALL_METHOD          (0 positional arguments)
+            2994 LOAD_ATTR            (cells)
+            2996 STORE_FAST           (SPlastline)
+
+228:        2998 LOAD_CONST           ("Total")
+            3000 LOAD_FAST            (SPlastline)
+            3002 LOAD_CONST           (0)
+            3004 BINARY_SUBSCR
+            3006 STORE_ATTR           (text)
+
+229:        3008 LOAD_GLOBAL          (str)
+            3010 LOAD_FAST            (SPntwt)
+            3012 CALL_FUNCTION        (1 positional argument)
+            3014 LOAD_FAST            (SPlastline)
+            3016 LOAD_CONST           (3)
+            3018 BINARY_SUBSCR
+            3020 STORE_ATTR           (text)
+
+230:        3022 LOAD_FAST            (SHPh)
+            3024 LOAD_METHOD          (add_run)
+            3026 LOAD_CONST           (" -  ")
+            3028 LOAD_FAST            (SHPtotal)
+            3030 FORMAT_VALUE         0
+            3032 BUILD_STRING         2
+            3034 CALL_METHOD          (1 positional argument)
+            3036 POP_TOP
+
+231:        3038 LOAD_FAST            (SHMh)
+            3040 LOAD_METHOD          (add_run)
+            3042 LOAD_CONST           (" - ")
+            3044 LOAD_FAST            (SHMtotal)
+            3046 FORMAT_VALUE         0
+            3048 BUILD_STRING         2
+            3050 CALL_METHOD          (1 positional argument)
+            3052 POP_TOP
+
+232:        3054 LOAD_FAST            (Exh)
+            3056 LOAD_METHOD          (add_run)
+            3058 LOAD_CONST           (" - ")
+            3060 LOAD_FAST            (EXtotal)
+            3062 FORMAT_VALUE         0
+            3064 BUILD_STRING         2
+            3066 CALL_METHOD          (1 positional argument)
+            3068 POP_TOP
+
+234:        3070 LOAD_FAST            (billdoc)
+            3072 LOAD_ATTR            (paragraphs)
+            3074 LOAD_CONST           (0)
+            3076 BINARY_SUBSCR
+            3078 STORE_FAST           (para1)
+
+235:        3080 LOAD_GLOBAL          (del_para)
+            3082 LOAD_FAST            (para1)
+            3084 CALL_FUNCTION        (1 positional argument)
+            3086 POP_TOP
+
+236:        3088 SETUP_FINALLY        (to 3110)
+
+237:        3090 LOAD_FAST            (billdoc)
+            3092 LOAD_METHOD          (save)
+            3094 LOAD_FAST            (today)
+            3096 FORMAT_VALUE         0
+            3098 LOAD_CONST           (".docx")
+            3100 BUILD_STRING         2
+            3102 CALL_METHOD          (1 positional argument)
+            3104 POP_TOP
+            3106 POP_BLOCK
+            3108 JUMP_FORWARD         (to 3162)
+
+238:     >> 3110 POP_TOP
+            3112 POP_TOP
+            3114 POP_TOP
+
+239:        3116 LOAD_CONST           (0)
+            3118 LOAD_CONST           (None)
+            3120 IMPORT_NAME          (os)
+            3122 STORE_FAST           (os)
+
+240:        3124 LOAD_FAST            (os)
+            3126 LOAD_METHOD          (rmdir)
+            3128 LOAD_FAST            (today)
+            3130 FORMAT_VALUE         0
+            3132 LOAD_CONST           (".docx")
+            3134 BUILD_STRING         2
+            3136 CALL_METHOD          (1 positional argument)
+            3138 POP_TOP
+
+241:        3140 LOAD_FAST            (billdoc)
+            3142 LOAD_METHOD          (save)
+            3144 LOAD_FAST            (today)
+            3146 FORMAT_VALUE         0
+            3148 LOAD_CONST           (".docx")
+            3150 BUILD_STRING         2
+            3152 CALL_METHOD          (1 positional argument)
+            3154 POP_TOP
+            3156 POP_EXCEPT
+            3158 JUMP_FORWARD         (to 3162)
+            3160 RERAISE
+
+242:     >> 3162 SETUP_FINALLY        (to 3192)
+
+243:        3164 LOAD_FAST            (convert)
+            3166 LOAD_FAST            (today)
+            3168 FORMAT_VALUE         0
+            3170 LOAD_CONST           (".docx")
+            3172 BUILD_STRING         2
+            3174 LOAD_CONST           ("pdf\\")
+            3176 LOAD_FAST            (today)
+            3178 FORMAT_VALUE         0
+            3180 LOAD_CONST           ("pdf.pdf")
+            3182 BUILD_STRING         3
+            3184 CALL_FUNCTION        (2 positional arguments)
+            3186 POP_TOP
+            3188 POP_BLOCK
+            3190 JUMP_FORWARD         (to 3212)
+
+244:     >> 3192 POP_TOP
+            3194 POP_TOP
+            3196 POP_TOP
+
+245:        3198 LOAD_GLOBAL          (print)
+            3200 LOAD_CONST           ("doc2pdf not working")
+            3202 CALL_FUNCTION        (1 positional argument)
+            3204 POP_TOP
+            3206 POP_EXCEPT
+            3208 JUMP_FORWARD         (to 3212)
+            3210 RERAISE
+         >> 3212 LOAD_CONST           (None)
+            3214 RETURN_VALUE
+
+
+# Method Name:       gen_sum
+# Filename:          Common\createdocx.py
+# Argument count:    1
+# Position-only argument count: 0
+# Keyword-only arguments: 0
+# Number of locals:  12
+# Stack size:        8
+# Flags:             0x00000043 (NOFREE | NEWLOCALS | OPTIMIZED)
+# First Line:        247
+# Constants:
+#    0: None
+#    1: 'Gold Sale'
+#    2: 2
+#    3: ('level',)
+#    4: 1
+#    5: ('rows', 'cols')
+#    6: 'TableGrid'
+#    7: 'Item Name'
+#    8: 0
+#    9: 'Amount'
+#   10: 'Silver Sale'
+#   11: 'Sum.docx'
+# Names:
+#    0: Get_Sale_store
+#    1: Document
+#    2: add_heading
+#    3: add_table
+#    4: style
+#    5: rows
+#    6: cells
+#    7: text
+#    8: keys
+#    9: str
+#   10: add_row
+#   11: save
+# Varnames:
+#	today, dbdict, sumdoc, GS, SS, GSdup, SSdup, key, i, j, GSrow, SSrow
+# Positional arguments:
+#	today
+# Local variables:
+#    1: dbdict
+#    2: sumdoc
+#    3: GS
+#    4: SS
+#    5: GSdup
+#    6: SSdup
+#    7: key
+#    8: i
+#    9: j
+#   10: GSrow
+#   11: SSrow
+248:           0 LOAD_GLOBAL          (Get_Sale_store)
+               2 LOAD_FAST            (today)
+               4 LOAD_FAST            (today)
+               6 CALL_FUNCTION        (2 positional arguments)
+               8 STORE_FAST           (dbdict)
+
+250:          10 LOAD_GLOBAL          (Document)
+              12 CALL_FUNCTION        (0 positional arguments)
+              14 STORE_FAST           (sumdoc)
+
+251:          16 LOAD_FAST            (sumdoc)
+              18 LOAD_ATTR            (add_heading)
+              20 LOAD_CONST           ("Gold Sale")
+              22 LOAD_CONST           (2)
+              24 LOAD_CONST           (('level',))
+              26 CALL_FUNCTION_KW     (2 total positional and keyword args)
+              28 POP_TOP
+
+252:          30 LOAD_FAST            (sumdoc)
+              32 LOAD_ATTR            (add_table)
+              34 LOAD_CONST           (1)
+              36 LOAD_CONST           (2)
+              38 LOAD_CONST           (('rows', 'cols'))
+              40 CALL_FUNCTION_KW     (2 total positional and keyword args)
+              42 STORE_FAST           (GS)
+
+253:          44 LOAD_CONST           ("TableGrid")
+              46 LOAD_FAST            (GS)
+              48 STORE_ATTR           (style)
+
+254:          50 LOAD_CONST           ("Item Name")
+              52 LOAD_FAST            (GS)
+              54 LOAD_ATTR            (rows)
+              56 LOAD_CONST           (0)
+              58 BINARY_SUBSCR
+              60 LOAD_ATTR            (cells)
+              62 LOAD_CONST           (0)
+              64 BINARY_SUBSCR
+              66 STORE_ATTR           (text)
+
+255:          68 LOAD_CONST           ("Amount")
+              70 LOAD_FAST            (GS)
+              72 LOAD_ATTR            (rows)
+              74 LOAD_CONST           (0)
+              76 BINARY_SUBSCR
+              78 LOAD_ATTR            (cells)
+              80 LOAD_CONST           (1)
+              82 BINARY_SUBSCR
+              84 STORE_ATTR           (text)
+
+256:          86 LOAD_FAST            (sumdoc)
+              88 LOAD_ATTR            (add_heading)
+              90 LOAD_CONST           ("Silver Sale")
+              92 LOAD_CONST           (2)
+              94 LOAD_CONST           (('level',))
+              96 CALL_FUNCTION_KW     (2 total positional and keyword args)
+              98 POP_TOP
+
+257:         100 LOAD_FAST            (sumdoc)
+             102 LOAD_ATTR            (add_table)
+             104 LOAD_CONST           (1)
+             106 LOAD_CONST           (2)
+             108 LOAD_CONST           (('rows', 'cols'))
+             110 CALL_FUNCTION_KW     (2 total positional and keyword args)
+             112 STORE_FAST           (SS)
+
+258:         114 LOAD_CONST           ("TableGrid")
+             116 LOAD_FAST            (SS)
+             118 STORE_ATTR           (style)
+
+259:         120 LOAD_CONST           ("Item Name")
+             122 LOAD_FAST            (SS)
+             124 LOAD_ATTR            (rows)
+             126 LOAD_CONST           (0)
+             128 BINARY_SUBSCR
+             130 LOAD_ATTR            (cells)
+             132 LOAD_CONST           (0)
+             134 BINARY_SUBSCR
+             136 STORE_ATTR           (text)
+
+260:         138 LOAD_CONST           ("Amount")
+             140 LOAD_FAST            (SS)
+             142 LOAD_ATTR            (rows)
+             144 LOAD_CONST           (0)
+             146 BINARY_SUBSCR
+             148 LOAD_ATTR            (cells)
+             150 LOAD_CONST           (1)
+             152 BINARY_SUBSCR
+             154 STORE_ATTR           (text)
+
+261:         156 BUILD_MAP            0
+             158 BUILD_MAP            0
+             160 ROT_TWO
+             162 STORE_FAST           (GSdup)
+             164 STORE_FAST           (SSdup)
+
+262:         166 LOAD_FAST            (dbdict)
+             168 LOAD_METHOD          (keys)
+             170 CALL_METHOD          (0 positional arguments)
+             172 GET_ITER
+         >>  174 FOR_ITER             (to 368)
+             176 STORE_FAST           (key)
+
+263:         178 LOAD_FAST            (key)
+             180 LOAD_CONST           ("Gold Sale")
+             182 COMPARE_OP           (==)
+             184 EXTENDED_ARG         (256)
+             186 POP_JUMP_IF_FALSE    (to 270)
+
+264:         188 LOAD_FAST            (dbdict)
+             190 LOAD_FAST            (key)
+             192 BINARY_SUBSCR
+             194 GET_ITER
+         >>  196 FOR_ITER             (to 270)
+             198 STORE_FAST           (i)
+
+265:         200 LOAD_FAST            (i)
+             202 GET_ITER
+         >>  204 FOR_ITER             (to 268)
+             206 STORE_FAST           (j)
+
+266:         208 LOAD_GLOBAL          (str)
+             210 LOAD_FAST            (j)
+             212 CALL_FUNCTION        (1 positional argument)
+             214 LOAD_FAST            (GSdup)
+             216 LOAD_METHOD          (keys)
+             218 CALL_METHOD          (0 positional arguments)
+             220 CONTAINS_OP          (in)
+             222 POP_JUMP_IF_FALSE    (to 250)
+
+267:         224 LOAD_FAST            (GSdup)
+             226 LOAD_GLOBAL          (str)
+             228 LOAD_FAST            (j)
+             230 LOAD_CONST           (0)
+             232 BINARY_SUBSCR
+             234 CALL_FUNCTION        (1 positional argument)
+             236 DUP_TOP_TWO
+             238 BINARY_SUBSCR
+             240 LOAD_CONST           (1)
+             242 INPLACE_ADD
+             244 ROT_THREE
+             246 STORE_SUBSCR
+             248 JUMP_ABSOLUTE        (to 204)
+
+269:     >>  250 LOAD_CONST           (1)
+             252 LOAD_FAST            (GSdup)
+             254 LOAD_GLOBAL          (str)
+             256 LOAD_FAST            (j)
+             258 LOAD_CONST           (0)
+             260 BINARY_SUBSCR
+             262 CALL_FUNCTION        (1 positional argument)
+             264 STORE_SUBSCR
+             266 JUMP_ABSOLUTE        (to 204)
+         >>  268 JUMP_ABSOLUTE        (to 196)
+
+270:     >>  270 LOAD_FAST            (key)
+             272 LOAD_CONST           ("Silver Sale")
+             274 COMPARE_OP           (==)
+             276 POP_JUMP_IF_FALSE    (to 174)
+
+271:         278 LOAD_FAST            (dbdict)
+             280 LOAD_FAST            (key)
+             282 BINARY_SUBSCR
+             284 GET_ITER
+         >>  286 FOR_ITER             (to 366)
+             288 STORE_FAST           (i)
+
+272:         290 LOAD_FAST            (i)
+             292 GET_ITER
+         >>  294 FOR_ITER             (to 362)
+             296 STORE_FAST           (j)
+
+273:         298 LOAD_GLOBAL          (str)
+             300 LOAD_FAST            (j)
+             302 CALL_FUNCTION        (1 positional argument)
+             304 LOAD_FAST            (SSdup)
+             306 LOAD_METHOD          (keys)
+             308 CALL_METHOD          (0 positional arguments)
+             310 CONTAINS_OP          (in)
+             312 EXTENDED_ARG         (256)
+             314 POP_JUMP_IF_FALSE    (to 342)
+
+274:         316 LOAD_FAST            (SSdup)
+             318 LOAD_GLOBAL          (str)
+             320 LOAD_FAST            (j)
+             322 LOAD_CONST           (0)
+             324 BINARY_SUBSCR
+             326 CALL_FUNCTION        (1 positional argument)
+             328 DUP_TOP_TWO
+             330 BINARY_SUBSCR
+             332 LOAD_CONST           (1)
+             334 INPLACE_ADD
+             336 ROT_THREE
+             338 STORE_SUBSCR
+             340 JUMP_FORWARD         (to 358)
+
+276:     >>  342 LOAD_CONST           (1)
+             344 LOAD_FAST            (SSdup)
+             346 LOAD_GLOBAL          (str)
+             348 LOAD_FAST            (j)
+             350 LOAD_CONST           (0)
+             352 BINARY_SUBSCR
+             354 CALL_FUNCTION        (1 positional argument)
+             356 STORE_SUBSCR
+         >>  358 EXTENDED_ARG         (256)
+             360 JUMP_ABSOLUTE        (to 294)
+         >>  362 EXTENDED_ARG         (256)
+             364 JUMP_ABSOLUTE        (to 286)
+         >>  366 JUMP_ABSOLUTE        (to 174)
+
+277:     >>  368 LOAD_FAST            (GSdup)
+             370 LOAD_METHOD          (keys)
+             372 CALL_METHOD          (0 positional arguments)
+             374 GET_ITER
+         >>  376 FOR_ITER             (to 422)
+             378 STORE_FAST           (key)
+
+278:         380 LOAD_FAST            (GS)
+             382 LOAD_METHOD          (add_row)
+             384 CALL_METHOD          (0 positional arguments)
+             386 LOAD_ATTR            (cells)
+             388 STORE_FAST           (GSrow)
+
+279:         390 LOAD_FAST            (key)
+             392 LOAD_FAST            (GSrow)
+             394 LOAD_CONST           (0)
+             396 BINARY_SUBSCR
+             398 STORE_ATTR           (text)
+
+280:         400 LOAD_GLOBAL          (str)
+             402 LOAD_FAST            (GSdup)
+             404 LOAD_FAST            (key)
+             406 BINARY_SUBSCR
+             408 CALL_FUNCTION        (1 positional argument)
+             410 LOAD_FAST            (GSrow)
+             412 LOAD_CONST           (1)
+             414 BINARY_SUBSCR
+             416 STORE_ATTR           (text)
+             418 EXTENDED_ARG         (256)
+             420 JUMP_ABSOLUTE        (to 376)
+
+281:     >>  422 LOAD_FAST            (SSdup)
+             424 LOAD_METHOD          (keys)
+             426 CALL_METHOD          (0 positional arguments)
+             428 GET_ITER
+         >>  430 FOR_ITER             (to 476)
+             432 STORE_FAST           (key)
+
+282:         434 LOAD_FAST            (SS)
+             436 LOAD_METHOD          (add_row)
+             438 CALL_METHOD          (0 positional arguments)
+             440 LOAD_ATTR            (cells)
+             442 STORE_FAST           (SSrow)
+
+283:         444 LOAD_FAST            (key)
+             446 LOAD_FAST            (SSrow)
+             448 LOAD_CONST           (0)
+             450 BINARY_SUBSCR
+             452 STORE_ATTR           (text)
+
+284:         454 LOAD_GLOBAL          (str)
+             456 LOAD_FAST            (SSdup)
+             458 LOAD_FAST            (key)
+             460 BINARY_SUBSCR
+             462 CALL_FUNCTION        (1 positional argument)
+             464 LOAD_FAST            (SSrow)
+             466 LOAD_CONST           (1)
+             468 BINARY_SUBSCR
+             470 STORE_ATTR           (text)
+             472 EXTENDED_ARG         (256)
+             474 JUMP_ABSOLUTE        (to 430)
+
+285:     >>  476 LOAD_FAST            (sumdoc)
+             478 LOAD_METHOD          (save)
+             480 LOAD_FAST            (today)
+             482 FORMAT_VALUE         0
+             484 LOAD_CONST           ("Sum.docx")
+             486 BUILD_STRING         2
+             488 CALL_METHOD          (1 positional argument)
+             490 POP_TOP
+             492 LOAD_CONST           (None)
+             494 RETURN_VALUE
+

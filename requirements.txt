@@ -1,0 +1,11 @@
+# Runtime dependencies for PyBookKeeper
+# Install with: python -m pip install -r requirements.txt
+
+PyQt5>=5.15.4
+python-docx>=0.8.11
+docx2pdf>=0.1.8
+beautifulsoup4>=4.9.3
+lxml>=4.6.3
+
+# Windows-only helper used behind-the-scenes by docx2pdf
+pywin32>=300; platform_system=="Windows"
